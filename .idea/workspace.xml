@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/icons/ico-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/ico-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/temp/bi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Black.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Bold.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-ExtraBold.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-ExtraLight.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Light.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Medium.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Regular.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-SemiBold.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts/Pretendard-Thin.subset.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/AppCard/앱카드_디폴트.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/AppCard/앱카드_디폴트.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/include/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/gulp_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/gulp_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_defaultPage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,29 +16,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2njj9PXIjQ47cuMBdl8f5WWTQ0F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Payple/Git_Project/payple-homepage-node/front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
@@ -81,10 +62,22 @@
       <option name="presentableId" value="Default" />
       <updated>1729493228598</updated>
       <workItem from="1729493230973" duration="6944000" />
+      <workItem from="1729502149601" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
