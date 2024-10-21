@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -999em;
+  overflow: hidden;
+
+  &.ico-back{
+    @include background-img ($width: 1.2rem, $height: 1.1rem, $category: 'icons', $img: 'ico-back.png');
+  }
+  &.ico-close{
+    @include background-img ($width: 2rem, $height: 2rem, $category: 'icons', $img: 'ico-close.png');
+  }
+}
+
