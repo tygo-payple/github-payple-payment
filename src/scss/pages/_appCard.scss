@@ -1,0 +1,75 @@
+.payment-window-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  .payment-window{
+    position: relative;
+    z-index: 100;
+    width: 37.5rem;
+    background-color:#fff;
+    color: #383838;
+    .payment-header{
+      padding: 2.4rem;
+      .title-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        .title{
+          font-size: 2rem;
+          font-weight: 600;
+
+        }
+        button{
+          cursor: pointer;
+        }
+
+      }
+      .partner-logo-box{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        .partner-logo{
+          width: 150px;
+          height: auto;
+
+        }
+      }
+    }
+    main{
+      padding: 2.4rem;
+      .info-section{
+        border-bottom: 12px solid #F5F5F5;
+        .title{
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding-bottom: 0.5rem;
+          border-bottom: 0.1rem solid rgba(56, 56, 56 , 0.5);
+        }
+        .item-list{
+          .item{
+            padding: 1.5rem 0;
+            .item-title{
+              font-size: 1.3rem;
+              @include ellipsis(2);
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
