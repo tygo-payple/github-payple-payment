@@ -1,10 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@@include('../include/head.html')
+<div class="payment-window-container">
+    <div class="payment-window">
+        @@include('../include/header.html')
+        <main>
+            <section class="info-section">
+                <h3 class="title">결제 상품 정보</h3>
+                <ul class="item-list image">
+                    <li class="item">
+                        <div class="empty-bg">
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
+                            <div class="item-content">
+                                <div class="quantity">
+                                    <span>수량<i class="number">1</i>개</span>
+                                </div>
+                                <div class="amount">
+                                    <span><i class="number">120,250</i></span>원
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="payment-method-section">
+                <h3 class="title">결제 방법 선택</h3>
+                <div class="btn-box">
+                    <button class="btn active" value="">카드</button>
+                    <button class="btn">머니/포인트</button>
+                </div>
+                <div class="tab-pane">
+                    <label class="input-label">
+                        <select class="custom-select-box _naver-pay" name="bank">
+                            <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
+                            <option data-value="card" value="1">카드</option>
+                            <option data-value="point" value="2">머니/포인트</option>
+                        </select>
+                    </label>
+                    <div class="tax-box _tax-box" >
+                        <label class="input-label">
+                            <select class="custom-select-box _tax" name="bank">
+                                <option data-value="phone" value="">소득공제용(휴대폰)</option>
+                                <option data-value="business" value="">지출증빙(사업자번호)</option>
+                                <option>미발행</option>
+                            </select>
+                        </label>
+                        <label class="custom-input _phone-input">
+                            <input type="text" placeholder="휴대폰번호를 입력해주세요."/>
+                        </label>
+                        <label class="custom-input _business-input">
+                            <input type="text" placeholder="사업자번호를 입력해주세요."/>
+                        </label>
+                    </div>
+                    <p class="caption">* 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                </div>
+                @@include('../include/terms-list_email.html')
 
-</body>
+            </section>
+
+            <button class="payment-btn" disabled>
+                결제하기
+            </button>
+        </main>
+        @@include('../include/footer.html')
+    </div>
+
+</div>
 </html>

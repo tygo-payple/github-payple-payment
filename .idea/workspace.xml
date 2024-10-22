@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="feat : 카카오 페이 완료">
-      <change afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/nicePay/사용_앱카드.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/nicePay/사용_카카오페이.html" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/html/complete/결제수단_카카오페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/guide/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/guide/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/src/img/icons",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/src/img/icons&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
@@ -87,7 +89,7 @@
       <workItem from="1729502149601" duration="61000" />
       <workItem from="1729552557968" duration="4494000" />
       <workItem from="1729557132838" duration="5253000" />
-      <workItem from="1729563514159" duration="20429000" />
+      <workItem from="1729563514159" duration="21631000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -137,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729584158471</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat : 사용_카카오페이 완료">
+      <option name="closed" value="true" />
+      <created>1729585076714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729585076714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +174,7 @@
     <MESSAGE value="feat : 결제수단 앱카드 완료" />
     <MESSAGE value="feat : 네이버 페이 완료" />
     <MESSAGE value="feat : 카카오 페이 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 카카오 페이 완료" />
+    <MESSAGE value="feat : 사용_카카오페이 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 사용_카카오페이 완료" />
   </component>
 </project>

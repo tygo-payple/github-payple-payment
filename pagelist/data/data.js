@@ -1,19 +1,32 @@
 const data = {}
-data.guide = {
-    title: 'Guide',
+data.complete = {
+    title: 'Complete',
     list: [
         {
-            stateClass: 'complete',
-            url: 'button',
-            category: 'guide',
-            page: 'button'
+            stateClass: 'working',
+            url: '결제수단_2개이상',
+            category: 'complete',
+            page: '결제수단_2개이상'
         },
         {
-            stateClass: 'complete',
-            url: 'test',
-            category: 'guide',
-            page: 'test'
+            stateClass: 'working',
+            url: '결제수단_앱카드',
+            category: 'complete',
+            page: '결제수단_앱카드'
         },
+        {
+            stateClass: 'working',
+            url: '결제수단_카카오페이',
+            category: 'complete',
+            page: '결제수단_카카오페이'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'complete',
+            page: '결제수단_네이버페이'
+        },
+
 
     ]
 }
