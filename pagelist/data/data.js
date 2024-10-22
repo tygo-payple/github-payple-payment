@@ -8,17 +8,41 @@ data.guide = {
             category: 'guide',
             page: 'button'
         },
+        {
+            stateClass: 'complete',
+            url: 'test',
+            category: 'guide',
+            page: 'test'
+        },
 
     ]
 }
-data.AppCard = {
-    title: 'Appcard',
+data.appcard = {
+    title: 'appcard',
     list: [
         {
             stateClass: 'working',
-            url: '앱카드_디폴트',
-            category: 'Appcard',
-            page: '앱카드_디폴트'
+            url: '상품_1개_이미지없음',
+            category: 'appcard',
+            page: '상품_1개_이미지없음'
+        },
+        {
+            stateClass: 'working',
+            url: '상품_1개_이미지있음',
+            category: 'appcard',
+            page: '상품_1개_이미지있음'
+        },
+        {
+            stateClass: 'working',
+            url: '상품_다수_이미지없음',
+            category: 'appcard',
+            page: '상품_다수_이미지없음'
+        },
+        {
+            stateClass: 'working',
+            url: '상품_다수_이미지있음',
+            category: 'appcard',
+            page: '상품_다수_이미지있음'
         },
 
     ]
