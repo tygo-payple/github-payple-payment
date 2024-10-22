@@ -17,31 +17,31 @@ data.guide = {
 
     ]
 }
-data.appcard = {
-    title: 'appcard',
+data.nicePay = {
+    title: 'nicePay',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '상품_1개_이미지없음',
-            category: 'appcard',
+            category: 'nicePay',
             page: '상품_1개_이미지없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '상품_1개_이미지있음',
-            category: 'appcard',
+            category: 'nicePay',
             page: '상품_1개_이미지있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '상품_다수_이미지없음',
-            category: 'appcard',
+            category: 'nicePay',
             page: '상품_다수_이미지없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '상품_다수_이미지있음',
-            category: 'appcard',
+            category: 'nicePay',
             page: '상품_다수_이미지있음'
         },
 
