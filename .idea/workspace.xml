@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="파일명 변경">
+      <change afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/ico-arrow-bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,26 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-docs.payple.kr&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/src/img/icons",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
+      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\build" />
+      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\dist" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\build\dist" />
-      <recent name="C:\Payple\Git_Project\github-payple-payment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
@@ -79,7 +86,7 @@
       <workItem from="1729502149601" duration="61000" />
       <workItem from="1729552557968" duration="4494000" />
       <workItem from="1729557132838" duration="5253000" />
-      <workItem from="1729563514159" duration="7437000" />
+      <workItem from="1729563514159" duration="14457000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -97,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729571334498</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="파일명 변경">
+      <option name="closed" value="true" />
+      <created>1729571935259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729571935259</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +135,7 @@
     <MESSAGE value="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행" />
     <MESSAGE value="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행" />
     <MESSAGE value="feat : 경우의 수 4가지 작업 진행 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 경우의 수 4가지 작업 진행 완료" />
+    <MESSAGE value="파일명 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="파일명 변경" />
   </component>
 </project>

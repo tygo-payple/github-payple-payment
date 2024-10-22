@@ -208,6 +208,13 @@
     }
 
     .payment-method-section {
+      .input-label {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+      }
+
       //추후 공통으로 뺄지도?
       .custom-checkbox-input:checked {
         + .custom-checkbox {
@@ -251,6 +258,21 @@
 
       }
 
+      .tab-pane {
+        margin-top: 1.5rem;
+      }
+
+      .custom-select-box {
+        padding: 1.4rem 1.6rem;
+        border: 1px solid #E6E6E6;
+        width: 100%;
+        font-size: 1.5rem;
+        color: #A4A4A4;
+        background-image: url('../img/icons/ico-arrow-bottom.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1.5rem) 50%;
+        background-size: 1.5rem 0.9rem;
+      }
 
       .btn-box {
         margin-top: 1.5rem;
@@ -273,7 +295,6 @@
           }
         }
       }
-
 
       .terms-list {
         margin: 2.4rem 0;
@@ -301,19 +322,26 @@
         }
       }
 
+      .caption {
+        font-size: 1.2rem;
+        color: #A4A4A4;
+      }
     }
-    .payment-btn{
+
+    .payment-btn {
       margin-top: 3rem;
       width: 100%;
       font-size: 1.8rem;
       text-align: center;
-      background-color: #F5F5F5;
-      color: #ACACAC;
+      background-color: #7852EB;
+      color: #fff;
       font-weight: 600;
       padding: 1.2rem 0;
       border-radius: 0.6rem;
-      &:disabled{
 
+      &:disabled {
+        background-color: #F5F5F5;
+        color: #ACACAC;
       }
     }
   }

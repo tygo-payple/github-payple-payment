@@ -44,6 +44,24 @@ data.nicePay = {
             category: 'nicePay',
             page: '상품_다수_이미지있음'
         },
+        {
+            stateClass: 'complete',
+            url: '결제수단_앱카드',
+            category: 'nicePay',
+            page: '결제수단_앱카드'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'nicePay',
+            page: '결제수단_네이버페이'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_카카오페이',
+            category: 'nicePay',
+            page: '결제수단_카카오페이'
+        },
 
     ]
 }
