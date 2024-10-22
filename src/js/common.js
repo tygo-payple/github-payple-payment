@@ -11,13 +11,38 @@ $(document).ready(function () {
     }
 
     function naverShowBox(){
-        // $('._installment-box').css({'display':'none'});
-        // $('._app-bank-box').change(function() {
-        //     const result = $('._app-bank-box option:selected').val();
-        //     if (result !== "") {
-        //         $('._installment-box').show()
-        //     }
-        // });
+        $('._tax-box').hide();
+
+        $('._business-input').hide();
+        $('._naver-pay').change(function() {
+            const result = $('._naver-pay option:selected').data("value")
+            const caption = $(this).parent().siblings('.caption')
+            if (result === "point") {
+                caption.css({'display':'none'});
+                $('._tax-box').show()
+            }
+            else{
+                caption.css({'display':'block'});
+                caption.text('무이자 할부 안내 〉')
+                $('._tax-box').hide()
+            }
+        });
+        $('._tax').change(function() {
+            const result = $('._tax option:selected').data("value")
+            if (result === "phone") {
+                $('._phone-input').show();
+                $('._business-input').hide();
+            }
+            else if (result === "business"){
+                $('._business-input').show();
+                $('._phone-input').hide();
+            }
+            else{
+                $('._business-input').hide();
+                $('._phone-input').hide();
+            }
+        });
+
     }
 
 

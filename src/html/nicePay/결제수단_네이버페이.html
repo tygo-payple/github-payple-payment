@@ -33,8 +33,35 @@
                     <button class="btn active">네이버페이</button>
                     <button class="btn">카카오페이</button>
                 </div>
+                <div class="tab-pane">
+                    <label class="input-label">
+                        <select class="custom-select-box _naver-pay" name="bank">
+                            <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
+                            <option data-value="card" value="1">카드</option>
+                            <option data-value="point" value="2">머니/포인트</option>
+                        </select>
+                    </label>
+                    <div class="tax-box _tax-box" >
+                        <label class="input-label">
+                            <select class="custom-select-box _tax" name="bank">
+                                <option data-value="phone" value="">소득공제용(휴대폰)</option>
+                                <option data-value="business" value="">지출증빙(사업자번호)</option>
+                                <option>미발행</option>
+                            </select>
+                        </label>
+                        <label class="custom-input _phone-input">
+                            <input type="text" placeholder="휴대폰번호를 입력해주세요."/>
+                        </label>
+                        <label class="custom-input _business-input">
+                            <input type="text" placeholder="사업자번호를 입력해주세요."/>
+                        </label>
+                    </div>
+                    <p class="caption">* 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                </div>
                 @@include('../include/terms-list_email.html')
+
             </section>
+
             <button class="payment-btn" disabled>
                 결제하기
             </button>

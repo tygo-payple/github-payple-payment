@@ -242,16 +242,21 @@
       }
 
       .custom-input {
+        display: inline-block;
+        width: 100%;
         input {
           width: 100%;
           border-radius: 0.6rem;
-          padding: 1rem;
+          padding: 1.4rem 1.6rem;
           border: 1px solid #E6E6E6;
           font-size: 1.5rem;
 
           &:disabled {
             border: none;
             background-color: #F5F5F5;
+
+          }
+          &::placeholder{
             color: #D2D2D2;
           }
         }
@@ -263,11 +268,12 @@
       }
 
       .custom-select-box {
+        border-radius: 0.6rem;
         padding: 1.4rem 1.6rem;
         border: 1px solid #E6E6E6;
         width: 100%;
         font-size: 1.5rem;
-        color: #A4A4A4;
+        color: #383838;
         background-image: url('../img/icons/ico-arrow-bottom.png');
         background-repeat: no-repeat;
         background-position: calc(100% - 1.5rem) 50%;
@@ -295,7 +301,14 @@
           }
         }
       }
-
+      .tax-box{
+        .custom-input{
+          margin-bottom: 1.5rem;
+          &:nth-last-child(1){
+            border-bottom: 0;
+          }
+        }
+      }
       .terms-list {
         margin: 2.4rem 0;
 
