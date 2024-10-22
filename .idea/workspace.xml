@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행">
-      <change afterPath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지있음.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지없음.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지있음.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/guide/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/include/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/temp/bg-empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/temp/img-dummy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
+      <change afterPath="$PROJECT_DIR$/src/html/include/terms-list_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/ico-custom-checkbox.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/AppCard/앱카드_디폴트.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/appcard/상품_1개_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/appcard/상품_다수_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,19 +36,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/src/img/temp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-docs.payple.kr&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
@@ -62,6 +58,7 @@
       <recent name="C:\Payple\Git_Project\github-payple-payment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
       <recent name="C:\Payple\Git_Project\github-payple-payment" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\build" />
@@ -85,8 +82,18 @@
       <workItem from="1729493230973" duration="6944000" />
       <workItem from="1729502149601" duration="61000" />
       <workItem from="1729552557968" duration="4494000" />
-      <workItem from="1729557132838" duration="5201000" />
+      <workItem from="1729557132838" duration="5253000" />
+      <workItem from="1729563514159" duration="6835000" />
     </task>
+    <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
+      <option name="closed" value="true" />
+      <created>1729562434546</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729562434546</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,7 +111,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행" />
+    <MESSAGE value="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-.payment-window-container{
+.payment-window-container {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -8,8 +8,15 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-
 }
+
+.custom-checkbox {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 20px
+}
+
 .payment-window {
   position: relative;
   z-index: 100;
@@ -52,40 +59,47 @@
   main {
     padding: 2.4rem;
 
-    .info-section {
-      border-bottom: 12px solid #F5F5F5;
-      .title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding-bottom: 0.8rem;
-        border-bottom: 0.1rem solid rgba(56, 56, 56, 0.5);
-      }
-      .empty-bg{
-          display: none;
-          flex: 0 0 8rem;
-          margin-right: 1.5rem;
-          height: 7.5rem;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url("../img/temp/bg-empty.png");
-      }
-      .item-list {
+    .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-bottom: 0.8rem;
+      border-bottom: 0.1rem solid rgba(56, 56, 56, 0.5);
+    }
 
+    .info-section {
+      border-bottom: 1.2rem solid #F5F5F5;
+      margin-bottom: 2.5rem;
+
+      .empty-bg {
+        display: none;
+        flex: 0 0 8rem;
+        margin-right: 1.5rem;
+        height: 7.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/temp/bg-empty.png");
+      }
+
+      .item-list {
         .item {
           min-height: 10.2rem;
           padding: 1.5rem 0;
           font-size: 1.3rem;
           border-bottom: 1px solid rgba(56, 56, 56, 0.15);
+
           &:nth-last-child(1) {
             border-bottom: none;
           }
         }
+
         .item-title {
           min-height: 3.9rem;
+          word-break: break-all;
           @include ellipsis(2);
           line-height: 1.5;
           margin-bottom: 1.4rem;
         }
+
         .item-content {
           display: flex;
           color: rgba(56, 56, 56, 0.5);
@@ -111,6 +125,7 @@
           }
 
         }
+
         &.items {
           .item {
             min-height: 10.2rem;
@@ -122,6 +137,7 @@
               border-bottom: none;
             }
           }
+
           .item-title {
             min-height: 3.9rem;
             @include ellipsis(2);
@@ -147,11 +163,13 @@
             }
           }
         }
-        &.image{
-          .item{
+
+        &.image {
+          .item {
             display: flex;
           }
-          .empty-bg{
+
+          .empty-bg {
             display: block;
           }
         }
@@ -188,8 +206,124 @@
         }
       }
     }
+
+    .payment-method-section {
+      //추후 공통으로 뺄지도?
+      .custom-checkbox-input:checked {
+        + .custom-checkbox {
+          background-position: 0 -4rem;
+
+          &.fill {
+            background-position: 0 -2rem;
+          }
+        }
+      }
+
+      .custom-checkbox {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+        background-image: url('../img/icons/ico-custom-checkbox.png');
+        background-repeat: no-repeat;
+        background-position: 0 -6rem;
+        background-size: 2rem;
+
+        &.fill {
+          background-position: 0 0;
+        }
+      }
+
+      .custom-input {
+        input {
+          width: 100%;
+          border-radius: 0.6rem;
+          padding: 1rem;
+          border: 1px solid #E6E6E6;
+          font-size: 1.5rem;
+
+          &:disabled {
+            border: none;
+            background-color: #F5F5F5;
+            color: #D2D2D2;
+          }
+        }
+
+      }
+
+
+      .btn-box {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          cursor: pointer;
+          border-radius: 0.4rem;
+          border: 1px solid #E6E6E6;
+          text-align: center;
+          flex: 1 1 100%;
+          font-size: 1.4rem;
+          color: #A4A4A4;
+          padding: 1.4rem;
+
+          &.active {
+            border: 1px solid #7852EB;
+            color: #7852EB;
+          }
+        }
+      }
+
+
+      .terms-list {
+        margin: 2.4rem 0;
+
+        .item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          .content {
+            cursor: pointer;
+            margin-left: 1rem;
+            font-size: 1.3rem;
+            color: #A4A4A4;
+
+            &.all {
+              color: #383838;
+              font-size: 1.4rem;
+            }
+          }
+
+          &:nth-last-child(1) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+    }
+    .payment-btn{
+      margin-top: 3rem;
+      width: 100%;
+      font-size: 1.8rem;
+      text-align: center;
+      background-color: #F5F5F5;
+      color: #ACACAC;
+      font-weight: 600;
+      padding: 1.2rem 0;
+      border-radius: 0.6rem;
+      &:disabled{
+
+      }
+    }
   }
 
+  footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    color: #acacac;
+  }
 
 }
 
