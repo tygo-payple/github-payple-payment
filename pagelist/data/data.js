@@ -57,10 +57,29 @@ data.nicePay = {
             page: '결제수단_네이버페이'
         },
         {
-            stateClass: 'working',
-            url: '결제수단_카카오페이',
+            stateClass: 'complete',
+            url: '결제수단_2개',
             category: 'nicePay',
-            page: '결제수단_카카오페이'
+            page: '결제수단_2개'
+        },
+
+        {
+            stateClass: 'working',
+            url: '사용_앱카드',
+            category: 'nicePay',
+            page: '사용_앱카드'
+        },
+        {
+            stateClass: 'working',
+            url: '사용_네이버페이',
+            category: 'nicePay',
+            page: '사용_네이버페이'
+        },
+        {
+            stateClass: 'complete',
+            url: '사용_카카오페이',
+            category: 'nicePay',
+            page: '사용_카카오페이'
         },
 
     ]
