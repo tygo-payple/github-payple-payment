@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +82,7 @@
       <workItem from="1729502149601" duration="61000" />
       <workItem from="1729552557968" duration="4494000" />
       <workItem from="1729557132838" duration="5253000" />
-      <workItem from="1729563514159" duration="18561000" />
+      <workItem from="1729563514159" duration="19518000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -111,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729579037592</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat : 네이버 페이 완료">
+      <option name="closed" value="true" />
+      <created>1729583203786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729583203786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +149,7 @@
     <MESSAGE value="feat : 경우의 수 4가지 작업 진행 완료" />
     <MESSAGE value="파일명 변경" />
     <MESSAGE value="feat : 결제수단 앱카드 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 결제수단 앱카드 완료" />
+    <MESSAGE value="feat : 네이버 페이 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 네이버 페이 완료" />
   </component>
 </project>
