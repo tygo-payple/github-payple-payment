@@ -1,0 +1,47 @@
+<script>
+    $(function () {
+            $('._validation').on('change', function () {
+                    const thisVal = $(this).val();
+                    const inputEmail = $("input[name=email]");
+                    const paymentBtn = $("button[name=paymentBtn]")
+
+
+                    switch ($(this).attr("name")) {
+                        case "allChk":
+                            if ($("input[name=allChk]").length !== $("input[name=allChk]:checked").length) {
+                                inputEmail.attr('disabled', true)
+                                paymentBtn.attr('disabled', true)
+                            } else {
+                                inputEmail.attr('disabled', false)
+                                paymentBtn.attr('disabled', false)
+                            }
+                            break;
+                        case "policy":
+                            if ($("input[name=policy]:checked").length !== $("input[name=policy]").length) {
+                                inputEmail.attr('disabled', true)
+                                paymentBtn.attr('disabled', true)
+                            } else {
+                                inputEmail.attr('disabled', false)
+                                paymentBtn.attr('disabled', false)
+                            }
+                            break;
+                        case "bank":
+                            if (thisVal === "") {
+                                inputEmail.attr('disabled', true)
+                                paymentBtn.attr('disabled', true)
+                            }
+                            break;
+                        case "month":
+                            if (thisVal === "") {
+                                inputEmail.attr('disabled', true)
+                                paymentBtn.attr('disabled', true)
+                            }
+                            break;
+                    }
+
+                }
+            )
+
+        }
+    )
+</script>

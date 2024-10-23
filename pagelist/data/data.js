@@ -15,7 +15,7 @@ data.complete = {
             page: '결제수단_앱카드'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제수단_카카오페이',
             category: 'complete',
             page: '결제수단_카카오페이'

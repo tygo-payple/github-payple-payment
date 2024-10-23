@@ -1,13 +1,76 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <p>안녀앗세ㅛ</p>
-</body>
+@@include('../include/head.html')
+<div class="payment-window-container">
+    <div class="payment-window">
+        @@include('../include/header.html')
+        <main>
+            <section class="info-section">
+                <h3 class="title">결제 상품 정보</h3>
+                <ul class="item-list image">
+                    <li class="item">
+                        <div class="empty-bg">
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
+                            <div class="item-content">
+                                <div class="quantity">
+                                    <span>수량<i class="number">1</i>개</span>
+                                </div>
+                                <div class="amount">
+                                    <span><i class="number">120,250</i></span>원
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="payment-method-section">
+                <h3 class="title">결제 카드사 선택</h3>
+                <div class="tab-pane show">
+                    <label class="input-label">
+                        <select class="custom-select-box _app-bank-box _validation" name="bank">
+                            <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
+                            <option value="1">신한은행</option>
+                            <option value="2">하나은행</option>
+                            <option value="3">국민은행</option>
+                            <option value="4">우리은행</option>
+                            <option value="5">농협은행</option>
+                        </select>
+                    </label>
+                    <div class="_installment-box" >
+                        <label class="input-label _installment-box">
+                            <select class="custom-select-box _validation" name="month">
+                                <option disabled hidden selected>할부 개월 수를 선택해 주세요.</option>
+                                <option value="1">1개월</option>
+                                <option value="2">2개월</option>
+                                <option value="3">3개월</option>
+                                <option value="4">4개월</option>
+                                <option value="5">5개월</option>
+                                <option value="6">6개월</option>
+                                <option value="7">7개월</option>
+                                <option value="8">8개월</option>
+                                <option value="9">9개월</option>
+                                <option value="10">10개월</option>
+                                <option value="11">11개월</option>
+                                <option value="12">12개월</option>
+                            </select>
+                        </label>
+                    </div>
+                    <p class="caption">무이자 할부 안내 〉</p>
+                </div>
+                @@include('../include/terms-list_email.html')
+            </section>
+            <button class="payment-btn" disabled name="paymentBtn">
+            카드사 앱으로 결제하기
+            </button>
+        </main>
+        @@include('../include/footer.html')
+    </div>
+
+</div>
+
+@@include('../include/validation.html')
 </html>

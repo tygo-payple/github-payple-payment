@@ -12,7 +12,6 @@ $(document).ready(function () {
 
     function naverShowBox(){
         $('._tax-box').hide();
-
         $('._business-input').hide();
         $('._naver-pay').change(function() {
             const result = $('._naver-pay option:selected').data("value")
@@ -45,7 +44,6 @@ $(document).ready(function () {
 
     }
 
-
     function btnTabShow(){
         const btnBox = $('._btn-box')
 
@@ -64,7 +62,6 @@ $(document).ready(function () {
         })
     }
 
-
     function checkBox(all,name){
         $(all).on('click',function() {
             if($(all).is(":checked")) $(`input[name=${name}]`).prop("checked", true);
@@ -72,16 +69,11 @@ $(document).ready(function () {
         });
         $(`input[name=${name}]`).on('click',function() {
             let total = $(`input[name=${name}]`).length;
-            let checked = $("input[name=policy]:checked").length;
+            let checked = $(`input[name=${name}]:checked`).length;
             if(total !== checked) $(all).prop("checked", false);
             else $(all).prop("checked", true);
         });
     }
-
-
-
-
-
 
     function init(){
         cardShowBox();
