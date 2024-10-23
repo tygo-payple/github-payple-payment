@@ -8,14 +8,10 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
+
 }
 
-.custom-checkbox {
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0px 20px
-}
+
 
 .payment-window {
   position: relative;
@@ -23,6 +19,8 @@
   width: 37.5rem;
   background-color: #fff;
   color: #383838;
+  height: 80rem;
+  overflow-y: auto;
 
   .payment-header {
     padding: 2.4rem;

@@ -83,13 +83,13 @@ data.nicePay = {
         },
 
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '사용_앱카드',
             category: 'nicePay',
             page: '사용_앱카드'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '사용_네이버페이',
             category: 'nicePay',
             page: '사용_네이버페이'
@@ -100,6 +100,37 @@ data.nicePay = {
             category: 'nicePay',
             page: '사용_카카오페이'
         },
+
+    ]
+}
+data.modal = {
+    title: 'modal',
+    list: [
+        {
+            stateClass: 'complete',
+            url: 'alert',
+            category: 'modal',
+            page: 'alert'
+        },
+        {
+            stateClass: 'complete',
+            url: 'confirm',
+            category: 'modal',
+            page: 'confirm'
+        },
+        {
+            stateClass: 'working',
+            url: '전자금융거래_이용약관',
+            category: 'modal',
+            page: '전자금융거래_이용약관'
+        },
+        {
+            stateClass: 'working',
+            url: '무이자_할부_안내',
+            category: 'modal',
+            page: '무이자_할부_안내'
+        },
+
 
     ]
 }

@@ -65,6 +65,20 @@ $(document).ready(function () {
     }
 
 
+    function checkBox(all,name){
+        $(all).on('click',function() {
+            if($(all).is(":checked")) $(`input[name=${name}]`).prop("checked", true);
+            else $(`input[name=${name}]`).prop("checked", false);
+        });
+        $(`input[name=${name}]`).on('click',function() {
+            let total = $(`input[name=${name}]`).length;
+            let checked = $("input[name=policy]:checked").length;
+            if(total !== checked) $(all).prop("checked", false);
+            else $(all).prop("checked", true);
+        });
+    }
+
+
 
 
 
@@ -73,6 +87,7 @@ $(document).ready(function () {
         cardShowBox();
         naverShowBox();
         btnTabShow();
+        checkBox('._all-chk','policy');
     }
 
     init();

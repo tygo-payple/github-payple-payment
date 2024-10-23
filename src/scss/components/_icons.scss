@@ -12,5 +12,8 @@
   &.ico-close{
     @include background-img ($width: 2rem, $height: 2rem, $category: 'icons', $img: 'ico-close.png');
   }
+  &.ico-alert-red{
+    @include background-img ($width: 2rem, $height: 2rem, $category: 'icons', $img: 'ico-alert-red.png');
+  }
 }
 
