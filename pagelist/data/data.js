@@ -71,6 +71,12 @@ data.nicePay = {
         },
         {
             stateClass: 'complete',
+            url: '결제수단_카카오페이',
+            category: 'nicePay',
+            page: '결제수단_카카오페이'
+        },
+        {
+            stateClass: 'complete',
             url: '결제수단_2개',
             category: 'nicePay',
             page: '결제수단_2개'

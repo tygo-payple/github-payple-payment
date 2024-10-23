@@ -46,6 +46,25 @@ $(document).ready(function () {
     }
 
 
+    function btnTabShow(){
+        const btnBox = $('._btn-box')
+
+
+
+        btnBox.on('click',function(e){
+            const target = $(e.target)
+            const index = $(e.target).index()
+            const tabPane = $('._tab-pane')
+
+            $(this).children('.btn').removeClass('active')
+            tabPane.removeClass('show')
+
+            target.addClass('active')
+            tabPane.eq(index).addClass('show')
+        })
+    }
+
+
 
 
 
@@ -53,6 +72,7 @@ $(document).ready(function () {
     function init(){
         cardShowBox();
         naverShowBox();
+        btnTabShow();
     }
 
     init();

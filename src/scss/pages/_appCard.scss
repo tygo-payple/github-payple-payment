@@ -265,6 +265,10 @@
 
       .tab-pane {
         margin-top: 1.5rem;
+        display: none;
+        &.show{
+          display: block;
+        }
       }
 
       .custom-select-box {
