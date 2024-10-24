@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 @@include('../include/head.html')
-<div class="dim">
-    <div>
+<button class="_modal-open" style="font-size: 20px; border: 1px solid red">confirm 클릭</button>
+<div class="modal-background _modal-background">
+    <div class="modal-animation _modal-animation">
         <div class="modal">
             <div class="modal-body confirm">
                 <i class="icon ico-alert-red">경고</i>
@@ -10,7 +11,7 @@
             </div>
             <div class="modal-footer">
                 <div>
-                    <button class="check">확인</button>
+                    <button class="check _modal-close">확인</button>
                 </div>
             </div>
         </div>

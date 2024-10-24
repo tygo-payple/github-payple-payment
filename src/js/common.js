@@ -75,12 +75,31 @@ $(document).ready(function () {
         });
     }
 
+    function modalAnimation(){
+        $('._modal-open').on('click',function(){
+            $('._modal-background').addClass('show')
+            $('._modal-animation').addClass('show')
+        })
+        $('._modal-close').on('click',function(){
+            $('._modal-animation').removeClass('show')
+            setTimeout(()=>{
+                $('._modal-background').removeClass('show')
+            },1000)
+        })
+
+
+    }
+
     function init(){
         cardShowBox();
         naverShowBox();
         btnTabShow();
         checkBox('._all-chk','policy');
+        modalAnimation();
     }
+
+
+
 
     init();
 })
