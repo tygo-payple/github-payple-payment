@@ -75,9 +75,13 @@
       text-align: left;
       font-size: 1.4rem;
       .main-title{
-        display: inline-block;
+        display: block;
         font-weight: 700;
         margin-bottom: 1.5rem;
+        &.b-bottom{
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #383838;
+        }
       }
       .text{
         margin-bottom: 1.5rem;
@@ -112,23 +116,38 @@
           }
         }
       }
+      table{
+        width: 100%;
+        &.table-free{
+          th,td{
+            font-size: 1.2rem;
+            text-align: left;
+            padding:1rem 0.5rem;
+          }
+        }
+        tr{
+          border-bottom: 1px solid rgba(56, 56, 56,0.05);
+          &:first-child{
+            border-top: 1px solid #383838;
+          };
+        }
+        th,td{
+          text-align: center;
+          padding:1rem;
+
+
+        }
+      }
       .response-table{
         overflow-x: auto;
         table{
-          width: 100%;
-          tr{
-            border-bottom: 1px solid rgba(56, 56, 56,0.05);
-            &:first-child{
-              border-top: 1px solid #383838;
-            };
-          }
           th,td{
-            text-align: center;
-            padding:1rem;
             white-space: nowrap;
           }
         }
+
       }
+
     }
   }
 

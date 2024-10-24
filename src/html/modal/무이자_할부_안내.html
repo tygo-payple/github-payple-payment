@@ -1,17 +1,156 @@
 <!doctype html>
 <html lang="en">
 @@include('../include/head.html')
-<button class="_modal-open" style="font-size: 20px; border: 1px solid red">모달클릭</button>
-<div class="modal-background _modal-background">
-    <div class="modal-animation _modal-animation ">
+<div class="modal-background _modal-background show">
+    <div class="modal-animation _modal-animation show">
         <div class="modal policy">
-            <div class="modal-header"></div>
-            <div class="modal-body">
-                <i class="icon ico-alert-red">경고</i>
-                <p class="title">공통 타이틀 텍스트</p>
-                <p class="content">공통 컨텐츠 텍스트 </p>
+            <div class="modal-header">
+                <div class="title-box">
+                    <h5 class="title">무이자 할부 안내</h5>
+                    <i class="icon ico-close _modal-close">종료</i>
+                </div>
+            </div>
+            <div class="modal-body policy">
+                <p class="main-title b-bottom">헹사기간 및 대상</p>
+                <p style="margin-bottom: 3rem">2024. 10. 01 ~ 2024. 10. 31<br/>온라인PG/결제 금액 5만원 이상 적용</p>
+                <p class="main-title">무이자 할부 혜택</p>
+                <table class="table-free" style="margin-bottom: 3rem">
+                    <colgroup>
+                        <col style="width: 5rem">
+                        <col style="width: 6rem">
+                        <col style="">
+                    </colgroup>
+                    <tr>
+                        <td >삼성</td>
+                        <td>2~3개월</td>
+                        <td>홈쇼핑/세금/병원 제외</td>
+                    </tr>
+                    <tr>
+                        <td >롯데</td>
+                        <td>2~5개월</td>
+                        <td>4대보험/세금(국세/지방세)제외</td>
+                    </tr>
+                    <tr>
+                        <td >신한</td>
+                        <td>2~5개월</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >KB국민</td>
+                        <td>2~3개월</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >현대</td>
+                        <td>2~3개월</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >하나</td>
+                        <td>2~3개월</td>
+                        <td>홈쇼핑/세금/병원 제외</td>
+                    </tr>
+                    <tr>
+                        <td >NH농협</td>
+                        <td>2~3개월</td>
+                        <td>스포츠/레저 용품, 차량정비, 의류, 슈퍼마켓 2~3개월
+                            국세, 지방세, 학원, 등록금 2~4개월</td>
+                    </tr>
+                    <tr>
+                        <td >비씨</td>
+                        <td>2~3개월</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >우리</td>
+                        <td>2~3개월</td>
+                        <td>자동차, 중고차, 국세, 지방세, 4대보험 등 일부 제외</td>
+                    </tr>
+                    <tr>
+                        <td >광주</td>
+                        <td>2~7개월</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >전북</td>
+                        <td>2~3개월</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p class="main-title">부분 무이자 할부 혜택</p>
+                <table class="table-free" style="margin-bottom: 3rem">
+                    <colgroup>
+                        <col style="width: 8rem">
+                        <col >
+                    </colgroup>
+                    <tr>
+                        <td >삼성</td>
+                        <td>6개월 할부 (1~3회차 이자 고객 부담)<br/>
+                            10개월 할부 (1~4회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~5회차 이자 고객 부담)</td>
+                    </tr>
+                    <tr>
+                        <td >NH농협</td>
+                        <td>7개월 할부 (1~3회차 이자 고객 부담)<br/>
+                            8개월 할부 (1~3회차 이자 고객 부담)<br/>
+                            9개월 할부 (1~3회차 이자 고객 부담)<br/>
+                            10개월 할부 (1~3회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~4회차 이자 고객 부담)<br/>
+                            18개월 할부 (1~5회차 이자 고객 부담)<br/>
+                            24개월 할부 (1~6회차 이자 고객 부담)</td>
+
+                    </tr>
+                    <tr>
+                        <td >비씨</td>
+                        <td>10개월 할부 (1~4회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~5회차 이자 고객 부담)</td>
+
+                    </tr>
+                    <tr>
+                        <td >우리</td>
+                        <td>10개월 할부 (1~4회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~5회차 이자 고객 부담)</td>
+
+                    </tr>
+                    <tr>
+                        <td >광주</td>
+                        <td>10개월 할부 (1~4회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~5회차 이자 고객 부담</td>
+
+                    </tr>
+                    <tr>
+                        <td >전북</td>
+                        <td>4개월 할부 (1회차 이자 고객 부담)<br/>
+                            5개월 할부 (1회차 이자 고객 부담)<br/>
+                            6개월 할부 (1회차 이자 고객 부담)<br/>
+                            7개월 할부 (1회차 이자 고객 부담)<br/>
+                            8개월 할부 (1회차 이자 고객 부담)<br/>
+                            9개월 할부 (1회차 이자 고객 부담)<br/>
+                            10개월 할부 (1~2회차 이자 고객 부담)<br/>
+                            11개월 할부 (1~2회차 이자 고객 부담)<br/>
+                            12개월 할부 (1~2회차 이자 고객 부담)</td>
+                    </tr>
+                </table>
+                <p class="main-title">유의사항</p>
+                <ul class="content-list">
+                    <li data-set="&middot;">전북/광주카드 무이자 : 당사 결제창 내 (무)표기가 노출 되지 않더라도 5만원 이상 결제 시에 업종 무이자 적용 됩니다.</li>
+                    <li data-set="&middot;">개인사업자/법인/체크/선불/기프트/하이브리드/토스카드/은행계열카드는 적용 대상에서 제외됩니다. *은행계열카드 : 카드 전/후면에 BC마크가 없는 카드 (예. 수협, 제주 등)</li>
+                    <li data-set="&middot;">무이자 할부 결제 시 포인트, 마일리지 등 다른 혜택과 중복 적용 되지 않습니다.</li>
+                    <li data-set="&middot;">당사 대표 가맹점이 아닌 직계약(자체) 가맹점, 신규 가맹점 등 일부는 적용 대상에서 제외됩니다.</li>
+                    <li data-set="&middot;">PG업종에만 해당하는 무이자로 이 외 업종은 적용 불가 합니다. (제약, 등록금, 도시가스 등)</li>
+                    <li data-set="&middot;">하나카드는 PG업종 외 TASF 취급수수료, 환금성(상품권), 학원, 면세점, 보험업종 등의 경우 적용 대상에서 제외됩니다.</li>
+                    <li data-set="&middot;">본 행사는 카드사 사정에 따라 변경 또는 중단될 수 있습니다.</li>
+                    <li data-set="&middot;">일반결제 및 KB Pay(KB국민카드 결제 한정)에 한해 위 무이자 할부 혜택 적용 가능하며, 간편결제(네이버페이, 카카오페이, 토스페이, 페이코, 삼성페이 등) 이용 시 일부 무이자 할부의 경우 적용 불가할 수 있습니다.</li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 </html>
+
+
+
+
+
+
+

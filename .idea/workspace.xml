@@ -7,8 +7,8 @@
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/modal/개인정보제공_및_위탁동의.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/개인정보제공_및_위탁동의.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/modal/무이자_할부_안내.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/무이자_할부_안내.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_modal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,8 @@
       <workItem from="1729651553788" duration="11658000" />
       <workItem from="1729667066713" duration="8201000" />
       <workItem from="1729725680859" duration="4807000" />
-      <workItem from="1729735940298" duration="10355000" />
+      <workItem from="1729735940298" duration="13039000" />
+      <workItem from="1729750917505" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -190,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729742825431</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="전자금융거래 이용약관 완료">
+      <option name="closed" value="true" />
+      <created>1729748126568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729748126568</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +233,8 @@
     <MESSAGE value="약관 수정 진행중" />
     <MESSAGE value="개인정보 수집 완료" />
     <MESSAGE value="개인정보수집_및_약관동의 작업 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="개인정보수집_및_약관동의 작업 완료" />
+    <MESSAGE value="전자" />
+    <MESSAGE value="전자금융거래 이용약관 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="전자금융거래 이용약관 완료" />
   </component>
 </project>
