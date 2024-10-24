@@ -47,15 +47,19 @@
   .modal-body {
     padding: 2.4rem;
     .icon{
-      margin-bottom: 1.6rem;
+      display: block;
+      margin: 0 auto 1.6rem;
+
     }
     .title {
+      text-align: center;
       font-weight: 600;
       margin-bottom: 0.8rem;
       font-size: 1.8rem;
       color: #000;
     }
     .content {
+      text-align: center;
       color: #8D8D8D;
       font-size: 1.5rem;
     }

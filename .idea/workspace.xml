@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="개인정보 수집 완료">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/개인정보수집_및_이용동의.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/개인정보수집_및_이용동의.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_modal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +92,7 @@
       <workItem from="1729651553788" duration="11658000" />
       <workItem from="1729667066713" duration="8201000" />
       <workItem from="1729725680859" duration="4807000" />
-      <workItem from="1729735940298" duration="5523000" />
+      <workItem from="1729735940298" duration="10355000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -181,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729728591333</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="개인정보수집_및_약관동의 작업 완료">
+      <option name="closed" value="true" />
+      <created>1729742825430</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729742825431</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +222,8 @@
     <MESSAGE value="feat: 네이버 페이 완료" />
     <MESSAGE value="modal 및 체크박스 스크립트 작업 완료" />
     <MESSAGE value="약관 수정 진행중" />
-    <option name="LAST_COMMIT_MESSAGE" value="약관 수정 진행중" />
+    <MESSAGE value="개인정보 수집 완료" />
+    <MESSAGE value="개인정보수집_및_약관동의 작업 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="개인정보수집_및_약관동의 작업 완료" />
   </component>
 </project>

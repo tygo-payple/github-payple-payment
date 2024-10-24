@@ -125,7 +125,7 @@ data.modal = {
             page: '전자금융거래_이용약관'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '개인정보수집_및_이용동의',
             category: 'modal',
             page: '개인정보수집_및_이용동의'
@@ -137,7 +137,7 @@ data.modal = {
             page: '개인정보제공_및_위탁동의'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '정기결제_이용약관',
             category: 'modal',
             page: '정기결제_이용약관'
