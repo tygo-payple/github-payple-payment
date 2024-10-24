@@ -15,7 +15,7 @@
 }
 .modal-animation{
     visibility: hidden;
-    transform: translateY(-2rem);
+    transform: translateY(-4rem);
     transition: all 1s;
     &.show{
       transform: translateY(0);
@@ -28,8 +28,23 @@
   width: 33rem;
   border-radius: 1.4rem;
   overflow: hidden;
+  .modal-header{
+    .title-box{
+      display: flex;
+      padding: 2.2rem 2.4rem;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(56,56,56,0.2);
+      .title{
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      .icon{
+        cursor: pointer;
+      }
+    }
+  }
   .modal-body {
-    text-align: center;
     padding: 2.4rem;
     .icon{
       margin-bottom: 1.6rem;
@@ -45,11 +60,72 @@
       font-size: 1.5rem;
     }
     &.confirm{
+      text-align: center;
       .content{
         color: #383838;
       }
     }
-
+    &.policy{
+      height: 50rem;
+      overflow-y: auto;
+      text-align: left;
+      font-size: 1.4rem;
+      .main-title{
+        display: inline-block;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+      .text{
+        margin-bottom: 1.5rem;
+      }
+      .number-list{
+        >li{
+          margin-bottom: 1.5rem;
+        }
+      }
+      .content-list{
+        margin-left: 1.5rem;
+        >span{
+          position: relative;
+          margin-bottom: 0.5rem;
+          display: inline-block;
+          &:before{
+            left: -1.6rem;
+            position: absolute;
+            content: attr(data-set);
+          }
+        }
+        >li{
+          position: relative;
+          margin-bottom: 0.5rem;
+          &:nth-last-child(1){
+            margin-bottom: 0;
+          }
+          &:before{
+            left: -1.2rem;
+            position: absolute;
+            content: attr(data-set);
+          }
+        }
+      }
+      .response-table{
+        overflow-x: auto;
+        table{
+          width: 100%;
+          tr{
+            border-bottom: 1px solid rgba(56, 56, 56,0.05);
+            &:first-child{
+              border-top: 1px solid #383838;
+            };
+          }
+          th,td{
+            text-align: center;
+            padding:1rem;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
   }
 
   .modal-footer {
