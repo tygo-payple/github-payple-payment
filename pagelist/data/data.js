@@ -144,9 +144,34 @@ data.modal = {
         },
         {
             stateClass: 'complete',
-            url: '무이자_할부_안내',
+            url: '무이자_할부_안내_정책필요',
             category: 'modal',
-            page: '무이자_할부_안내'
+            page: '무이자_할부_안내_정책필요'
+        },
+
+
+    ]
+}
+data.common = {
+    title: 'common',
+    list: [
+        {
+            stateClass: 'working',
+            url: '결제성공_V1',
+            category: 'common',
+            page: '결제성공_V1'
+        },
+        {
+            stateClass: 'working',
+            url: '결제성공_V2',
+            category: 'common',
+            page: '결제성공_V2'
+        },
+        {
+            stateClass: 'working',
+            url: '결제실패',
+            category: 'common',
+            page: '결제실패'
         },
 
 
