@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -46,12 +45,66 @@
   main {
     padding: 1rem 2.4rem;
     max-height: 71.4rem;
+    height: 71.4rem;
     overflow-y: auto;
+
     @include res-sm{
+      height: auto;
       max-height: 55.5rem;
+    }
+    &.complete-payment-layout{
+      height: 71.4rem;
+      position: relative;
+      @include res-sm{
+        height: calc(100dvh - 11.2rem);
+        max-height: none;
+      }
+      .payment-complete-box{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .img-payment{
+          margin: 0 auto;
+          width: 5.8rem;
+          height: 5.8rem;
+          &.complete{
+            width: 6.3rem;
+            height: 6.7rem;
+          }
+          &.cancellation{
+            width: 7.1rem;
+            height: 7.1rem;
+          }
+        }
+        h6{
+          margin-top: 2rem;
+          color: #383838;
+          font-size: 22px;
+          font-weight: 600;
+          text-align: center;
+          &.purple{
+            font-size: 2.5rem;
+            color: #7852EB;
+          }
+          &.red{
+            margin-top: 0.5rem;
+            font-size: 2.2rem;
+            color: #FF5B5B;
+          }
+        }
+        .desc{
+          margin-top: 1rem;
+          color: #8D8D8D;
+          text-align: center;
+          font-size: 1.5rem;
+        }
+      }
     }
     .partner-logo-box {
       display: flex;
+      padding-bottom: 1rem;
       justify-content: center;
       align-items: center;
 
@@ -346,10 +399,10 @@
       }
     }
 
-    .logo{
+    .copyright{
       text-align: center;
       font-size: 1.5rem;
-      padding: 2.5rem;
+      padding: 2.5rem 0 7.5rem;
       color: #acacac;
     }
   }

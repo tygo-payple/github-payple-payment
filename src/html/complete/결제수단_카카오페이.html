@@ -35,14 +35,45 @@
                 <h3 class="title">필수 약관 동의 및 결제내역 수신</h3>
                 @@include('../include/terms-list_email.html')
             </section>
-
-            <button class="payment-btn" disabled name="paymentBtn">
-            카카오페이로 결제하기
-            </button>
+            <p class="copyright">powered by Payple</p>
         </main>
-        @@include('../include/footer.html')
+        <footer>
+            <button class="payment-btn _submit-btn" disabled name="paymentBtn">
+                카카오페이로 결제하기
+            </button>
+        </footer>
     </div>
-
 </div>
-@@include('../include/validation.html')
+<script>
+    $(document).ready(function(){
+        const checkboxAllField = $('._chk-all-validation');
+        const checkboxField = $('._chk-validation')
+        const submitButton = $('._submit-btn');
+        const emailField = $('._email-filed')
+
+        checkboxAllField.on('change',validationCheckbox);
+        checkboxField.on('change',validationCheckbox);
+
+        function validationCheckbox(){
+            let isCheckbox = checkboxAllField.is(':checked')
+            if(isCheckbox === true){
+                emailField.attr('disabled',false)
+                submitButton.attr('disabled',false)
+            }else{
+                emailField.attr('disabled',true)
+                submitButton.attr('disabled',true)
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+    })
+</script>
 </html>

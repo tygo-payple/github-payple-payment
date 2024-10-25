@@ -16,10 +16,12 @@
 .modal-animation{
     visibility: hidden;
     transform: translateY(-4rem);
-    transition: all 1s;
+    transition: all 0.15s;
+    opacity: 0;
     &.show{
       transform: translateY(0);
       visibility: visible;
+      opacity: 1;
   }
 }
 

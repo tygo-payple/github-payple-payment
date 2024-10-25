@@ -106,18 +106,7 @@ data.nicePay = {
 data.modal = {
     title: 'modal',
     list: [
-        {
-            stateClass: 'complete',
-            url: 'alert',
-            category: 'modal',
-            page: 'alert'
-        },
-        {
-            stateClass: 'complete',
-            url: 'confirm',
-            category: 'modal',
-            page: 'confirm'
-        },
+
         {
             stateClass: 'complete',
             url: '전자금융거래_이용약관',
@@ -156,19 +145,31 @@ data.common = {
     title: 'common',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
+            url: 'alert',
+            category: 'modal',
+            page: 'alert'
+        },
+        {
+            stateClass: 'complete',
+            url: 'confirm',
+            category: 'modal',
+            page: 'confirm'
+        },
+        {
+            stateClass: 'complete',
             url: '결제성공_V1',
             category: 'common',
             page: '결제성공_V1'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제성공_V2',
             category: 'common',
             page: '결제성공_V2'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제실패',
             category: 'common',
             page: '결제실패'

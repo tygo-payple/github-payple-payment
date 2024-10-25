@@ -1,10 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@@include('../include/head.html')
+<div class="payment-window-background">
+    <div class="payment-window">
+        @@include('../include/header.html')
+        <main class="complete-payment-layout">
+            <div class="partner-logo-box">
+                <div class="partner-logo">
+                    <img src="../../img/temp/bi.png" alt="이미지">
+                </div>
+            </div>
+            <div class="payment-complete-box">
+                <div class="img-payment">
+                    <img src="../../img/image/img-payment-complete.png" alt="결제 완료">
+                </div>
+                <h6>결제가 완료되었습니다!</h6>
+            </div>
+        </main>
+        <footer>
+            <button class="payment-btn" name="paymentBtn">
+                닫기
+            </button>
+        </footer>
 
-</body>
+
+    </div>
+</div>
 </html>
