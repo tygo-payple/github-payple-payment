@@ -13,6 +13,28 @@
   }
 }
 
+
+@mixin res-sm {
+  @media screen and (min-width: 0px) and (max-width: $res_sm) {
+    @content;
+  }
+}
+@mixin res-md {
+  @media screen and (min-width: 0px) and (max-width:$res_md ) {
+    @content;
+  }
+}
+@mixin res-lg {
+  @media screen and (min-width: 0px) and (max-width:$res_lg ) {
+    @content;
+  }
+}
+@mixin res-xl {
+  @media screen and (min-width: 0px) and (max-width:$res_xl ) {
+    @content;
+  }
+}
+
 @mixin background-img ($width: 100px, $height: 100px, $category: 'common', $img: 'temp.svg'){
   $url : "../img/";
   width: $width;
@@ -20,3 +42,4 @@
   background-image: url($url + $category + "/" + $img);
   background-size: cover;
 }
+
