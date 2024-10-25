@@ -36,7 +36,7 @@
                 <h3 class="title">결제 카드사 선택</h3>
                 <div class="tab-pane show">
                     <label class="input-label">
-                        <select class="custom-select-box _app-bank-box _validation" name="bank">
+                        <select class="custom-select-box _app-bank-box _select-bank-validation" name="bank">
                             <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
                             <option value="1">신한은행</option>
                             <option value="2">하나은행</option>
@@ -47,8 +47,8 @@
                     </label>
                     <div class="_installment-box" >
                         <label class="input-label _installment-box">
-                            <select class="custom-select-box _validation" name="month">
-                                <option disabled hidden selected>할부 개월 수를 선택해 주세요.</option>
+                            <select class="custom-select-box _select-month-validation" name="month">
+                                <option value=""  hidden selected >할부 개월 수를 선택해 주세요.</option>
                                 <option value="1">1개월</option>
                                 <option value="2">2개월</option>
                                 <option value="3">3개월</option>
@@ -71,13 +71,52 @@
             <p class="copyright">powered by Payple</p>
         </main>
         <footer>
-            <button class="payment-btn" disabled name="paymentBtn">
+            <button class="payment-btn _submit-btn" disabled name="paymentBtn">
                 카드사 앱으로 결제하기
             </button>
         </footer>
     </div>
 
 </div>
+<script>
+    $(document).ready(function(){
+        const checkboxAllField = $('._chk-all-validation');
+        const checkboxField = $('._chk-validation');
+        const bankSelectField = $('._select-bank-validation');
+        const monthSelectField = $('._select-month-validation');
 
+        const submitButton = $('._submit-btn');
+        const emailField = $('._email-filed');
+
+        checkboxAllField.on('change', checkAllConditions);
+        checkboxField.on('change', checkAllConditions);
+        bankSelectField.on('change', checkAllConditions);
+        monthSelectField.on('change', checkAllConditions);
+
+        function validationMonthSelect() {
+            return monthSelectField.val() !== "";
+        }
+        function validationBankSelect() {
+            return bankSelectField.val() !== "";
+        }
+        function validationCheckbox() {
+            return checkboxAllField.is(':checked')
+        }
+
+        function checkAllConditions() {
+            const isCheckbox = validationCheckbox();
+            const isBankSelected = validationBankSelect();
+            const isMonthSelected = validationMonthSelect();
+
+            if (isCheckbox && isBankSelected && isMonthSelected) {
+                emailField.attr('disabled', false);
+                submitButton.attr('disabled', false);
+            } else {
+                emailField.attr('disabled', true);
+                submitButton.attr('disabled', true);
+            }
+        }
+    });
+</script>
 
 </html>

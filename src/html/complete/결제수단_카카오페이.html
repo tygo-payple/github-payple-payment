@@ -45,35 +45,30 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');
         const checkboxField = $('._chk-validation')
         const submitButton = $('._submit-btn');
-        const emailField = $('._email-filed')
+        const emailField = $('._email-filed');
 
-        checkboxAllField.on('change',validationCheckbox);
-        checkboxField.on('change',validationCheckbox);
+        checkboxAllField.on('change', checkAllConditions);
+        checkboxField.on('change', checkAllConditions);
 
-        function validationCheckbox(){
-            let isCheckbox = checkboxAllField.is(':checked')
-            if(isCheckbox === true){
-                emailField.attr('disabled',false)
-                submitButton.attr('disabled',false)
-            }else{
-                emailField.attr('disabled',true)
-                submitButton.attr('disabled',true)
-            }
+        function validationCheckbox() {
+            return checkboxAllField.is(':checked')
         }
 
+        function checkAllConditions() {
+            let isCheckbox = validationCheckbox();
 
-
-
-
-
-
-
-
-
+            if (isCheckbox) {
+                emailField.attr('disabled', false)
+                submitButton.attr('disabled', false)
+            } else {
+                emailField.attr('disabled', true)
+                submitButton.attr('disabled', true)
+            }
+        }
     })
 </script>
 </html>

@@ -9,7 +9,7 @@ data.complete = {
             page: '결제수단_2개이상'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제수단_앱카드',
             category: 'complete',
             page: '결제수단_앱카드'
