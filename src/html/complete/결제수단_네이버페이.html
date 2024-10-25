@@ -35,21 +35,16 @@
             <section class="payment-method-section">
                 <h3 class="title">결제 방법 선택</h3>
                 <div class="btn-box _btn-box">
-                    <button class="btn" value="">카드</button>
-                    <button class="btn">머니/포인트</button>
+                    <button class="btn" value="1">카드</button>
+                    <button class="btn" value="2">머니/포인트</button>
+                    <input type="hidden"/>
+                    <input type="hidden"/>
                 </div>
                 <div class="tab-pane _tab-pane">
                     <p class="caption">무이자 할부 안내 〉</p>
                 </div>
                 <div class="tab-pane _tab-pane">
-                    <label class="input-label">
-                        <select class="custom-select-box _naver-pay" name="bank">
-                            <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
-                            <option data-value="card" value="1">카드</option>
-                            <option data-value="point" value="2">머니/포인트</option>
-                        </select>
-                    </label>
-                    <div class="tax-box _tax-box">
+                    <div class="tax-box">
                         <label class="input-label">
                             <select class="custom-select-box _tax" name="bank">
                                 <option data-value="phone" value="">소득공제용(휴대폰)</option>
@@ -74,4 +69,48 @@
     </div>
 
 </div>
+<script>
+    $(document).ready(function () {
+
+        const checkboxAllField = $('._chk-all-validation');
+        const checkboxField = $('._chk-validation');
+        const bankSelectField = $('._select-bank-validation');
+        const monthSelectField = $('._select-month-validation');
+
+        const submitButton = $('._submit-btn');
+        const emailField = $('._email-filed');
+
+        checkboxAllField.on('change', checkAllConditions);
+        checkboxField.on('change', checkAllConditions);
+        bankSelectField.on('change', checkAllConditions);
+        monthSelectField.on('change', checkAllConditions);
+
+
+        function validationMonthSelect() {
+            return monthSelectField.val() !== "";
+        }
+
+        function validationBankSelect() {
+            return bankSelectField.val() !== "";
+        }
+
+        function validationCheckbox() {
+            return checkboxAllField.is(':checked')
+        }
+
+        function checkAllConditions() {
+            const isCheckbox = validationCheckbox();
+            const isBankSelected = validationBankSelect();
+            const isMonthSelected = validationMonthSelect();
+
+            if (isCheckbox && isBankSelected && isMonthSelected) {
+                emailField.attr('disabled', false);
+                submitButton.attr('disabled', false);
+            } else {
+                emailField.attr('disabled', true);
+                submitButton.attr('disabled', true);
+            }
+        }
+    });
+</script>
 </html>
