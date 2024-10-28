@@ -6,30 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/common/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/common/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/common/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/common/confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/include/terms-list_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/terms-list_email.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/modal/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/alert.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/modal/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/개인정보수집_및_이용동의.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/개인정보수집_및_이용동의.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/개인정보제공_및_위탁동의.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/개인정보제공_및_위탁동의.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/무이자_할부_안내_정책필요.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/무이자_할부_안내_정책필요.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/전자금융거래_이용약관.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/정기결제_이용약관.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +99,7 @@
       <workItem from="1729750917505" duration="8529000" />
       <workItem from="1729816428600" duration="144000" />
       <workItem from="1729816575160" duration="28151000" />
-      <workItem from="1730073549091" duration="7463000" />
+      <workItem from="1730073549091" duration="11837000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -287,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729848607711</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="caption 추가 완료">
+      <option name="closed" value="true" />
+      <created>1730081354121</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730081354121</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +321,8 @@
     <MESSAGE value="반영진행" />
     <MESSAGE value="수정" />
     <MESSAGE value="UI 구현  완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI 구현  완료" />
+    <MESSAGE value="caption 추가 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="caption 추가 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
