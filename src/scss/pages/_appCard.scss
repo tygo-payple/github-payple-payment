@@ -338,7 +338,7 @@
         background-size: 1.5rem 0.9rem;
       }
 
-      .btn-box {
+      .payment-method-box {
         margin-top: 1.5rem;
         display: flex;
         gap: 1rem;
@@ -394,6 +394,8 @@
       }
 
       .caption {
+        cursor: pointer;
+        display: inline-block;
         font-size: 1.2rem;
         color: #A4A4A4;
       }

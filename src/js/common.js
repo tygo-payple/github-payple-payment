@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
     function btnTabShow() {
-        const btnBox = $('._btn-box')
+        const btnBox = $('._payment-method-box')
         btnBox.on('click', function (e) {
             const target = $(e.target)
             const index = $(e.target).index()
@@ -68,75 +68,42 @@ $(document).ready(function () {
         });
     }
 
-    function modalAnimation() {
-        $('._modal-open').on('click', function () {
-            $('._modal-background').addClass('show')
-            $('._modal-animation').addClass('show')
-        })
-        $('._modal-close').on('click', function () {
-            $('._modal-animation').removeClass('show')
-            setTimeout(() => {
-                $('._modal-background').removeClass('show')
-            }, 150)
-        })
+    function toggleModal(modalId , action){
+        const modal = $(`.${modalId}`);
+        const modalAnimation = modal.children('._modal-animation');
+
+        if(action === "open"){
+            modal.addClass('show');
+            modalAnimation.addClass('show');
+        }else if (action === "close"){
+            modal.removeClass('show');
+            modalAnimation.removeClass('show');
+        }
 
 
+        $('._open-modal').on('click', function () {
+            const modalId = $(this).data('modal-id');
+            toggleModal(modalId, 'open');
+        })
+        $('._close-modal').on('click', function () {
+            const modalId = $(this).data('modal-id');
+            toggleModal(modalId, 'close');
+        })
     }
 
 
 
-    // function validateForm {
-    //     $('._validation').on('change', function () {
-    //             const thisVal = $(this).val();
-    //             const inputEmail = $("input[name=email]");
-    //             const paymentBtn = $("button[name=paymentBtn]")
-    //
-    //
-    //             switch ($(this).attr("name")) {
-    //                 case "allChk":
-    //                     if ($("input[name=allChk]").length !== $("input[name=allChk]:checked").length) {
-    //                         inputEmail.attr('disabled', true)
-    //                         paymentBtn.attr('disabled', true)
-    //                     } else {
-    //                         inputEmail.attr('disabled', false)
-    //                         paymentBtn.attr('disabled', false)
-    //                     }
-    //                     break;
-    //                 case "policy":
-    //                     if ($("input[name=policy]:checked").length !== $("input[name=policy]").length) {
-    //                         inputEmail.attr('disabled', true)
-    //                         paymentBtn.attr('disabled', true)
-    //                     } else {
-    //                         inputEmail.attr('disabled', false)
-    //                         paymentBtn.attr('disabled', false)
-    //                     }
-    //                     break;
-    //                 case "bank":
-    //                     if (thisVal === "") {
-    //                         inputEmail.attr('disabled', true)
-    //                         paymentBtn.attr('disabled', true)
-    //                     }
-    //                     break;
-    //                 case "month":
-    //                     if (thisVal === "") {
-    //                         inputEmail.attr('disabled', true)
-    //                         paymentBtn.attr('disabled', true)
-    //                     }
-    //                     break;
-    //             }
-    //
-    //         }
-    //     )
-    // }
+
+
 
 
     function init() {
         cardShowBox();
         naverShowBox();
         btnTabShow();
+        toggleModal();
         // enableSubmitButton();
         checkBox('._all-chk', 'policy');
-        modalAnimation();
     }
 
 
