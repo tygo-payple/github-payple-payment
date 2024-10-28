@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="QA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_카카오페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/include/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/include/terms-list_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/terms-list_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/modal/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/modal/confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/ico-back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/ico-back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/ico-close.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/ico-close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,26 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/src/img/icons",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AtomSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\build" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\html\common" />
-      <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\icons" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
       <recent name="C:\Payple\Git_Project\github-payple-payment\dist" />
     </key>
@@ -99,7 +108,8 @@
       <workItem from="1729750917505" duration="8529000" />
       <workItem from="1729816428600" duration="144000" />
       <workItem from="1729816575160" duration="28151000" />
-      <workItem from="1730073549091" duration="11837000" />
+      <workItem from="1730073549091" duration="16418000" />
+      <workItem from="1730091875196" duration="12226000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -277,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730081354121</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="confirm &#10;aLERT 변경">
+      <option name="closed" value="true" />
+      <created>1730085819818</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730085819818</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +315,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat : 환경 설정 완료&#10;&#10;AppCard 리디자인 진행을 위한 작업 진행&#10;- 변경 : 환경 설정 진행" />
     <MESSAGE value="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행" />
     <MESSAGE value="feat : 경우의 수 4가지 작업 진행 완료" />
     <MESSAGE value="파일명 변경" />
@@ -322,7 +339,8 @@
     <MESSAGE value="수정" />
     <MESSAGE value="UI 구현  완료" />
     <MESSAGE value="caption 추가 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="caption 추가 완료" />
+    <MESSAGE value="confirm &#10;aLERT 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirm &#10;aLERT 변경" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,7 +348,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/js/common.js</url>
           <line>71</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

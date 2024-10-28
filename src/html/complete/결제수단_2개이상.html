@@ -41,7 +41,7 @@
                 </div>
                 <div class="tab-pane _tab-pane">
                     <label class="input-label">
-                        <select class="custom-select-box _app-bank-box" name="bank">
+                        <select class="custom-select-box _app-bank-box" name="bank" required>
                             <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
                             <option value="1">신한은행</option>
                             <option value="2">하나은행</option>
@@ -52,7 +52,7 @@
                     </label>
                     <div class="_installment-box" >
                         <label class="input-label _installment-box">
-                            <select class="custom-select-box" name="bank">
+                            <select class="custom-select-box" name="bank" required>
                                 <option disabled hidden selected>할부 개월 수를 선택해 주세요.</option>
                                 <option value="">1개월</option>
                                 <option value="">2개월</option>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="tab-pane _tab-pane">
                     <label class="input-label">
-                        <select class="custom-select-box _naver-pay" name="bank">
+                        <select class="custom-select-box _naver-pay" name="bank" required>
                             <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
                             <option data-value="card" value="1">카드</option>
                             <option data-value="point" value="2">머니/포인트</option>
@@ -82,7 +82,7 @@
                     </label>
                     <div class="tax-box _tax-box" >
                         <label class="input-label">
-                            <select class="custom-select-box _tax" name="bank">
+                            <select class="custom-select-box _tax" name="bank" required>
                                 <option data-value="phone" value="">소득공제용(휴대폰)</option>
                                 <option data-value="business" value="">지출증빙(사업자번호)</option>
                                 <option>미발행</option>

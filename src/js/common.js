@@ -68,22 +68,20 @@ $(document).ready(function () {
         });
     }
 
-    function toggleModal(modalId , action){
+    function toggleModal(modalId, action) {
         const modal = $(`.${modalId}`);
         const modalAnimation = modal.children('._modal-animation');
-
-        if(action === "open"){
+        if (action === "open") {
             modal.addClass('show');
             modalAnimation.addClass('show');
-        }else if (action === "close"){
+        } else if (action === "close") {
             modal.removeClass('show');
             modalAnimation.removeClass('show');
         }
-
-
         $('._open-modal').on('click', function () {
             const modalId = $(this).data('modal-id');
             toggleModal(modalId, 'open');
+
         })
         $('._close-modal').on('click', function () {
             const modalId = $(this).data('modal-id');
@@ -92,17 +90,11 @@ $(document).ready(function () {
     }
 
 
-
-
-
-
-
     function init() {
         cardShowBox();
         naverShowBox();
         btnTabShow();
         toggleModal();
-        // enableSubmitButton();
         checkBox('._all-chk', 'policy');
     }
 
