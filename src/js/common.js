@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-    function cardShowBox() {
+    function handleSelectChange() {
         $('._installment-box').css({'display': 'none'});
         $('._app-bank-box').change(function () {
             const result = $('._app-bank-box option:selected').val();
@@ -9,8 +8,7 @@ $(document).ready(function () {
             }
         });
     }
-
-    function naverShowBox() {
+    function handleSelectsChange() {
         $('._tax-box').hide();
         $('._business-input').hide();
         $('._naver-pay').change(function () {
@@ -38,36 +36,31 @@ $(document).ready(function () {
                 $('._phone-input').hide();
             }
         });
-
     }
-
-    function btnTabShow() {
+    function handleBtnChange() {
         const btnBox = $('._payment-method-box')
         btnBox.on('click', function (e) {
             const target = $(e.target)
             const index = $(e.target).index()
             const tabPane = $('._tab-pane')
-
             $(this).children('.btn').removeClass('active')
             tabPane.removeClass('show')
             target.addClass('active')
             tabPane.eq(index).addClass('show')
         })
     }
-
-    function checkBox(all, name) {
-        $(all).on('click', function () {
-            if ($(all).is(":checked")) $(`input[name=${name}]`).prop("checked", true);
-            else $(`input[name=${name}]`).prop("checked", false);
+    function createCustomCheckbox() {
+        $('._all-chk').on('click', function () {
+            if ($('._all-chk').is(":checked")) $('input[name=policy]').prop("checked", true);
+            else $('input[name=policy]').prop("checked", false);
         });
-        $(`input[name=${name}]`).on('click', function () {
-            let total = $(`input[name=${name}]`).length;
-            let checked = $(`input[name=${name}]:checked`).length;
-            if (total !== checked) $(all).prop("checked", false);
-            else $(all).prop("checked", true);
+        $('input[name=policy]').on('click', function () {
+            let total = $('input[name=policy]').length;
+            let checked = $('input[name=policy]:checked').length;
+            if (total !== checked) $('._all-chk').prop("checked", false);
+            else $('._all-chk').prop("checked", true);
         });
     }
-
     function toggleModal(modalId, action) {
         const modal = $(`.${modalId}`);
         const modalAnimation = modal.children('._modal-animation');
@@ -90,14 +83,17 @@ $(document).ready(function () {
     }
 
 
-    function init() {
-        cardShowBox();
-        naverShowBox();
-        btnTabShow();
-        toggleModal();
-        checkBox('._all-chk', 'policy');
-    }
 
+
+
+    function init() {
+        handleSelectChange();
+        handleSelectsChange();
+        handleBtnChange();
+        toggleModal();
+        createCustomCheckbox();
+
+    }
 
     init();
 })

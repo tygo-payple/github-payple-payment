@@ -812,18 +812,16 @@
 <!--정기결제 이용약관 e-->
 
 <!--Alert s-->
-<div class="modal-background _modal-background closeAlert" data-modal-id="closeAlert">
+<div class="modal-background _modal-background alert" data-modal-id="alert">
     <div class="modal-animation _modal-animation">
-        <div class="modal confirm">
-            <div class="modal-body">
+        <div class="modal">
+            <div class="modal-body confirm">
                 <i class="icon ico-alert-red">경고</i>
-                <p class="title">공통 타이틀 텍스트</p>
-                <p class="content">공통 컨텐츠 텍스트 </p>
+                <p class="content"></p>
             </div>
             <div class="modal-footer">
                 <div>
-                    <button class="continuer _close-modal" data-modal-id="closeAlert">결제 계속하기</button>
-                    <button class="close">취소하기</button>
+                    <button class="check _close-modal" data-modal-id="alert">확인</button>
                 </div>
             </div>
         </div>
@@ -850,6 +848,7 @@
         checkboxField.on('change', checkAllConditions);
         bankSelectField.on('change', checkAllConditions);
         monthSelectField.on('change', checkAllConditions);
+
         emailField.on('change',validationEmailInput)
 
 
@@ -865,13 +864,12 @@
             return checkboxAllField.is(':checked')
         }
 
-        // 값 보낼때 처리
         function validationEmailInput() {
             let emailValue = emailField.val();
             const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
             if(!regexp.test(emailValue)){
-                alert('올바른이메일주소가 아닙니당')
+                alertModal("이메일을 다시 입력해주세요.",)
+                emailField.val("")
                 emailField.focus();
                 return false;
 
@@ -884,12 +882,23 @@
             const isMonthSelected = validationMonthSelect();
 
             if (isCheckbox && isBankSelected && isMonthSelected) {
-                emailField.attr('disabled', false);
                 submitButton.attr('disabled', false);
             } else {
-                emailField.attr('disabled', true);
                 submitButton.attr('disabled', true);
             }
+        }
+
+
+
+        function alertModal(message, status = 'show') {
+            const ALERT = $('.alert');
+            ALERT.addClass(status);
+            ALERT.children('._modal-animation').addClass(status);
+            ALERT.find('.content').text(message);
+            // setTimeout(() => {
+            //     ALERT.removeClass(status);
+            //     ALERT.children('._modal-animation').removeClass(status);
+            // }, 2000);
         }
 
 
