@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="required 수정 완료">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="AlertPopup 공통으로 사용  완료">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/common/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/common/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/common/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/common/confirm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/include/terms-list_email.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/terms-list_email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +42,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-docs.payple.kr&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,7 +100,8 @@
       <workItem from="1730091875196" duration="13329000" />
       <workItem from="1730160237546" duration="5803000" />
       <workItem from="1730185576758" duration="4699000" />
-      <workItem from="1730192972996" duration="730000" />
+      <workItem from="1730192972996" duration="990000" />
+      <workItem from="1730249964411" duration="4757000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -298,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730105574062</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="AlertPopup 공통으로 사용  완료">
+      <option name="closed" value="true" />
+      <created>1730193742914</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730193742914</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +323,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="파일명 변경" />
     <MESSAGE value="feat : 결제수단 앱카드 완료" />
     <MESSAGE value="feat : 네이버 페이 완료" />
     <MESSAGE value="feat : 카카오 페이 완료" />
@@ -343,7 +347,8 @@
     <MESSAGE value="confirm &#10;aLERT 변경" />
     <MESSAGE value="QA" />
     <MESSAGE value="required 수정 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="required 수정 완료" />
+    <MESSAGE value="AlertPopup 공통으로 사용  완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="AlertPopup 공통으로 사용  완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
