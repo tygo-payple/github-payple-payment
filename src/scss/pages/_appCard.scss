@@ -141,17 +141,28 @@
 
       .title-box {
         position: relative;
+
+        .slide-down-btn {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+        }
+
         button {
           cursor: pointer;
           right: 0;
           top: 0;
           position: absolute;
-          .icon{
+
+          .icon {
             transition: all 0.3s;
             rotate: 180deg;
           }
-          &.active{
-            .icon{
+
+          &.active {
+            .icon {
               rotate: 0deg;
             }
           }
@@ -170,11 +181,13 @@
       }
 
       .item-list {
-        &.is-active{
+        &.is-active {
           height: 0;
-          overflow:hidden;
+          overflow: hidden;
         }
+
         transition: all 1s;
+
         .item {
           min-height: 10.2rem;
           padding: 1.5rem 0;
@@ -270,9 +283,14 @@
       }
 
       .total-list {
+        display: none;
         font-size: 1.5rem;
         padding: 1.5rem 0;
         border-top: 1px solid rgba(56, 56, 56, 0.15);
+
+        &.show {
+          display: block;
+        }
 
         > li {
           display: flex;
@@ -415,7 +433,9 @@
 
       .tax-box {
         display: none;
-
+        &.show{
+          display: block;
+        }
         .custom-input {
           margin-bottom: 1.5rem;
 
@@ -469,6 +489,21 @@
         display: inline-block;
         font-size: 1.2rem;
         color: #A4A4A4;
+
+        &.warning-caption {
+          margin-top: 1rem;
+          word-break: keep-all;
+          cursor: auto;
+          position: relative;
+          margin-left: 1rem;
+
+          &:before {
+            position: absolute;
+            content: attr(data-set);
+            top: 0.2rem;
+            left: -1rem;
+          }
+        }
       }
     }
 

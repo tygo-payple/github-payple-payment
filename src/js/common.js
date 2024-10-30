@@ -11,8 +11,8 @@ $(document).ready(function () {
     function handleSelectsChange() {
         $('._tax-box').hide();
         $('._business-input').hide();
-        $('._naver-pay').change(function () {
-            const result = $('._naver-pay option:selected').data("value")
+        $('._transaction-type').change(function () {
+            const result = $('._transaction-type option:selected').data("value")
             const caption = $(this).parent().siblings('.caption')
             if (result === "point") {
                 caption.css({'display': 'none'});
@@ -25,28 +25,34 @@ $(document).ready(function () {
         });
         $('._tax').change(function () {
             const result = $('._tax option:selected').data("value")
+
             if (result === "phone") {
                 $('._phone-input').show();
                 $('._business-input').hide();
+                $('._business-input input').val("");
             } else if (result === "business") {
                 $('._business-input').show();
                 $('._phone-input').hide();
+                $('._phone-input input').val("");
             } else {
                 $('._business-input').hide();
                 $('._phone-input').hide();
+                $('._business-input input').val("");
+                $('._phone-input input').val("");
             }
         });
     }
     function handleBtnChange() {
-        const btnBox = $('._payment-method-box')
+        const btnBox = $('._tab-box')
         btnBox.on('click', function (e) {
             const target = $(e.target)
             const index = $(e.target).index()
             const tabPane = $('._tab-pane')
-            $(this).children('.btn').removeClass('active')
-            tabPane.removeClass('show')
-            target.addClass('active')
-            tabPane.eq(index).addClass('show')
+
+            $(this).children('.btn').removeClass('active');
+            tabPane.removeClass('show');
+            target.addClass('active');
+            tabPane.eq(index).addClass('show');
         })
     }
     function createCustomCheckbox() {

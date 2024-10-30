@@ -13,7 +13,7 @@
             @@include('../include/info-section.html')
             <section class="payment-method-section">
                 <h3 class="title">결제 수단 선택</h3>
-                <div class="payment-method-box _payment-method-box">
+                <div class="payment-method-box _tab-box">
                     <button class="btn" value="">앱카드</button>
                     <button class="btn" value="">네이버페이</button>
                     <button class="btn">카카오페이</button>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="tab-pane _tab-pane">
                     <label class="input-label">
-                        <select class="custom-select-box _naver-pay" name="bank" required>
+                        <select class="custom-select-box _transaction-type" name="bank" required>
                             <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
                             <option data-value="card" value="1">카드</option>
                             <option data-value="point" value="2">머니/포인트</option>

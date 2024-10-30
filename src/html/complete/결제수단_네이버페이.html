@@ -13,16 +13,16 @@
             @@include('../include/info-section.html')
             <section class="payment-method-section">
                 <h3 class="title">결제 방법 선택</h3>
-                <div class="payment-method-box _payment-method-box">
-                    <button class="btn active" value="1">카드</button>
+                <div class="payment-method-box _tab-box">
+                    <button class="btn" value="1">카드</button>
                     <button class="btn" value="2">머니/포인트</button>
-                    <input type="hidden" class="_payment-method-validation" value="1"/>
                 </div>
-                <div class="tab-pane _tab-pane show">
+                <p class="caption warning-caption" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                <div class="tab-pane _tab-pane">
                     <p class="caption _open-modal" data-modal-id="ziig">무이자 할부 안내 〉</p>
                 </div>
                 <div class="tab-pane _tab-pane">
-                    <div class="tax-box">
+                    <div class="tax-box show">
                         <label class="input-label">
                             <select class="custom-select-box _tax" name="bank" required>
                                 <option data-value="phone" value="">소득공제용(휴대폰)</option>
@@ -37,7 +37,7 @@
                             <input type="text" placeholder="사업자번호를 입력해주세요."/>
                         </label>
                     </div>
-                    <p class="caption">* 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                    <p class="caption warning-caption" data-set="*" style="margin-top: 0">카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
                 </div>
                 @@include('../include/terms-list_email.html')
             </section>
@@ -815,7 +815,7 @@
 
         const submitButton = $('._submit-btn');
         const emailField = $('._email-filed');
-        const paymentMethodBox = $('._payment-method-box')
+        const paymentMethodBox = $('._tab-box')
 
 
         checkboxAllField.on('change', checkAllConditions);
@@ -825,7 +825,7 @@
         paymentMethodBox.on('click', inputPaymentValue);
         paymentMethodBox.on('change', validationPaymentMethodSelect);
 
-        function resetField() {
+        function requiredReset() {
             if (paymentField.val() === '1') {
 
             } else {
@@ -837,8 +837,7 @@
         function inputPaymentValue(e) {
             const targetValue = $(e.target).val();
             paymentField.val(targetValue);
-            resetField();
-
+            requiredReset();
         }
 
         function validationMonthSelect() {
@@ -864,10 +863,8 @@
             const isPaymentSelect = validationPaymentMethodSelect();
 
             if (isCheckbox && isBankSelected && isMonthSelected && isPaymentSelect && isPaymentSelect) {
-                emailField.attr('disabled', false);
                 submitButton.attr('disabled', false);
             } else {
-                emailField.attr('disabled', true);
                 submitButton.attr('disabled', true);
             }
         }
