@@ -11,28 +11,7 @@
                     <img src="../../img/temp/bi.png" alt="이미지">
                 </div>
             </div>
-                <section class="info-section">
-                    <h3 class="title">결제 상품 정보</h3>
-                    <ul class="item-list">
-                        <li class="item">
-                            <div class="empty-bg">
-                                <img src="" alt="">
-                            </div>
-                            <div>
-                                <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
-                                    아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
-                                <div class="item-content">
-                                    <div class="quantity">
-                                        <span>수량<i class="number">1</i>개</span>
-                                    </div>
-                                    <div class="amount">
-                                        <span><i class="number">120,250</i></span>원
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+            @@include('../include/info-section.html')
             <section class="payment-method-section">
                 <h3 class="title">결제 카드사 선택</h3>
                 <div class="tab-pane show">
@@ -812,7 +791,7 @@
 <!--정기결제 이용약관 e-->
 
 <!--Alert s-->
-<div class="modal-background _modal-background alert" data-modal-id=    "alert">
+<div class="modal-background _modal-background alert" data-modal-id="alert">
     <div class="modal-animation _modal-animation">
         <div class="modal">
             <div class="modal-body confirm">
@@ -865,7 +844,7 @@
         bankSelectField.on('change', checkAllConditions);
         monthSelectField.on('change', checkAllConditions);
 
-        emailField.on('change',validationEmailInput)
+        emailField.on('change', validationEmailInput)
 
 
         function validationMonthSelect() {
@@ -883,7 +862,7 @@
         function validationEmailInput() {
             let emailValue = emailField.val();
             const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if(!regexp.test(emailValue)){
+            if (!regexp.test(emailValue)) {
                 alertModal("이메일을 다시 입력해주세요.",)
                 emailField.val("")
                 emailField.focus();
@@ -903,7 +882,6 @@
                 submitButton.attr('disabled', true);
             }
         }
-
 
 
         function alertModal(message, status = 'show') {

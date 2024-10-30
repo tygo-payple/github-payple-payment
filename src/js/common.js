@@ -81,7 +81,14 @@ $(document).ready(function () {
             toggleModal(modalId, 'close');
         })
     }
+    function toggleSlide(){
+        const btn = $('._slide-down-btn');
 
+        btn.on('click', function () {
+            $(this).parent().siblings('.item-list').toggleClass('is-active')
+            $(this).toggleClass('active')
+        })
+    }
 
 
 
@@ -92,7 +99,7 @@ $(document).ready(function () {
         handleBtnChange();
         toggleModal();
         createCustomCheckbox();
-
+        toggleSlide();
     }
 
     init();

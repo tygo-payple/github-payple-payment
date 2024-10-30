@@ -10,27 +10,7 @@
                     <img src="../../img/temp/bi.png" alt="이미지">
                 </div>
             </div>
-            <section class="info-section">
-                <h3 class="title">결제 상품 정보</h3>
-                <ul class="item-list">
-                    <li class="item">
-                        <div class="empty-bg">
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] </h5>
-                            <div class="item-content">
-                                <div class="quantity">
-                                    <span>수량<i class="number">1</i>개</span>
-                                </div>
-                                <div class="amount">
-                                    <span><i class="number">120,250</i></span>원
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
+            @@include('../include/info-section.html')
             <section class="payment-method-section">
                 <h3 class="title">필수 약관 동의 및 결제내역 수신</h3>
                 @@include('../include/terms-list_email.html')
@@ -617,6 +597,24 @@
     </div>
 </div>
 <!--정기결제 이용약관 e-->
+
+<div class="modal-background _modal-background paymentCloseAlert" data-modal-id="paymentCloseAlert">
+    <div class="modal-animation _modal-animation">
+        <div class="modal confirm">
+            <div class="modal-body">
+                <i class="icon ico-alert-red">경고</i>
+                <p class="title">결제를 취소하시겠습니까?</p>
+                <p class="content">입력한 항목은 모두 초기화 됩니다.</p>
+            </div>
+            <div class="modal-footer">
+                <div>
+                    <button class="continuer _close-modal" data-modal-id="paymentCloseAlert">결제 계속하기</button>
+                    <button class="close">취소하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');

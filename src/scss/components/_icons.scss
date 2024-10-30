@@ -15,5 +15,11 @@
   &.ico-alert-red{
     @include background-img ($width: 2rem, $height: 2rem, $category: 'icons', $img: 'ico-alert-red.png');
   }
+  &.ico-arrow-bottom{
+    @include background-img ($width: 0.8rem, $height: 0.8rem, $category: 'icons', $img: 'ico-arrow-bottom.png');
+  }
+  &.ico-arrow-bottom-slide{
+    @include background-img ($width: 2rem, $height: 2rem, $category: 'icons', $img: 'ico-arrow-bottom-slide.png');
+  }
 }
 

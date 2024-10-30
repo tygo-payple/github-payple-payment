@@ -11,7 +11,6 @@
 }
 
 
-
 .payment-window {
   max-height: 100%;
   position: relative;
@@ -19,6 +18,7 @@
   width: 37.5rem;
   background-color: #fff;
   color: #383838;
+
   .payment-header {
     padding: 1.6rem 2.4rem;
     position: sticky;
@@ -26,10 +26,12 @@
     top: 0;
     left: 0;
     height: 5.6rem;
+
     .title-box {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .title {
         font-size: 2rem;
         font-weight: 600;
@@ -37,6 +39,7 @@
 
       button {
         cursor: pointer;
+
       }
 
     }
@@ -48,53 +51,62 @@
     height: 71.4rem;
     overflow-y: auto;
 
-    @include res-sm{
+    @include res-sm {
       height: auto;
       max-height: 55.5rem;
     }
-    &.complete-payment-layout{
+
+    &.complete-payment-layout {
       height: 71.4rem;
       position: relative;
-      @include res-sm{
+      @include res-sm {
         height: calc(100dvh - 11.2rem);
         max-height: none;
       }
-      .payment-complete-box{
+
+      .payment-complete-box {
         position: absolute;
         top: 50%;
         width: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
-        .img-payment{
+
+        .img-payment {
           margin: 0 auto;
           width: 5.8rem;
           height: 5.8rem;
-          &.complete{
+
+          &.complete {
             width: 6.3rem;
             height: 6.7rem;
           }
-          &.cancellation{
+
+          &.cancellation {
             width: 7.1rem;
             height: 7.1rem;
           }
         }
-        h6{
+
+        h6 {
           margin-top: 2rem;
           color: #383838;
           font-size: 22px;
           font-weight: 600;
           text-align: center;
-          &.purple{
+
+          &.purple {
             font-size: 2.5rem;
             color: #7852EB;
           }
-          &.red{
+
+          &.red {
             margin-top: 0.5rem;
             font-size: 2.2rem;
             color: #FF5B5B;
           }
         }
-        .desc{
+
+        .desc {
           margin-top: 1rem;
           color: #8D8D8D;
           text-align: center;
@@ -102,6 +114,7 @@
         }
       }
     }
+
     .partner-logo-box {
       display: flex;
       padding-bottom: 1rem;
@@ -113,6 +126,7 @@
         height: auto;
       }
     }
+
     .title {
       font-size: 1.5rem;
       font-weight: 700;
@@ -125,6 +139,26 @@
       margin: 0 -2.4rem 2.5rem;
       padding: 2.4rem;
 
+      .title-box {
+        position: relative;
+        button {
+          cursor: pointer;
+          right: 0;
+          top: 0;
+          position: absolute;
+          .icon{
+            transition: all 0.3s;
+            rotate: 180deg;
+          }
+          &.active{
+            .icon{
+              rotate: 0deg;
+            }
+          }
+
+        }
+      }
+
       .empty-bg {
         display: none;
         flex: 0 0 8rem;
@@ -136,6 +170,11 @@
       }
 
       .item-list {
+        &.is-active{
+          height: 0;
+          overflow:hidden;
+        }
+        transition: all 1s;
         .item {
           min-height: 10.2rem;
           padding: 1.5rem 0;
@@ -299,6 +338,7 @@
       .custom-input {
         display: inline-block;
         width: 100%;
+
         input {
           width: 100%;
           border-radius: 0.6rem;
@@ -312,7 +352,8 @@
             background-color: #F5F5F5;
 
           }
-          &::placeholder{
+
+          &::placeholder {
             color: #D2D2D2;
           }
         }
@@ -322,7 +363,8 @@
       .tab-pane {
         margin-top: 1.5rem;
         display: none;
-        &.show{
+
+        &.show {
           display: block;
         }
       }
@@ -338,10 +380,12 @@
         background-repeat: no-repeat;
         background-position: calc(100% - 1.5rem) 50%;
         background-size: 1.5rem 0.9rem;
+
         &:invalid {
           color: #A4A4A4;
         }
-        option{
+
+        option {
           color: #383838;
         }
       }
@@ -368,15 +412,19 @@
           }
         }
       }
-      .tax-box{
+
+      .tax-box {
         display: none;
-        .custom-input{
+
+        .custom-input {
           margin-bottom: 1.5rem;
-          &:nth-last-child(1){
+
+          &:nth-last-child(1) {
             border-bottom: 0;
           }
         }
       }
+
       .terms-list {
         margin: 2.4rem 0;
 
@@ -384,13 +432,16 @@
           display: flex;
           align-items: center;
           margin-bottom: 0.5rem;
-          &.all{
+
+          &.all {
             position: relative;
-            .custom-checkbox{
+
+            .custom-checkbox {
               width: 100%;
               z-index: 10;
             }
-            .content{
+
+            .content {
               color: #383838;
               position: absolute;
               text-decoration: none;
@@ -398,6 +449,7 @@
               left: 2.2rem;
             }
           }
+
           .content {
             cursor: pointer;
             margin-left: 1rem;
@@ -420,7 +472,7 @@
       }
     }
 
-    .copyright{
+    .copyright {
       text-align: center;
       font-size: 1.5rem;
       padding: 2.5rem 0 7.5rem;
@@ -434,6 +486,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+
     .payment-btn {
       width: 100%;
       height: 100%;
