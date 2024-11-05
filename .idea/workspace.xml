@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="작업 진행중">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="결제수단_네이버페이 우선 작업">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
     </list>
@@ -43,7 +43,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-docs.payple.kr&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/payple-homepage-node/front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,7 +107,8 @@
       <workItem from="1730342141293" duration="953000" />
       <workItem from="1730347732718" duration="3318000" />
       <workItem from="1730358684516" duration="763000" />
-      <workItem from="1730766027576" duration="16727000" />
+      <workItem from="1730766027576" duration="21810000" />
+      <workItem from="1730791187211" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -349,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730782902257</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="결제수단_네이버페이 우선 작업">
+      <option name="closed" value="true" />
+      <created>1730785572414</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730785572414</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat: 네이버 페이 완료" />
     <MESSAGE value="modal 및 체크박스 스크립트 작업 완료" />
     <MESSAGE value="약관 수정 진행중" />
     <MESSAGE value="개인정보 수집 완료" />
@@ -394,7 +402,8 @@
     <MESSAGE value="네이버 페이 작업 진행중" />
     <MESSAGE value="네이버 페이 수정 완료" />
     <MESSAGE value="작업 진행중" />
-    <option name="LAST_COMMIT_MESSAGE" value="작업 진행중" />
+    <MESSAGE value="결제수단_네이버페이 우선 작업" />
+    <option name="LAST_COMMIT_MESSAGE" value="결제수단_네이버페이 우선 작업" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,6 +412,11 @@
           <url>file://$PROJECT_DIR$/dist/js/common.js</url>
           <line>57</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html</url>
+          <line>913</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

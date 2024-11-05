@@ -14,8 +14,8 @@
             <section class="payment-method-section">
                 <h3 class="title">결제 방법 선택</h3>
                 <div class="payment-method-box _tab-box">
-                    <button class="btn" value="1">카드</button>
-                    <button class="btn" value="2">머니/포인트</button>
+                    <input type="button" class="btn" value="카드"/>
+                    <input type="button" class="btn" value="머니/포인트"/>
 
                 </div>
                 <p class="caption warning-caption _caption" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수
@@ -45,8 +45,7 @@
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
-
-            <input type="hidden" id="paymentInput">
+            <input type="hidden" id="inputPayment">
         </main>
         <footer>
             <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
@@ -836,26 +835,14 @@
         const emailField = $('#inputEmail');
         const inputPhone = $('#inputPhone');
         const inputBusiness = $('#inputBusiness');
-        const paymentMethodBox = $('._tab-box')
-        const paymentInput = $('#paymentInput');
+        const TabBox = $('._tab-box')
+        const inputPayment = $('#inputPayment')
 
-        paymentMethodBox.on('click', resetFormValues);
-
-        // 필수
-        checkboxAllField.on('change', checkAllConditions);
-        checkboxField.on('change', checkAllConditions);
-        inputPhone.on('change', checkAllConditions);
-
-        // 선택 - Email
-        emailField.on('change', validationEmailInput)
-
-        // reset Form
-        function resetFormValues() {
-            const phoneInput = $('._phone-input');
-            const businessInput = $('._business-input');
+        TabBox.on('click', function (e) {
+            const phoneInput = $('._phone-input')
+            const businessInput = $('._business-input')
             $('._caption').css("display", "none");
-            // TODO : 데이터값 변경 필요
-            if (paymentInput.val() === '1') {
+            if (e.target.value === '머니/포인트') {
                 phoneInput.css('display', 'block')
                 businessInput.css('display', 'none')
                 $('._tax').find('option:first').prop('selected', true);
@@ -863,22 +850,33 @@
                 businessInput.find('input').val("");
                 checkboxAllField.prop("checked", false);
                 checkboxField.prop("checked", false);
-
+                submitButton.attr('disabled', true)
             } else {
                 checkboxAllField.prop("checked", false);
                 checkboxField.prop("checked", false);
+                submitButton.attr('disabled', true)
             }
-            checkAllConditions();
-        }
+            inputPayment.val(e.target.value);
+        })
+
+        const cardFieldsToCheck = [checkboxAllField, checkboxField];
+        // 필수
+        cardFieldsToCheck.forEach(field => field.on('change', CardcheckAllConditions));
+
+        // 선택 - Email
+        emailField.on('change', validationEmailInput)
 
 
         // validation
-        function validationPaymentMethod(){
-            return paymentInput.val() !== ""
+
+        function validationPaymentMethod() {
+            return inputPayment !== ''
         }
+
         function validationCheckbox() {
             return checkboxAllField.is(':checked')
         }
+
         function validationEmailInput() {
             let emailValue = emailField.val();
             const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -889,6 +887,7 @@
                 return false;
             }
         }
+
         function validationPhoneNumber() {
             const regexp = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
             if (!regexp.test(inputPhone)) {
@@ -899,6 +898,7 @@
             }
             return true;
         }
+
         function validationBusiness() {
             const regexp = /^\d{3}-\d{2}-\d{5}$/;
             if (!regexp.test(inputBusiness)) {
@@ -911,7 +911,7 @@
         }
 
 
-        function checkAllConditions() {
+        function CardcheckAllConditions() {
             let isCheckbox = validationCheckbox();
             let isPaymentMethod = validationPaymentMethod();
             if (isCheckbox && isPaymentMethod) {
@@ -920,6 +920,7 @@
                 submitButton.attr('disabled', true)
             }
         }
+
 
         function alertModal(message, status = 'show') {
             const ALERT = $('.alert');
@@ -932,15 +933,4 @@
 <!--validation e-->
 
 
-<script>
-    const paymentInput = $('#paymentInput');
-    const paymentMethodBox = $('._tab-box')
-
-    paymentMethodBox.on('click', setPaymentInput);
-
-    function setPaymentInput(e) {
-        const targetValue = $(e.target).val();
-        paymentInput.val(targetValue);
-    }
-</script>
 </html>
