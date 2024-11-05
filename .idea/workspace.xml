@@ -6,20 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_카카오페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/include/info-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/include/info-section.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="248d6bb9-3fee-4355-88fb-e61ece6f49e3" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -54,7 +44,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-docs.payple.kr&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -113,7 +103,12 @@
       <workItem from="1730160237546" duration="5803000" />
       <workItem from="1730185576758" duration="4699000" />
       <workItem from="1730192972996" duration="990000" />
-      <workItem from="1730249964411" duration="19077000" />
+      <workItem from="1730249964411" duration="19566000" />
+      <workItem from="1730333160726" duration="2965000" />
+      <workItem from="1730342141293" duration="953000" />
+      <workItem from="1730347732718" duration="3318000" />
+      <workItem from="1730358684516" duration="763000" />
+      <workItem from="1730766027576" duration="2151000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -331,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730268047591</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="네이버 페이 작업 진행중">
+      <option name="closed" value="true" />
+      <created>1730278447577</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1730278447577</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +354,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat : 카카오 페이 완료" />
     <MESSAGE value="feat : 사용_카카오페이 완료" />
     <MESSAGE value="feat: 결제수단 작업 진행중" />
     <MESSAGE value="feat: 네이버 페이 완료" />
@@ -376,7 +378,8 @@
     <MESSAGE value="AlertPopup 공통으로 사용  완료" />
     <MESSAGE value="종료 confirm 팝업 작업 완료" />
     <MESSAGE value="slide 추가 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="slide 추가 완료" />
+    <MESSAGE value="네이버 페이 작업 진행중" />
+    <option name="LAST_COMMIT_MESSAGE" value="네이버 페이 작업 진행중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

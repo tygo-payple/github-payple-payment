@@ -39,9 +39,7 @@
 
       button {
         cursor: pointer;
-
       }
-
     }
   }
 
@@ -185,20 +183,16 @@
           height: 0;
           overflow: hidden;
         }
-
         transition: all 1s;
-
         .item {
           min-height: 10.2rem;
           padding: 1.5rem 0;
           font-size: 1.3rem;
           border-bottom: 1px solid rgba(56, 56, 56, 0.15);
-
           &:nth-last-child(1) {
             border-bottom: none;
           }
         }
-
         .item-title {
           min-height: 3.9rem;
           word-break: break-all;
@@ -206,7 +200,6 @@
           line-height: 1.5;
           margin-bottom: 1.4rem;
         }
-
         .item-content {
           display: flex;
           color: rgba(56, 56, 56, 0.5);
@@ -232,26 +225,22 @@
           }
 
         }
-
         &.items {
           .item {
             min-height: 10.2rem;
             padding: 1.5rem 0;
             font-size: 1.3rem;
             border-bottom: 1px solid rgba(56, 56, 56, 0.15);
-
             &:nth-last-child(1) {
               border-bottom: none;
             }
           }
-
           .item-title {
             min-height: 3.9rem;
             @include ellipsis(2);
             line-height: 1.5;
             margin-bottom: 1.4rem;
           }
-
           .item-content {
             .quantity {
               .number {

@@ -16,17 +16,18 @@
                 <div class="payment-method-box _tab-box">
                     <button class="btn" value="1">카드</button>
                     <button class="btn" value="2">머니/포인트</button>
+                    <input type="hidden" id="paymentInput">
                 </div>
-                <p class="caption warning-caption" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                <p class="caption warning-caption _not-card-money" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
                 <div class="tab-pane _tab-pane">
                     <p class="caption _open-modal" data-modal-id="ziig">무이자 할부 안내 〉</p>
                 </div>
                 <div class="tab-pane _tab-pane">
                     <div class="tax-box show">
                         <label class="input-label">
-                            <select class="custom-select-box _tax" name="bank" required>
-                                <option data-value="phone" value="">소득공제용(휴대폰)</option>
-                                <option data-value="business" value="">지출증빙(사업자번호)</option>
+                            <select class="custom-select-box _tax" name="bank">
+                                <option data-value="phone">소득공제용(휴대폰)</option>
+                                <option data-value="business">지출증빙(사업자번호)</option>
                                 <option>미발행</option>
                             </select>
                         </label>
@@ -818,6 +819,7 @@
         const paymentMethodBox = $('._tab-box')
 
 
+
         checkboxAllField.on('change', checkAllConditions);
         checkboxField.on('change', checkAllConditions);
         bankSelectField.on('change', checkAllConditions);
@@ -825,19 +827,33 @@
         paymentMethodBox.on('click', inputPaymentValue);
         paymentMethodBox.on('change', validationPaymentMethodSelect);
 
-        function requiredReset() {
-            if (paymentField.val() === '1') {
 
-            } else {
 
-            }
-        }
+
+
+
 
 
         function inputPaymentValue(e) {
             const targetValue = $(e.target).val();
-            paymentField.val(targetValue);
-            requiredReset();
+            const paymentInput = $('#paymentInput')
+            $('._not-card-money').css("display","none")
+            paymentInput.val(targetValue);
+            ResetRequire();
+        }
+
+
+        function ResetRequire(){
+            const paymentInput = $('#paymentInput')
+            const phoneInput = $('._phone-input')
+            const businessInput = $('._business-input')
+            if(paymentInput.val() === '1'){
+                phoneInput.css('display','block')
+                businessInput.css('display','none')
+                $('._tax').find('option:first').prop('selected', true);
+                phoneInput.find('input').val("");
+                businessInput.find('input').val("");
+            }
         }
 
         function validationMonthSelect() {
