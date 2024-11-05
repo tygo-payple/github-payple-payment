@@ -26,7 +26,7 @@
                 <div class="tab-pane _tab-pane">
                     <div class="tax-box show">
                         <label class="input-label">
-                            <select class="custom-select-box _tax" id="tex" name="">
+                            <select class="custom-select-box _tax" name="">
                                 <option data-value="phone" value="1">소득공제용(휴대폰)</option>
                                 <option data-value="business" value="2">지출증빙(사업자번호)</option>
                                 <option value="3">미발행</option>
@@ -835,54 +835,22 @@
         const submitButton = $('#submitButton');
         const emailField = $('#inputEmail');
         const inputPhone = $('#inputPhone');
-
         const inputBusiness = $('#inputBusiness');
         const paymentMethodBox = $('._tab-box')
-        const texField = $('#tex');
+        const paymentInput = $('#paymentInput');
 
         paymentMethodBox.on('click', resetFormValues);
 
         // 필수
         checkboxAllField.on('change', checkAllConditions);
         checkboxField.on('change', checkAllConditions);
-        // inputPhone.on('change', validationPhoneNumber);
+        inputPhone.on('change', checkAllConditions);
 
         // 선택 - Email
         emailField.on('change', validationEmailInput)
 
-        // validation
-        function validationCheckbox() {
-            return checkboxAllField.is(':checked')
-        }
-
-        function validationEmailInput() {
-            let emailValue = emailField.val();
-            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!regexp.test(emailValue)) {
-                alertModal("이메일을 다시 입력해주세요.",)
-                emailField.val("")
-                emailField.focus();
-                return false;
-            }
-        }
-
-        function validationPhoneNumber() {
-            const regexp = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
-            if (!regexp.test(inputPhone)) {
-                alertModal("전화번호를 다시 입력해주세요.",)
-                inputPhone.val("")
-                inputPhone.focus();
-                return false;
-            }
-        }
-
-        function validation() {
-
-        }
-
-
+        // reset Form
         function resetFormValues() {
-            const paymentInput = $('#paymentInput');
             const phoneInput = $('._phone-input');
             const businessInput = $('._business-input');
             $('._caption').css("display", "none");
@@ -904,13 +872,52 @@
         }
 
 
-        function checkAllConditions() {
-            const isCheckbox = validationCheckbox();
+        // validation
+        function validationPaymentMethod(){
+            return paymentInput.val() !== ""
+        }
+        function validationCheckbox() {
+            return checkboxAllField.is(':checked')
+        }
+        function validationEmailInput() {
+            let emailValue = emailField.val();
+            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!regexp.test(emailValue)) {
+                alertModal("이메일을 다시 입력해주세요.",)
+                emailField.val("")
+                emailField.focus();
+                return false;
+            }
+        }
+        function validationPhoneNumber() {
+            const regexp = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
+            if (!regexp.test(inputPhone)) {
+                alertModal("전화번호를 다시 입력해주세요.",)
+                inputPhone.val("")
+                inputPhone.focus();
+                return false;
+            }
+            return true;
+        }
+        function validationBusiness() {
+            const regexp = /^\d{3}-\d{2}-\d{5}$/;
+            if (!regexp.test(inputBusiness)) {
+                alertModal("사업자번호를 다시 입력해주세요.",)
+                inputBusiness.val("")
+                inputBusiness.focus();
+                return false;
+            }
+            return true;
+        }
 
-            if (isCheckbox) {
-                submitButton.attr('disabled', false);
+
+        function checkAllConditions() {
+            let isCheckbox = validationCheckbox();
+            let isPaymentMethod = validationPaymentMethod();
+            if (isCheckbox && isPaymentMethod) {
+                submitButton.attr('disabled', false)
             } else {
-                submitButton.attr('disabled', true);
+                submitButton.attr('disabled', true)
             }
         }
 
