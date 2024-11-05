@@ -45,7 +45,6 @@
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
-            <input type="hidden" id="inputPayment">
         </main>
         <footer>
             <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
@@ -829,40 +828,21 @@
 <!--validation s-->
 <script>
     $(document).ready(function () {
-        const phoneInput = $('._phone-input');
-        const businessInput = $('._business-input');
-        const checkboxAllField = $('._chk-all-validation');
-        const checkboxField = $('._chk-validation');
-        const inputPayment = $('#inputPayment')
-        const emailField = $('#inputEmail');
-        const selectTax = $('#selectTax')
+        const selectTax = $('#selectTax');
         const inputPhone = $('#inputPhone');
         const inputBusiness = $('#inputBusiness');
-        const submitButton = $('#submitButton');
+        const paymentButton = $("input[type='button']");
+        const submitButton = $('#submitButton')
 
+        const checkboxAllField = $('._chk-all-validation');
+        const checkboxField = $('._chk-validation');
+        const phoneArea = $('._phone-input');
+        const businessArea = $('._business-input');
 
-        // 카드 validation
-        const cardFieldsToCheck = [checkboxAllField, checkboxField];
-        cardFieldsToCheck.forEach(field => field.on('change', CardCheckAllConditions));
-
-        // 머니포인트 validation - 휴대폰
-        const phoneFieldsToCheck = [checkboxAllField, checkboxField , inputPhone];
-        phoneFieldsToCheck.forEach(field => field.on('change', phoneCheckAllConditions));
-
-        // 머니포인트 validation - 사업자번호
-        const businessFieldsToCheck = [checkboxAllField, checkboxField , inputBusiness];
-        businessFieldsToCheck.forEach(field => field.on('change', CardCheckAllConditions));
-
-        // 머니포인트 validation - 미발행
-
-        // 선택 - Email
-        emailField.on('change', validationEmailInput)
-
-
-        // Input Reset
+        // reset
         const resetInputs = () => {
-            phoneInput.find('input').val("");
-            businessInput.find('input').val("");
+            phoneArea.find('input').val("");
+            businessArea.find('input').val("");
             checkboxAllField.prop("checked", false);
             checkboxField.prop("checked", false);
             submitButton.attr('disabled', true);
@@ -871,77 +851,44 @@
             const selectedValue = e.target.value;
             $('._caption').css("display", "none");
             if (selectedValue === '머니/포인트') {
-                phoneInput.css('display', 'block');
-                businessInput.css('display', 'none');
+                phoneArea.css('display', 'block');
+                businessArea.css('display', 'none');
                 selectTax.find('option:first').prop('selected', true);
             } else {
-                phoneInput.css('display', 'none');
-                businessInput.css('display', 'block');
+                phoneArea.css('display', 'none');
+                businessArea.css('display', 'block');
             }
             resetInputs();
-            inputPayment.val(selectedValue);
         };
-        $('.btn').on('click', handlePaymentMethodSelection);
+        paymentButton.on('click', handlePaymentMethodSelection);
 
 
-        // validation
-        function validationPaymentMethod() {
-            return inputPayment !== ''
-        }
-        function validationCheckbox() {
-            return checkboxAllField.is(':checked')
-        }
-        function validationEmailInput() {
-            let emailValue = emailField.val();
-            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!regexp.test(emailValue)) {
-                alertModal("이메일을 다시 입력해주세요.",)
-                emailField.val("")
-                emailField.focus();
-                return false;
+
+
+        // Validation
+        paymentButton.on('click',function(){
+            if($(this).val() === '카드'){
+                const fieldsToCheck =  [checkboxAllField, checkboxField];
+                fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
+            }else{
+
             }
-            return true;
-        }
-
-        function validationPhoneNumber() {
-            return inputPhone !== ''
-        }
-        function validationBusiness() {
-            return inputBusiness !== ''
-        }
+        })
 
 
-        // Button disabled
-        function CardCheckAllConditions() {
-            let isCheckbox = validationCheckbox();
-            let isPaymentMethod = validationPaymentMethod();
-            if (isCheckbox && isPaymentMethod) {
-                submitButton.attr('disabled', false)
+        function checkAllConditions() {
+            const isCheckbox = validationCheckbox();
+            const isBankSelected = validationBankSelect();
+            const isMonthSelected = validationMonthSelect();
+
+            if (isCheckbox && isBankSelected && isMonthSelected) {
+                submitButton.attr('disabled', false);
             } else {
-                submitButton.attr('disabled', true)
+                submitButton.attr('disabled', true);
             }
         }
 
-
-        function phoneCheckAllConditions() {
-            let isCheckbox = validationCheckbox();
-            let isPaymentMethod = validationPaymentMethod();
-
-            if (isCheckbox && isPaymentMethod) {
-                submitButton.attr('disabled', false)
-            } else {
-                submitButton.attr('disabled', true)
-            }
-        }
-
-        // alert
-        function alertModal(message, status = 'show') {
-            const ALERT = $('.alert');
-            ALERT.addClass(status);
-            ALERT.children('._modal-animation').addClass(status);
-            ALERT.find('.content').text(message);
-        }
-    });
+    })
 </script>
 <!--validation e-->
 
