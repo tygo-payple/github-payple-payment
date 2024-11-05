@@ -26,7 +26,7 @@
                 <div class="tab-pane _tab-pane">
                     <div class="tax-box show">
                         <label class="input-label">
-                            <select class="custom-select-box _tax" name="">
+                            <select class="custom-select-box _tax" id="selectTax">
                                 <option data-value="phone" value="1">소득공제용(휴대폰)</option>
                                 <option data-value="business" value="2">지출증빙(사업자번호)</option>
                                 <option value="3">미발행</option>
@@ -829,54 +829,68 @@
 <!--validation s-->
 <script>
     $(document).ready(function () {
+        const phoneInput = $('._phone-input');
+        const businessInput = $('._business-input');
         const checkboxAllField = $('._chk-all-validation');
         const checkboxField = $('._chk-validation');
-        const submitButton = $('#submitButton');
+        const inputPayment = $('#inputPayment')
         const emailField = $('#inputEmail');
+        const selectTax = $('#selectTax')
         const inputPhone = $('#inputPhone');
         const inputBusiness = $('#inputBusiness');
-        const TabBox = $('._tab-box')
-        const inputPayment = $('#inputPayment')
+        const submitButton = $('#submitButton');
 
-        TabBox.on('click', function (e) {
-            const phoneInput = $('._phone-input')
-            const businessInput = $('._business-input')
-            $('._caption').css("display", "none");
-            if (e.target.value === '머니/포인트') {
-                phoneInput.css('display', 'block')
-                businessInput.css('display', 'none')
-                $('._tax').find('option:first').prop('selected', true);
-                phoneInput.find('input').val("");
-                businessInput.find('input').val("");
-                checkboxAllField.prop("checked", false);
-                checkboxField.prop("checked", false);
-                submitButton.attr('disabled', true)
-            } else {
-                checkboxAllField.prop("checked", false);
-                checkboxField.prop("checked", false);
-                submitButton.attr('disabled', true)
-            }
-            inputPayment.val(e.target.value);
-        })
 
+        // 카드 validation
         const cardFieldsToCheck = [checkboxAllField, checkboxField];
-        // 필수
-        cardFieldsToCheck.forEach(field => field.on('change', CardcheckAllConditions));
+        cardFieldsToCheck.forEach(field => field.on('change', CardCheckAllConditions));
+
+        // 머니포인트 validation - 휴대폰
+        const phoneFieldsToCheck = [checkboxAllField, checkboxField , inputPhone];
+        phoneFieldsToCheck.forEach(field => field.on('change', phoneCheckAllConditions));
+
+        // 머니포인트 validation - 사업자번호
+        const businessFieldsToCheck = [checkboxAllField, checkboxField , inputBusiness];
+        businessFieldsToCheck.forEach(field => field.on('change', CardCheckAllConditions));
+
+        // 머니포인트 validation - 미발행
 
         // 선택 - Email
         emailField.on('change', validationEmailInput)
 
 
-        // validation
+        // Input Reset
+        const resetInputs = () => {
+            phoneInput.find('input').val("");
+            businessInput.find('input').val("");
+            checkboxAllField.prop("checked", false);
+            checkboxField.prop("checked", false);
+            submitButton.attr('disabled', true);
+        };
+        const handlePaymentMethodSelection = (e) => {
+            const selectedValue = e.target.value;
+            $('._caption').css("display", "none");
+            if (selectedValue === '머니/포인트') {
+                phoneInput.css('display', 'block');
+                businessInput.css('display', 'none');
+                selectTax.find('option:first').prop('selected', true);
+            } else {
+                phoneInput.css('display', 'none');
+                businessInput.css('display', 'block');
+            }
+            resetInputs();
+            inputPayment.val(selectedValue);
+        };
+        $('.btn').on('click', handlePaymentMethodSelection);
 
+
+        // validation
         function validationPaymentMethod() {
             return inputPayment !== ''
         }
-
         function validationCheckbox() {
             return checkboxAllField.is(':checked')
         }
-
         function validationEmailInput() {
             let emailValue = emailField.val();
             const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -886,32 +900,19 @@
                 emailField.focus();
                 return false;
             }
+            return true;
         }
 
         function validationPhoneNumber() {
-            const regexp = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
-            if (!regexp.test(inputPhone)) {
-                alertModal("전화번호를 다시 입력해주세요.",)
-                inputPhone.val("")
-                inputPhone.focus();
-                return false;
-            }
-            return true;
+            return inputPhone !== ''
         }
-
         function validationBusiness() {
-            const regexp = /^\d{3}-\d{2}-\d{5}$/;
-            if (!regexp.test(inputBusiness)) {
-                alertModal("사업자번호를 다시 입력해주세요.",)
-                inputBusiness.val("")
-                inputBusiness.focus();
-                return false;
-            }
-            return true;
+            return inputBusiness !== ''
         }
 
 
-        function CardcheckAllConditions() {
+        // Button disabled
+        function CardCheckAllConditions() {
             let isCheckbox = validationCheckbox();
             let isPaymentMethod = validationPaymentMethod();
             if (isCheckbox && isPaymentMethod) {
@@ -922,6 +923,18 @@
         }
 
 
+        function phoneCheckAllConditions() {
+            let isCheckbox = validationCheckbox();
+            let isPaymentMethod = validationPaymentMethod();
+
+            if (isCheckbox && isPaymentMethod) {
+                submitButton.attr('disabled', false)
+            } else {
+                submitButton.attr('disabled', true)
+            }
+        }
+
+        // alert
         function alertModal(message, status = 'show') {
             const ALERT = $('.alert');
             ALERT.addClass(status);
