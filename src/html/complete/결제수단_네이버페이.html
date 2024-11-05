@@ -16,36 +16,40 @@
                 <div class="payment-method-box _tab-box">
                     <button class="btn" value="1">카드</button>
                     <button class="btn" value="2">머니/포인트</button>
-                    <input type="hidden" id="paymentInput">
+
                 </div>
-                <p class="caption warning-caption _not-card-money" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                <p class="caption warning-caption _caption" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수
+                    없습니다.</p>
                 <div class="tab-pane _tab-pane">
                     <p class="caption _open-modal" data-modal-id="ziig">무이자 할부 안내 〉</p>
                 </div>
                 <div class="tab-pane _tab-pane">
                     <div class="tax-box show">
                         <label class="input-label">
-                            <select class="custom-select-box _tax" name="bank">
-                                <option data-value="phone">소득공제용(휴대폰)</option>
-                                <option data-value="business">지출증빙(사업자번호)</option>
-                                <option>미발행</option>
+                            <select class="custom-select-box _tax" id="tex" name="">
+                                <option data-value="phone" value="1">소득공제용(휴대폰)</option>
+                                <option data-value="business" value="2">지출증빙(사업자번호)</option>
+                                <option value="3">미발행</option>
                             </select>
                         </label>
                         <label class="custom-input _phone-input">
-                            <input type="text" placeholder="휴대폰번호를 입력해주세요."/>
+                            <input type="text" id="inputPhone" placeholder="휴대폰번호를 입력해주세요."/>
                         </label>
                         <label class="custom-input _business-input">
-                            <input type="text" placeholder="사업자번호를 입력해주세요."/>
+                            <input type="text" id="inputBusiness" placeholder="사업자번호를 입력해주세요."/>
                         </label>
                     </div>
-                    <p class="caption warning-caption" data-set="*" style="margin-top: 0">카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                    <p class="caption warning-caption" data-set="*" style="margin-top: 0">카드와 머니/포인트 결제를 함께 사용할 수
+                        없습니다.</p>
                 </div>
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
+
+            <input type="hidden" id="paymentInput">
         </main>
         <footer>
-            <button class="payment-btn _submit-btn" disabled name="paymentBtn">
+            <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
                 네이버페이로 결제하기
             </button>
         </footer>
@@ -785,7 +789,25 @@
 </div>
 <!--정기결제 이용약관 e-->
 
-<!--alert s-->
+<!--Alert s-->
+<div class="modal-background _modal-background alert" data-modal-id="alert">
+    <div class="modal-animation _modal-animation">
+        <div class="modal">
+            <div class="modal-body confirm">
+                <i class="icon ico-alert-red">경고</i>
+                <p class="content"></p>
+            </div>
+            <div class="modal-footer">
+                <div>
+                    <button class="check _close-modal" data-modal-id="alert">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Alert e-->
+
+<!--confirm s-->
 <div class="modal-background _modal-background paymentCloseAlert" data-modal-id="paymentCloseAlert">
     <div class="modal-animation _modal-animation">
         <div class="modal confirm">
@@ -805,85 +827,113 @@
 </div>
 <!--confirm e-->
 
+<!--validation s-->
 <script>
     $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');
         const checkboxField = $('._chk-validation');
-        const bankSelectField = $('._select-bank-validation');
-        const monthSelectField = $('._select-month-validation');
-        const paymentField = $('._payment-method-validation')
+        const submitButton = $('#submitButton');
+        const emailField = $('#inputEmail');
+        const inputPhone = $('#inputPhone');
 
-
-        const submitButton = $('._submit-btn');
-        const emailField = $('._email-filed');
+        const inputBusiness = $('#inputBusiness');
         const paymentMethodBox = $('._tab-box')
+        const texField = $('#tex');
 
+        paymentMethodBox.on('click', resetFormValues);
 
-
+        // 필수
         checkboxAllField.on('change', checkAllConditions);
         checkboxField.on('change', checkAllConditions);
-        bankSelectField.on('change', checkAllConditions);
-        monthSelectField.on('change', checkAllConditions);
-        paymentMethodBox.on('click', inputPaymentValue);
-        paymentMethodBox.on('change', validationPaymentMethodSelect);
+        // inputPhone.on('change', validationPhoneNumber);
 
+        // 선택 - Email
+        emailField.on('change', validationEmailInput)
 
-
-
-
-
-
-
-        function inputPaymentValue(e) {
-            const targetValue = $(e.target).val();
-            const paymentInput = $('#paymentInput')
-            $('._not-card-money').css("display","none")
-            paymentInput.val(targetValue);
-            ResetRequire();
-        }
-
-
-        function ResetRequire(){
-            const paymentInput = $('#paymentInput')
-            const phoneInput = $('._phone-input')
-            const businessInput = $('._business-input')
-            if(paymentInput.val() === '1'){
-                phoneInput.css('display','block')
-                businessInput.css('display','none')
-                $('._tax').find('option:first').prop('selected', true);
-                phoneInput.find('input').val("");
-                businessInput.find('input').val("");
-            }
-        }
-
-        function validationMonthSelect() {
-            return monthSelectField.val() !== "";
-        }
-
-        function validationBankSelect() {
-            return bankSelectField.val() !== "";
-        }
-
+        // validation
         function validationCheckbox() {
             return checkboxAllField.is(':checked')
         }
 
-        function validationPaymentMethodSelect() {
-            return paymentField.val() !== "";
+        function validationEmailInput() {
+            let emailValue = emailField.val();
+            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!regexp.test(emailValue)) {
+                alertModal("이메일을 다시 입력해주세요.",)
+                emailField.val("")
+                emailField.focus();
+                return false;
+            }
         }
+
+        function validationPhoneNumber() {
+            const regexp = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
+            if (!regexp.test(inputPhone)) {
+                alertModal("전화번호를 다시 입력해주세요.",)
+                inputPhone.val("")
+                inputPhone.focus();
+                return false;
+            }
+        }
+
+        function validation() {
+
+        }
+
+
+        function resetFormValues() {
+            const paymentInput = $('#paymentInput');
+            const phoneInput = $('._phone-input');
+            const businessInput = $('._business-input');
+            $('._caption').css("display", "none");
+            // TODO : 데이터값 변경 필요
+            if (paymentInput.val() === '1') {
+                phoneInput.css('display', 'block')
+                businessInput.css('display', 'none')
+                $('._tax').find('option:first').prop('selected', true);
+                phoneInput.find('input').val("");
+                businessInput.find('input').val("");
+                checkboxAllField.prop("checked", false);
+                checkboxField.prop("checked", false);
+
+            } else {
+                checkboxAllField.prop("checked", false);
+                checkboxField.prop("checked", false);
+            }
+            checkAllConditions();
+        }
+
 
         function checkAllConditions() {
             const isCheckbox = validationCheckbox();
-            const isBankSelected = validationBankSelect();
-            const isMonthSelected = validationMonthSelect();
-            const isPaymentSelect = validationPaymentMethodSelect();
 
-            if (isCheckbox && isBankSelected && isMonthSelected && isPaymentSelect && isPaymentSelect) {
+            if (isCheckbox) {
                 submitButton.attr('disabled', false);
             } else {
                 submitButton.attr('disabled', true);
             }
         }
+
+        function alertModal(message, status = 'show') {
+            const ALERT = $('.alert');
+            ALERT.addClass(status);
+            ALERT.children('._modal-animation').addClass(status);
+            ALERT.find('.content').text(message);
+        }
     });
+</script>
+<!--validation e-->
+
+
+<script>
+    const paymentInput = $('#paymentInput');
+    const paymentMethodBox = $('._tab-box')
+
+    paymentMethodBox.on('click', setPaymentInput);
+
+    function setPaymentInput(e) {
+        const targetValue = $(e.target).val();
+        paymentInput.val(targetValue);
+    }
 </script>
 </html>

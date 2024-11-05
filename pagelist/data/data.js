@@ -21,7 +21,7 @@ data.complete = {
             page: '결제수단_카카오페이'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제수단_네이버페이',
             category: 'complete',
             page: '결제수단_네이버페이'

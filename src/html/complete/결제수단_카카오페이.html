@@ -18,7 +18,7 @@
             <p class="copyright">powered by Payple</p>
         </main>
         <footer>
-            <button class="payment-btn _submit-btn" disabled name="paymentBtn">
+            <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
                 카카오페이로 결제하기
             </button>
         </footer>
@@ -598,6 +598,25 @@
 </div>
 <!--정기결제 이용약관 e-->
 
+<!--Alert s-->
+<div class="modal-background _modal-background alert" data-modal-id="alert">
+    <div class="modal-animation _modal-animation">
+        <div class="modal">
+            <div class="modal-body confirm">
+                <i class="icon ico-alert-red">경고</i>
+                <p class="content"></p>
+            </div>
+            <div class="modal-footer">
+                <div>
+                    <button class="check _close-modal" data-modal-id="alert">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Alert e-->
+
+<!--confirm s-->
 <div class="modal-background _modal-background paymentCloseAlert" data-modal-id="paymentCloseAlert">
     <div class="modal-animation _modal-animation">
         <div class="modal confirm">
@@ -615,20 +634,38 @@
         </div>
     </div>
 </div>
+<!--confirm e-->
+
+<!--validation s-->
 <script>
     $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');
-        const checkboxField = $('._chk-validation')
-        const submitButton = $('._submit-btn');
-        const emailField = $('._email-filed');
+        const checkboxField = $('._chk-validation');
+        const submitButton = $('#submitButton');
+        const emailField = $('#inputEmail');
+        const fieldsToCheck = [checkboxAllField, checkboxField]
 
-        checkboxAllField.on('change', checkAllConditions);
-        checkboxField.on('change', checkAllConditions);
+        // 필수
+        fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
 
+        // 선택 - Email
+        emailField.on('change', validationEmailInput)
+
+        // validation
         function validationCheckbox() {
             return checkboxAllField.is(':checked')
         }
-
+        function validationEmailInput() {
+            let emailValue = emailField.val();
+            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!regexp.test(emailValue)) {
+                alertModal("이메일을 다시 입력해주세요.",)
+                emailField.val("")
+                emailField.focus();
+                return false;
+            }
+            return true
+        }
         function checkAllConditions() {
             let isCheckbox = validationCheckbox();
 
@@ -638,6 +675,17 @@
                 submitButton.attr('disabled', true)
             }
         }
+
+        // alert
+        function alertModal(message, status = 'show') {
+            const ALERT = $('.alert');
+            ALERT.addClass(status);
+            ALERT.children('._modal-animation').addClass(status);
+            ALERT.find('.content').text(message);
+        }
+
+
     })
 </script>
+<!--validation e-->
 </html>

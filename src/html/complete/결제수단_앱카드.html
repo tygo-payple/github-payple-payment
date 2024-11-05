@@ -16,7 +16,7 @@
                 <h3 class="title">결제 카드사 선택</h3>
                 <div class="tab-pane show">
                     <label class="input-label">
-                        <select class="custom-select-box _app-bank-box _select-bank-validation" name="bank" required>
+                        <select class="custom-select-box _app-bank-box" id="selectBank" name="bank" required>
                             <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
                             <option value="1">신한은행</option>
                             <option value="2">하나은행</option>
@@ -27,7 +27,7 @@
                     </label>
                     <div class="_installment-box">
                         <label class="input-label _installment-box">
-                            <select class="custom-select-box _select-month-validation" name="month" required>
+                            <select class="custom-select-box" id="selectMonth" name="month" required>
                                 <option value="" hidden selected>할부 개월 수를 선택해 주세요.</option>
                                 <option value="1">1개월</option>
                                 <option value="2">2개월</option>
@@ -51,7 +51,7 @@
             <p class="copyright">powered by Payple</p>
         </main>
         <footer>
-            <button class="payment-btn _submit-btn" type="submit" disabled name="paymentBtn">
+            <button class="payment-btn" id="submitButton" type="submit" disabled name="paymentBtn">
                 카드사 앱으로 결제하기
             </button>
         </footer>
@@ -829,36 +829,34 @@
 <!--confirm e-->
 
 
+<!--validation s-->
 <script>
     $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');
         const checkboxField = $('._chk-validation');
-        const bankSelectField = $('._select-bank-validation');
-        const monthSelectField = $('._select-month-validation');
-        const emailField = $('._email-filed');
-        const submitButton = $('._submit-btn');
+        const bankSelectField = $('#selectBank');
+        const monthSelectField = $('#selectMonth');
+        const emailField = $('#inputEmail');
+        const submitButton = $('#submitButton');
 
+        const fieldsToCheck =  [checkboxAllField, checkboxField, bankSelectField, monthSelectField];
 
-        checkboxAllField.on('change', checkAllConditions);
-        checkboxField.on('change', checkAllConditions);
-        bankSelectField.on('change', checkAllConditions);
-        monthSelectField.on('change', checkAllConditions);
+        // 필수
+        fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
 
+        // 선택 - Email
         emailField.on('change', validationEmailInput)
 
-
+        // validation
         function validationMonthSelect() {
             return monthSelectField.val() !== "";
         }
-
         function validationBankSelect() {
             return bankSelectField.val() !== "";
         }
-
         function validationCheckbox() {
             return checkboxAllField.is(':checked')
         }
-
         function validationEmailInput() {
             let emailValue = emailField.val();
             const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -867,10 +865,9 @@
                 emailField.val("")
                 emailField.focus();
                 return false;
-
             }
+            return true
         }
-
         function checkAllConditions() {
             const isCheckbox = validationCheckbox();
             const isBankSelected = validationBankSelect();
@@ -883,20 +880,15 @@
             }
         }
 
-
+        // alert
         function alertModal(message, status = 'show') {
             const ALERT = $('.alert');
             ALERT.addClass(status);
             ALERT.children('._modal-animation').addClass(status);
             ALERT.find('.content').text(message);
-            // setTimeout(() => {
-            //     ALERT.removeClass(status);
-            //     ALERT.children('._modal-animation').removeClass(status);
-            // }, 2000);
         }
-
-
     });
 </script>
+<!--validation e-->
 
 </html>
