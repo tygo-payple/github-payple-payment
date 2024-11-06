@@ -48,7 +48,7 @@
             <input type="hidden" id="taxValue" value="1">
         </main>
         <footer>
-            <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
+            <button class="payment-btn" id="submitButton" disabled >
                 네이버페이로 결제하기
             </button>
         </footer>
@@ -847,27 +847,28 @@
         * 결제 방법 선택시 Reset
         * */
         const resetInputs = () => {
+
             phoneArea.find('input').val("");
             businessArea.find('input').val("");
             checkboxAllField.prop("checked", false);
             checkboxField.prop("checked", false);
             submitButton.attr('disabled', true);
+            selectTax.find('option:first').prop('selected', true);
         };
-        const handlePaymentMethodSelection = (e) => {
+        const updatePaymentMethodUiData = (e) => {
             const selectedValue = e.target.value;
             paymentMethod.val(selectedValue);
             $('._caption').css("display", "none");
             if (selectedValue === '1') {
                 phoneArea.css('display', 'block');
                 businessArea.css('display', 'none');
-                selectTax.find('option:first').prop('selected', true);
             } else {
                 phoneArea.css('display', 'none');
                 businessArea.css('display', 'block');
             }
             resetInputs();
         };
-        paymentMethodBox.on('click', handlePaymentMethodSelection);
+        paymentMethodBox.on('click', updatePaymentMethodUiData);
 
 
 

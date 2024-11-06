@@ -20,7 +20,7 @@
                 </div>
                 <div class="tab-pane _tab-pane">
                     <label class="input-label">
-                        <select class="custom-select-box _app-bank-box" name="card" required>
+                        <select class="custom-select-box _app-bank-box" name="card" id="selectCard" required>
                             <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
                             <option value="1">신한은행</option>
                             <option value="2">하나은행</option>
@@ -31,7 +31,7 @@
                     </label>
                     <div class="_installment-box" >
                         <label class="input-label _installment-box">
-                            <select class="custom-select-box" name="bank" required>
+                            <select class="custom-select-box" name="bank" id="selectMonth" required>
                                 <option disabled hidden selected value="">할부 개월 수를 선택해 주세요.</option>
                                 <option value="">1개월</option>
                                 <option value="">2개월</option>
@@ -84,6 +84,8 @@
             <p class="copyright">powered by Payple</p>
             <input type="hidden" id="paymentMethodValue">
             <input type="hidden" id="taxValue">
+            <input type="hidden" id="bankValue">
+            <input type="hidden" id="monthValue">
         </main>
         @@include('../include/footer.html')
     </div>
@@ -862,23 +864,31 @@
 <!---->
 <script>
     const paymentMethod = $('#paymentMethodValue');
-    const paymentMethodBox = $('._payment-method-box');
+    const paymentMethodBox = $('._payment-method-box')
+    const selectMonth = $('#selectMonth')
+    const selectCard = $('#selectCard')
 
-
-    const resetInputs = () => {
-
-    };
-    const handlePaymentMethodSelection = (e) => {
+    const updatePaymentMethodUiData = (e) => {
         const selectedValue = e.target.value;
-        paymentMethod(selectedValue);
-        if (selectedValue === '1') {
+        paymentMethod.val(selectedValue);
 
-        } else {
-
-        }
         resetInputs();
     };
-    paymentMethodBox.on('click', handlePaymentMethodSelection);
+    const resetInputs = () => {
+        // phoneArea.find('input').val("");
+        // businessArea.find('input').val("");
+        // checkboxAllField.prop("checked", false);
+        // checkboxField.prop("checked", false);
+        // submitButton.attr('disabled', true);
+
+        selectMonth.find('option:first').prop('selected', true);
+        selectCard.find('option:first').prop('selected', true);
+        $('._installment-box').css({'display' : 'none'})
+    };
+    paymentMethodBox.on('click', updatePaymentMethodUiData)
+
+
+
 </script>
 
 </html>
