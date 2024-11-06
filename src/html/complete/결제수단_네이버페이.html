@@ -863,23 +863,42 @@
         paymentButton.on('click', handlePaymentMethodSelection);
 
 
+        function validatePaymentMethod(paymentMethod, value, agreementCompleted){
+            if (paymentMethod === 'card') {
 
+            } else {
+                switch (value) {
+                    case 1:
+                        validatePhoneNumber();
+                        break;
+                    case 2:
+                        validateBusinessNumber();
+                        break;
+                    default:
+                        break;
+                }
+            }
+            if (agreementCompleted) {
 
-        // Validation
-        paymentButton.on('click',function(){
-            if($(this).val() === '카드'){
-                const fieldsToCheck =  [checkboxAllField, checkboxField];
-                fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
-            }else{
+            } else {
 
             }
-        })
+        }
+
+        function validatePhoneNumber() {
+
+        }
+        function validateBusinessNumber() {
+
+        }
+
+
+
+
+
 
 
         function checkAllConditions() {
-            const isCheckbox = validationCheckbox();
-            const isBankSelected = validationBankSelect();
-            const isMonthSelected = validationMonthSelect();
 
             if (isCheckbox && isBankSelected && isMonthSelected) {
                 submitButton.attr('disabled', false);

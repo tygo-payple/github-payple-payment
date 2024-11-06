@@ -108,7 +108,8 @@
       <workItem from="1730347732718" duration="3318000" />
       <workItem from="1730358684516" duration="763000" />
       <workItem from="1730766027576" duration="21810000" />
-      <workItem from="1730791187211" duration="7475000" />
+      <workItem from="1730791187211" duration="7583000" />
+      <workItem from="1730851386976" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -374,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730797511682</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="validation 재작업 진행">
+      <option name="closed" value="true" />
+      <created>1730798839010</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730798839010</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +403,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="개인정보 수집 완료" />
     <MESSAGE value="개인정보수집_및_약관동의 작업 완료" />
     <MESSAGE value="전자" />
     <MESSAGE value="전자금융거래 이용약관 완료" />
@@ -419,7 +427,8 @@
     <MESSAGE value="결제수단_네이버페이 우선 작업" />
     <MESSAGE value="네이버페이 작업 진행ㅈ우" />
     <MESSAGE value="비상 pUSH 작업 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="비상 pUSH 작업 진행" />
+    <MESSAGE value="validation 재작업 진행" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation 재작업 진행" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
