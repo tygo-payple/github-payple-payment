@@ -885,7 +885,7 @@
         function validationpaymentMethod(){
             return paymentMethod.val() !== ""
         }
-        const fieldsToCheck =  [checkboxAllField, checkboxField]
+        const fieldsToCheck =  [checkboxAllField, checkboxField , paymentMethod]
         fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
     })
 </script>

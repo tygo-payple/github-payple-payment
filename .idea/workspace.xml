@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_2개.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_앱카드.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/결제수단_카카오페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/사용_네이버페이.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_1개_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지없음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePay/상품_다수_이미지있음.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +108,7 @@
       <workItem from="1730358684516" duration="763000" />
       <workItem from="1730766027576" duration="21810000" />
       <workItem from="1730791187211" duration="7583000" />
-      <workItem from="1730851386976" duration="7800000" />
+      <workItem from="1730851386976" duration="7843000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -402,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730855550081</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="해당 작업 임시 구현">
+      <option name="closed" value="true" />
+      <created>1730860073011</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730860073011</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +418,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="개인정보수집_및_약관동의 작업 완료" />
     <MESSAGE value="전자" />
     <MESSAGE value="전자금융거래 이용약관 완료" />
     <MESSAGE value="무이자_할부 안내 작업 완료" />
@@ -447,7 +442,8 @@
     <MESSAGE value="네이버페이 작업 진행ㅈ우" />
     <MESSAGE value="비상 pUSH 작업 진행" />
     <MESSAGE value="validation 재작업 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="validation 재작업 진행" />
+    <MESSAGE value="해당 작업 임시 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="해당 작업 임시 구현" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
