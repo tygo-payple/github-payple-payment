@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="네이버페이 validation 처리 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_2개이상.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_네이버페이.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
@@ -111,7 +114,7 @@
       <workItem from="1730358684516" duration="763000" />
       <workItem from="1730766027576" duration="21810000" />
       <workItem from="1730791187211" duration="7583000" />
-      <workItem from="1730851386976" duration="15333000" />
+      <workItem from="1730851386976" duration="18509000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -409,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730860182982</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="네이버페이 validation 처리 완료">
+      <option name="closed" value="true" />
+      <created>1730871756117</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730871756117</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +440,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="전자금융거래 이용약관 완료" />
     <MESSAGE value="무이자_할부 안내 작업 완료" />
     <MESSAGE value="UI 다시 구현 진행중" />
     <MESSAGE value="UI 재 구성중" />
@@ -454,7 +464,8 @@
     <MESSAGE value="validation 재작업 진행" />
     <MESSAGE value="해당 작업 임시 구현" />
     <MESSAGE value="데이터 처리 진행" />
-    <option name="LAST_COMMIT_MESSAGE" value="데이터 처리 진행" />
+    <MESSAGE value="네이버페이 validation 처리 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="네이버페이 validation 처리 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,6 +5,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
 const fileinclude = require('gulp-file-include');
+const uglify = require('gulp-uglify');
 
 // 작업 경로 설정
 const devSrc = 'src';
@@ -24,6 +25,10 @@ const distdSrc = 'dist'
 // js - common
 function copyJs() {
     return gulp.src(devPaths.js)
+        /*
+        js 이미지 서버 반영 시 uglify 주석
+        * */
+        // .pipe(uglify())
         .pipe(concat('common.js'))
         .pipe(gulp.dest(distdSrc + '/js'));
 }

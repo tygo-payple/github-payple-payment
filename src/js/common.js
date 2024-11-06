@@ -102,9 +102,6 @@ $(document).ready(function () {
         });
     }
 
-
-
-
     function init() {
         handleSelectChange();
         handleSelectsChange();
@@ -114,6 +111,5 @@ $(document).ready(function () {
         toggleSlide();
         onlyNumber();
     }
-
     init();
 })

@@ -832,7 +832,6 @@
         const selectTax = $('#selectTax');
         const inputPhone = $('#inputPhone');
         const inputBusiness = $('#inputBusiness')
-
         const submitButton = $('#submitButton');
         const paymentMethod = $('#paymentMethodValue');
 
@@ -856,6 +855,7 @@
         };
         const handlePaymentMethodSelection = (e) => {
             const selectedValue = e.target.value;
+            paymentMethod.val(selectedValue);
             $('._caption').css("display", "none");
             if (selectedValue === '1') {
                 phoneArea.css('display', 'block');
@@ -951,19 +951,12 @@
 
 <!--business logic s-->
 <script>
-    const paymentMethod = $('#paymentMethodValue');
-    const paymentMethodBox = $('._payment-method-box');
     const selectTax = $('#selectTax')
     const taxValue = $('#taxValue')
-    const setPaymentValue = (e) => {
-        const selectedValue = e.target.value;
-        paymentMethod.val(selectedValue);
-    };
     const setTaxValue = (e) => {
         const selectValue = e.target.value
         taxValue.val(selectValue)
     }
-    paymentMethodBox.on('click', setPaymentValue)
     selectTax.on('change',setTaxValue)
 
 
