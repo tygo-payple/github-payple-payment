@@ -13,10 +13,9 @@
             @@include('../include/info-section.html')
             <section class="payment-method-section">
                 <h3 class="title">결제 방법 선택</h3>
-                <div class="payment-method-box _tab-box">
+                <div class="payment-method-box _payment-method-box">
                     <input type="button" class="btn" value="카드"/>
                     <input type="button" class="btn" value="머니/포인트"/>
-
                 </div>
                 <p class="caption warning-caption _caption" data-set="*">네이버페이 결제시 카드와 머니/포인트 결제를 함께 사용할 수
                     없습니다.</p>
@@ -45,6 +44,7 @@
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
+            <input type="hidden" id="paymentMethod">
         </main>
         <footer>
             <button class="payment-btn" id="submitButton" disabled name="paymentBtn">
@@ -831,15 +831,19 @@
         const selectTax = $('#selectTax');
         const inputPhone = $('#inputPhone');
         const inputBusiness = $('#inputBusiness');
-        const paymentButton = $("input[type='button']");
-        const submitButton = $('#submitButton')
+        const submitButton = $('#submitButton');
+        const paymentMethod  = $('#paymentMethod');
 
+        const paymentMethodBox = $('._payment-method-box');
         const checkboxAllField = $('._chk-all-validation');
         const checkboxField = $('._chk-validation');
         const phoneArea = $('._phone-input');
         const businessArea = $('._business-input');
 
-        // reset
+
+        /*
+        * 결제 방법 선택시 Reset
+        * */
         const resetInputs = () => {
             phoneArea.find('input').val("");
             businessArea.find('input').val("");
@@ -860,56 +864,49 @@
             }
             resetInputs();
         };
-        paymentButton.on('click', handlePaymentMethodSelection);
+        paymentMethodBox.on('click', handlePaymentMethodSelection);
 
-
-        function validatePaymentMethod(paymentMethod, value, agreementCompleted){
-            if (paymentMethod === 'card') {
-
-            } else {
-                switch (value) {
-                    case 1:
-                        validatePhoneNumber();
-                        break;
-                    case 2:
-                        validateBusinessNumber();
-                        break;
-                    default:
-                        break;
-                }
-            }
-            if (agreementCompleted) {
-
-            } else {
-
-            }
-        }
-
-        function validatePhoneNumber() {
-
-        }
-        function validateBusinessNumber() {
-
-        }
-
-
-
-
-
-
-
+        /*
+        * validation
+        * */
         function checkAllConditions() {
+            const isCheckbox = validationCheckbox();
+            const isPaymentMethod = validationpaymentMethod();
 
-            if (isCheckbox && isBankSelected && isMonthSelected) {
+            if (isCheckbox && isPaymentMethod) {
                 submitButton.attr('disabled', false);
             } else {
                 submitButton.attr('disabled', true);
             }
         }
-
+        function validationCheckbox() {
+            return checkboxAllField.is(':checked')
+        }
+        function validationpaymentMethod(){
+            return paymentMethod.val() !== ""
+        }
+        const fieldsToCheck =  [checkboxAllField, checkboxField]
+        fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
     })
 </script>
 <!--validation e-->
 
+<script>
+    const paymentMethod = $('#paymentMethod');
+    const paymentMethodBox = $('._payment-method-box');
+    const setPaymentValue = (e) => {
+        const selectedValue = e.target.value;
+
+        if (selectedValue === '카드') {
+            paymentMethod.val(1);
+        } else if (selectedValue === '머니/포인트') {
+            paymentMethod.val(2);
+        }
+
+    };
+    paymentMethodBox.on('click', setPaymentValue)
+
+
+</script>
 
 </html>

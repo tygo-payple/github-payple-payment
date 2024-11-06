@@ -43,8 +43,8 @@ $(document).ready(function () {
         });
     }
     function handleBtnChange() {
-        const btnBox = $('._tab-box')
-        btnBox.on('click', function (e) {
+        const paymentMethod = $('._payment-method-box')
+        paymentMethod.on('click', function (e) {
             const target = $(e.target)
             const index = $(e.target).index()
             const tabPane = $('._tab-pane')
@@ -89,7 +89,6 @@ $(document).ready(function () {
     }
     function toggleSlide(){
         const btn = $('._slide-down-btn');
-
         btn.on('click', function () {
             $(this).parent().siblings('.item-list').toggleClass('is-active')
             $(this).toggleClass('active')
