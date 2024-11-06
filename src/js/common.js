@@ -94,6 +94,13 @@ $(document).ready(function () {
             $(this).toggleClass('active')
         })
     }
+    function onlyNumber() {
+        $('._only-number').on('input', function() {
+            let inputValue = $(this).val();
+            inputValue = inputValue.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+            $(this).val(inputValue);
+        });
+    }
 
 
 
@@ -105,6 +112,7 @@ $(document).ready(function () {
         toggleModal();
         createCustomCheckbox();
         toggleSlide();
+        onlyNumber();
     }
 
     init();
