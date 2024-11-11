@@ -6,6 +6,7 @@ const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
 const fileinclude = require('gulp-file-include');
 const uglify = require('gulp-uglify');
+// const cleanCss = require("gulp-clean-css");
 
 // 작업 경로 설정
 const devSrc = 'src';
@@ -26,9 +27,10 @@ const distdSrc = 'dist'
 function copyJs() {
     return gulp.src(devPaths.js)
         /*
-        js 이미지 서버 반영 시 uglify 주석
+       .pipe(uglify()) 이미지 서버 반영시 주석 해제
         * */
-        // .pipe(uglify())
+        //
+        .pipe(uglify())
         .pipe(concat('common.js'))
         .pipe(gulp.dest(distdSrc + '/js'));
 }
@@ -38,8 +40,10 @@ function copyLibJs() {
     let sourceLib = [
         'src/js/lib/jquery.min.js',
     ];
-
     return gulp.src(sourceLib)
+        /*
+        * .pipe(uglify()) 이미지 서버 반영시 주석 해제
+        * */
         // .pipe(uglify())
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest(distdSrc + '/js'));
@@ -50,6 +54,7 @@ function compileScss() {
     return gulp.src('src/scss/*.scss')
         .pipe(sass())
         // .pipe(cleanCss({ compatibiliy: 'ie8' }))
+
         .pipe(gulp.dest(distdSrc + '/css'));
 }
 

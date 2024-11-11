@@ -847,7 +847,6 @@
         * 결제 방법 선택시 Reset
         * */
         const resetInputs = () => {
-
             phoneArea.find('input').val("");
             businessArea.find('input').val("");
             checkboxAllField.prop("checked", false);
@@ -859,6 +858,7 @@
             const selectedValue = e.target.value;
             paymentMethod.val(selectedValue);
             $('._caption').css("display", "none");
+
             if (selectedValue === '1') {
                 phoneArea.css('display', 'block');
                 businessArea.css('display', 'none');
