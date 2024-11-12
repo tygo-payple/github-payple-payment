@@ -3,7 +3,7 @@ data.complete = {
     title: 'Complete',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제수단_2개이상',
             category: 'complete',
             page: '결제수단_2개이상'
