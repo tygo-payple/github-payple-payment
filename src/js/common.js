@@ -25,6 +25,7 @@ $(document).ready(function () {
         });
         $('._tax').change(function () {
             const result = $('._tax option:selected').data("value")
+            console.log(result);
             if (result === "phone") {
                 $('._phone-input').show();
                 $('._business-input').hide();
