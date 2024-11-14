@@ -18,6 +18,8 @@
     transform: translateY(-4rem);
     transition: all 0.15s;
     opacity: 0;
+    height: 100%;
+    position: relative;
     &.show{
       transform: translateY(0);
       visibility: visible;
@@ -25,12 +27,16 @@
   }
 }
 
-.modal {
+.modal-conditions {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
   background-color: #fff;
   width: 33rem;
   border-radius: 1.4rem;
   overflow: hidden;
-  .modal-header{
+  .modal-conditions-header{
     .title-box{
       display: flex;
       padding: 2.2rem 2.4rem;
@@ -46,7 +52,7 @@
       }
     }
   }
-  .modal-body {
+  .modal-conditions-body {
     padding: 2.4rem;
     .icon{
       display: block;
@@ -154,7 +160,7 @@
     }
   }
 
-  .modal-footer {
+  .modal-conditions-footer {
     font-size: 1.6rem;
     >div{
       display: flex;
