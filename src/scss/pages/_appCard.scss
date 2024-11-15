@@ -532,6 +532,12 @@
 
   }
 
+  .inner-result{
+    display: none;
+      &.show{
+          display: block;
+      }
+  }
 }
 
 
