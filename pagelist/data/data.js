@@ -108,27 +108,21 @@ data.nicePayPc = {
     list: [
         {
             stateClass: 'working',
-            url: '결제수단_네이버페이',
-            category: 'complete',
-            page: '결제수단_네이버페이'
+            url: '결제페이지',
+            category: 'nicePayPc',
+            page: '결제페이지'
         },
         {
             stateClass: 'working',
-            url: '결제수단_네이버페이',
-            category: 'complete',
-            page: '결제수단_네이버페이'
+            url: '결제완료',
+            category: 'nicePayPc',
+            page: '결제완료'
         },
         {
             stateClass: 'working',
-            url: '결제수단_네이버페이',
-            category: 'complete',
-            page: '결제수단_네이버페이'
-        },
-        {
-            stateClass: 'working',
-            url: '결제수단_네이버페이',
-            category: 'complete',
-            page: '결제수단_네이버페이'
+            url: '결제실패',
+            category: 'nicePayPc',
+            page: '결제실패'
         },
     ]
 }
