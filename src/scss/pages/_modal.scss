@@ -27,7 +27,7 @@
   }
 }
 
-.modal-conditions {
+.modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -36,7 +36,7 @@
   width: 33rem;
   border-radius: 1.4rem;
   overflow: hidden;
-  .modal-conditions-header{
+  .modal-header{
     .title-box{
       display: flex;
       padding: 2.2rem 2.4rem;
@@ -52,7 +52,7 @@
       }
     }
   }
-  .modal-conditions-body {
+  .modal-body {
     padding: 2.4rem;
     .icon{
       display: block;
@@ -160,7 +160,7 @@
     }
   }
 
-  .modal-conditions-footer {
+  .modal-footer {
     font-size: 1.6rem;
     >div{
       display: flex;

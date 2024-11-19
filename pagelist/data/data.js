@@ -103,6 +103,35 @@ data.nicePay = {
 
     ]
 }
+data.nicePayPc = {
+    title: 'nicePayPc',
+    list: [
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'complete',
+            page: '결제수단_네이버페이'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'complete',
+            page: '결제수단_네이버페이'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'complete',
+            page: '결제수단_네이버페이'
+        },
+        {
+            stateClass: 'working',
+            url: '결제수단_네이버페이',
+            category: 'complete',
+            page: '결제수단_네이버페이'
+        },
+    ]
+}
 data.modal = {
     title: 'modal',
     list: [
@@ -178,4 +207,5 @@ data.common = {
 
     ]
 }
+
 
