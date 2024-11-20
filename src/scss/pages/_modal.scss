@@ -9,6 +9,7 @@
   align-items: center;
   background-image: url(https://cpay.payple.kr/img/background.png);
   visibility: hidden;
+  z-index: 10000;
   &.show{
     visibility: visible;
   }

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제실패.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제완료.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="환경세팅 구현 완료">
+      <change afterPath="$PROJECT_DIR$/src/scss/components/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/payple_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_components.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.결제수단_2개이상.html.executor": "Run",
+    "JavaScript Debug.결제페이지.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/src/html/nicePayPc",
@@ -75,12 +79,16 @@
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.결제페이지.html">
     <configuration name="결제수단_2개이상.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/dist/html/complete/결제수단_2개이상.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="결제페이지.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/src/html/nicePayPc/결제페이지.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.결제페이지.html" />
         <item itemvalue="JavaScript Debug.결제수단_2개이상.html" />
       </list>
     </recent_temporary>
@@ -136,7 +144,8 @@
       <workItem from="1731387870039" duration="9533000" />
       <workItem from="1731562764533" duration="2287000" />
       <workItem from="1731629728203" duration="4051000" />
-      <workItem from="1731998479000" duration="3036000" />
+      <workItem from="1731998479000" duration="5528000" />
+      <workItem from="1732060965696" duration="13603000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -506,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732001169907</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="환경세팅 구현 완료">
+      <option name="closed" value="true" />
+      <created>1732001608725</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1732001608725</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +543,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="confirm &#10;aLERT 변경" />
     <MESSAGE value="QA" />
     <MESSAGE value="required 수정 완료" />
     <MESSAGE value="AlertPopup 공통으로 사용  완료" />
@@ -551,6 +567,7 @@
     <MESSAGE value="추가" />
     <MESSAGE value="결제하기 프로세스 변경 작업 진행" />
     <MESSAGE value="환경설정 진행중" />
-    <option name="LAST_COMMIT_MESSAGE" value="환경설정 진행중" />
+    <MESSAGE value="환경세팅 구현 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="환경세팅 구현 완료" />
   </component>
 </project>

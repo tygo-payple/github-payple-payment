@@ -49,11 +49,14 @@
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
-            <input type="hidden" value="">
-            <input type="hidden" value="">
+            <input type="hidden" id="setPaymentMethod" value="1">
+            <input type="hidden" id="setBankValue" value="">
+            <input type="hidden" id="setMonthValue" value="">
+            <input type="hidden" id="setEmailValue" value="">
+            <input type="hidden" id="setRadioCheckbox" value="">
         </main>
         <footer>
-            <button class="payment-btn" id="submitButton" type="submit" disabled >
+            <button class="payment-btn" id="submitButton" type="submit">
                 카드사 앱으로 결제하기
             </button>
         </footer>
@@ -832,6 +835,91 @@
 
 
 <!--validation s-->
+
+<script>
+    $(document).ready(function () {
+        $(".loader").hide();
+        const selectBank = $('#selectBank');
+        const selectMonth = $('#selectMonth');
+        const inputEmail = $('#inputEmail');
+        const radioCheckboxAll = $('._chk-all-validation');
+        const radioCheckbox = $('._chk-validation');
+
+        const setPaymentMethod = $('#setPaymentMethod');
+        const setBankValue = $('#setBankValue');
+        const setMonthValue = $('#setMonthValue');
+        const setEmailValue = $('#setEmailValue');
+        const setRadioCheckbox = $('#setRadioCheckbox');
+        const submitButton = $('#submitButton');
+
+
+        selectBank.on('change', function () {
+            let setData = $(this).val()
+            setBankValue.val(setData)
+        })
+        selectMonth.on('change', function () {
+            let setData = $(this).val()
+            setMonthValue.val(setData)
+        })
+        inputEmail.on('input', function () {
+            let setData = $(this).val()
+            setEmailValue.val(setData)
+        })
+        radioCheckboxAll.on('change', function () {
+            let isChecked = $(this).is(':checked')
+            if (isChecked) {
+                setRadioCheckbox.val("Y")
+            } else {
+                setRadioCheckbox.val("N")
+            }
+        })
+        radioCheckbox.on('change', function () {
+            const isRadioTotal = $('._chk-validation').length;
+
+            let isRadio = $('._chk-validation:checked').length;
+            if (isRadioTotal === isRadio) {
+                setRadioCheckbox.val("Y")
+            } else {
+                setRadioCheckbox.val("N")
+            }
+        })
+
+        inputEmail.on('change', validationEmailInput)
+        function validationEmailInput() {
+            return true
+        }
+
+        const fieldsToCheck = [radioCheckboxAll, radioCheckbox, selectBank, selectMonth];
+        fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
+        function validationMonthSelect() {
+            return selectMonth.val() !== "";
+        }
+        function validationBankSelect() {
+            return selectBank.val() !== "";
+        }
+        function validationCheckbox() {
+            return radioCheckboxAll.is(':checked')
+        }
+        function checkAllConditions() {
+            const isCheckbox = validationCheckbox();
+            const isBankSelected = validationBankSelect();
+            const isMonthSelected = validationMonthSelect();
+            if (isCheckbox && isBankSelected && isMonthSelected) {
+                submitButton.attr('disabled', false);
+            } else {
+                submitButton.attr('disabled', true);
+            }
+        }
+
+        function alertModal(message, status = 'show') {
+            const ALERT = $('.alert');
+            ALERT.addClass(status);
+            ALERT.children('._modal-animation').addClass(status);
+            ALERT.find('.content').text(message);
+        }
+    });
+</script>
+
 <script>
     $(document).ready(function () {
         const checkboxAllField = $('._chk-all-validation');
