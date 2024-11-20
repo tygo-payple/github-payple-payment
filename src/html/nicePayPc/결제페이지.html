@@ -139,7 +139,7 @@
                 <input type="hidden" id="setMonthValue" value="">
                 <input type="hidden" id="setEmailValue" value="">
                 <input type="hidden" id="setRadioCheckbox" value="">
-                <button class="button-submit" id="submitButton">결제하기</button>
+                <button class="button-submit" id="submitButton" disabled>결제하기</button>
             </article>
         </section>
     </main>
@@ -937,10 +937,10 @@
         const fieldsToCheck = [radioCheckboxAll, radioCheckbox, selectBank, selectMonth];
         fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
         function validationMonthSelect() {
-            return selectMonth.val() !== "";
+            return setMonthValue.val() !== "";
         }
         function validationBankSelect() {
-            return selectBank.val() !== "";
+            return setBankValue.val() !== "";
         }
         function validationCheckbox() {
             return radioCheckboxAll.is(':checked')

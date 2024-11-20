@@ -107,19 +107,19 @@ data.nicePayPc = {
     title: 'nicePayPc',
     list: [
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제페이지',
             category: 'nicePayPc',
             page: '결제페이지'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제완료',
             category: 'nicePayPc',
             page: '결제완료'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제실패',
             category: 'nicePayPc',
             page: '결제실패'

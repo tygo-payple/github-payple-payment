@@ -56,7 +56,7 @@
             <input type="hidden" id="setRadioCheckbox" value="">
         </main>
         <footer>
-            <button class="payment-btn" id="submitButton" type="submit">
+            <button class="payment-btn" id="submitButton" type="submit" disabled>
                 카드사 앱으로 결제하기
             </button>
         </footer>
@@ -835,7 +835,6 @@
 
 
 <!--validation s-->
-
 <script>
     $(document).ready(function () {
         $(".loader").hide();
@@ -892,10 +891,10 @@
         const fieldsToCheck = [radioCheckboxAll, radioCheckbox, selectBank, selectMonth];
         fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
         function validationMonthSelect() {
-            return selectMonth.val() !== "";
+            return setMonthValue.val() !== "";
         }
         function validationBankSelect() {
-            return selectBank.val() !== "";
+            return setBankValue.val() !== "";
         }
         function validationCheckbox() {
             return radioCheckboxAll.is(':checked')
@@ -911,66 +910,6 @@
             }
         }
 
-        function alertModal(message, status = 'show') {
-            const ALERT = $('.alert');
-            ALERT.addClass(status);
-            ALERT.children('._modal-animation').addClass(status);
-            ALERT.find('.content').text(message);
-        }
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-        const checkboxAllField = $('._chk-all-validation');
-        const checkboxField = $('._chk-validation');
-        const bankSelectField = $('#selectBank');
-        const monthSelectField = $('#selectMonth');
-        const emailField = $('#inputEmail');
-        const submitButton = $('#submitButton');
-
-        const fieldsToCheck =  [checkboxAllField, checkboxField, bankSelectField, monthSelectField];
-
-        // 필수
-        fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
-
-        // 선택 - Email
-        emailField.on('change', validationEmailInput)
-
-        // validation
-        function validationMonthSelect() {
-            return monthSelectField.val() !== "";
-        }
-        function validationBankSelect() {
-            return bankSelectField.val() !== "";
-        }
-        function validationCheckbox() {
-            return checkboxAllField.is(':checked')
-        }
-        function validationEmailInput() {
-            let emailValue = emailField.val();
-            const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (!regexp.test(emailValue)) {
-                alertModal("이메일을 다시 입력해주세요.",)
-                emailField.val("")
-                emailField.focus();
-                return false;
-            }
-            return true
-        }
-        function checkAllConditions() {
-            const isCheckbox = validationCheckbox();
-            const isBankSelected = validationBankSelect();
-            const isMonthSelected = validationMonthSelect();
-
-            if (isCheckbox && isBankSelected && isMonthSelected) {
-                submitButton.attr('disabled', false);
-            } else {
-                submitButton.attr('disabled', true);
-            }
-        }
-
-        // alert
         function alertModal(message, status = 'show') {
             const ALERT = $('.alert');
             ALERT.addClass(status);
