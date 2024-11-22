@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제실패.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제실패.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/payple_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/payple_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_pages.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,15 +146,7 @@
       <workItem from="1732060965696" duration="20326000" />
       <workItem from="1732147212069" duration="6635000" />
       <workItem from="1732178257983" duration="2402000" />
-      <workItem from="1732250666783" duration="11935000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
-      <option name="closed" value="true" />
-      <created>1729562434546</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1729562434546</updated>
+      <workItem from="1732250666783" duration="12089000" />
     </task>
     <task id="LOCAL-00002" summary="feat : 경우의 수 4가지 작업 진행 완료">
       <option name="closed" value="true" />
@@ -545,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732088261886</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="UI 수정 작업 완료">
+      <option name="closed" value="true" />
+      <created>1732263361820</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1732263361822</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +560,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="AlertPopup 공통으로 사용  완료" />
     <MESSAGE value="종료 confirm 팝업 작업 완료" />
     <MESSAGE value="slide 추가 완료" />
     <MESSAGE value="네이버 페이 작업 진행중" />
@@ -590,6 +584,7 @@
     <MESSAGE value="환경세팅 구현 완료" />
     <MESSAGE value="결제페이지 작업 완료" />
     <MESSAGE value="완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="완료" />
+    <MESSAGE value="UI 수정 작업 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI 수정 작업 완료" />
   </component>
 </project>
