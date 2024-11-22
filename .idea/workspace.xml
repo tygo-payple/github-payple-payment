@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="결제페이지 작업 완료">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제실패.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제실패.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제완료.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제완료.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/payple_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/payple_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/payple_pages.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.결제수단_2개이상.html.executor": "Run",
-    "JavaScript Debug.결제페이지.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Payple/Git_Project/github-payple-payment/build",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AtomSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.결제수단_2개이상.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.결제실패.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.결제페이지.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Payple\Git_Project\github-payple-payment\build" />
@@ -78,11 +79,14 @@
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.결제페이지.html">
+  <component name="RunManager" selected="JavaScript Debug.결제수단_2개이상.html">
     <configuration name="결제수단_2개이상.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/dist/html/complete/결제수단_2개이상.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="결제페이지.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/src/html/nicePayPc/결제페이지.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="결제실패.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/dist/html/nicePayPc/결제실패.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -144,7 +148,10 @@
       <workItem from="1731562764533" duration="2287000" />
       <workItem from="1731629728203" duration="4051000" />
       <workItem from="1731998479000" duration="5528000" />
-      <workItem from="1732060965696" duration="17044000" />
+      <workItem from="1732060965696" duration="20326000" />
+      <workItem from="1732147212069" duration="6635000" />
+      <workItem from="1732178257983" duration="2402000" />
+      <workItem from="1732250666783" duration="11935000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 경우의 수 4가지 작업 진행 중&#10;&#10;작업 진행">
       <option name="closed" value="true" />
@@ -530,7 +537,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732084754573</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="완료">
+      <option name="closed" value="true" />
+      <created>1732088261886</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1732088261886</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +565,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="required 수정 완료" />
     <MESSAGE value="AlertPopup 공통으로 사용  완료" />
     <MESSAGE value="종료 confirm 팝업 작업 완료" />
     <MESSAGE value="slide 추가 완료" />
@@ -575,6 +589,7 @@
     <MESSAGE value="환경설정 진행중" />
     <MESSAGE value="환경세팅 구현 완료" />
     <MESSAGE value="결제페이지 작업 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="결제페이지 작업 완료" />
+    <MESSAGE value="완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="완료" />
   </component>
 </project>

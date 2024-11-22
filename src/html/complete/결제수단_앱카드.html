@@ -18,29 +18,29 @@
                     <label class="input-label">
                         <select class="custom-select-box _app-bank-box" id="selectBank" name="bank" required>
                             <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
-                            <option value="1">신한은행</option>
-                            <option value="2">하나은행</option>
-                            <option value="3">국민은행</option>
-                            <option value="4">우리은행</option>
-                            <option value="5">농협은행</option>
+                            <!--                            <option value="1">신한은행</option>-->
+                            <!--                            <option value="2">하나은행</option>-->
+                            <!--                            <option value="3">국민은행</option>-->
+                            <!--                            <option value="4">우리은행</option>-->
+                            <!--                            <option value="5">농협은행</option>-->
                         </select>
                     </label>
                     <div class="_installment-box">
                         <label class="input-label _installment-box">
                             <select class="custom-select-box" id="selectMonth" name="month" required>
                                 <option value="" hidden selected>할부 개월 수를 선택해 주세요.</option>
-                                <option value="1">1개월</option>
-                                <option value="2">2개월</option>
-                                <option value="3">3개월</option>
-                                <option value="4">4개월</option>
-                                <option value="5">5개월</option>
-                                <option value="6">6개월</option>
-                                <option value="7">7개월</option>
-                                <option value="8">8개월</option>
-                                <option value="9">9개월</option>
-                                <option value="10">10개월</option>
-                                <option value="11">11개월</option>
-                                <option value="12">12개월</option>
+                                <!--                                <option value="1">1개월</option>-->
+                                <!--                                <option value="2">2개월</option>-->
+                                <!--                                <option value="3">3개월</option>-->
+                                <!--                                <option value="4">4개월</option>-->
+                                <!--                                <option value="5">5개월</option>-->
+                                <!--                                <option value="6">6개월</option>-->
+                                <!--                                <option value="7">7개월</option>-->
+                                <!--                                <option value="8">8개월</option>-->
+                                <!--                                <option value="9">9개월</option>-->
+                                <!--                                <option value="10">10개월</option>-->
+                                <!--                                <option value="11">11개월</option>-->
+                                <!--                                <option value="12">12개월</option>-->
                             </select>
                         </label>
                     </div>
@@ -49,16 +49,20 @@
                 @@include('../include/terms-list_email.html')
             </section>
             <p class="copyright">powered by Payple</p>
-            <input type="hidden" id="setPaymentMethod" value="1">
-            <input type="hidden" id="setBankValue" value="">
-            <input type="hidden" id="setMonthValue" value="">
-            <input type="hidden" id="setEmailValue" value="">
-            <input type="hidden" id="setRadioCheckbox" value="">
+
+
         </main>
         <footer>
-            <button class="payment-btn" id="submitButton" type="submit" disabled>
-                카드사 앱으로 결제하기
-            </button>
+            <form style="height: 100%">
+                <input type="hidden" id="setPaymentMethod" value="1">
+                <input type="hidden" id="setBankValue" value="">
+                <input type="hidden" id="setMonthValue" value="">
+                <input type="hidden" id="setEmailValue" value="">
+                <input type="hidden" id="setRadioCheckbox" value="">
+                <button class="payment-btn" id="submitButton" type="submit" disabled>
+                 카드사 앱으로 결제하기
+                </button>
+            </form>
         </footer>
     </div>
 </div>
@@ -884,21 +888,26 @@
         })
 
         inputEmail.on('change', validationEmailInput)
+
         function validationEmailInput() {
             return true
         }
 
         const fieldsToCheck = [radioCheckboxAll, radioCheckbox, selectBank, selectMonth];
         fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
+
         function validationMonthSelect() {
             return setMonthValue.val() !== "";
         }
+
         function validationBankSelect() {
             return setBankValue.val() !== "";
         }
+
         function validationCheckbox() {
             return radioCheckboxAll.is(':checked')
         }
+
         function checkAllConditions() {
             const isCheckbox = validationCheckbox();
             const isBankSelected = validationBankSelect();
@@ -920,4 +929,68 @@
 </script>
 <!--validation e-->
 
+
+<script>
+    $(document).ready(function () {
+        const selectMonth = $('#selectMonth')
+        const selectBank = $('#selectBank')
+        const setMonthValue = $('#setMonthValue');
+
+        /*받을 데이터 영역*/
+        const card_code = {
+            "01": "비씨카드",
+            "02": "KB국민카드",
+            "03": "하나(외환)카드",
+            "04": "삼성카드",
+            "06": "신한카드",
+            "07": "현대카드",
+            "08": "롯데카드",
+            "09": "우체국카드",
+            "10": "한미카드",
+            "11": "씨티카드",
+            "12": "NH채움카드",
+            "13": "수협카드",
+            "14": "신협카드",
+            "15": "우리카드",
+            "16": "하나카드",
+            "21": "광주카드",
+            "22": "전북카드",
+            "23": "제주카드"
+        };
+        const installment_months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+        const free_installment_months = ["02", "03", "04", "05", "06"]
+
+
+        const SortCardCode = Object.keys(card_code).sort();
+        $.each(SortCardCode, function (index, key) {
+            selectBank.append(`<option value="${index}">${card_code[key]}</option>`);
+        });
+
+        selectBank.on('change',function(){
+            selectMonth.empty();
+            setMonthValue.val("");
+            selectMonth.append('<option value="" disabled hidden selected>할부 개월수를 선택해 주세요.</option>');
+            $.each(installment_months, function (index, month) {
+                let displayText;
+                const monthNumber = parseInt(month, 10);
+                if (month === "01") {
+                    displayText = "일시불"
+                } else if (month <= "10") {
+                    displayText = monthNumber + "개월";
+                } else {
+                    displayText = monthNumber + "개월";
+                }
+
+                if (free_installment_months.includes(month)) {
+                    displayText += " (무이자)";
+                }
+                selectMonth.append(`<option value="${month}">${displayText}</option>`);
+            });
+        })
+
+
+
+    });
+
+</script>
 </html>

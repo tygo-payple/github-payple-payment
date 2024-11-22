@@ -1,5 +1,11 @@
 @charset "utf-8";
-
+/*
+|--------------------------------------|
+  Page Component
+  Cpay 적용시 경로 변경 필요
+  ../img/ -> /img/payment/
+|-------------------------------------|
+*/
 @import "components/reset";
 @import "components/variables";
 @import "components/mixin";
