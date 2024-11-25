@@ -870,7 +870,7 @@
 
         const SortCardCode = Object.keys(card_code).sort();
         $.each(SortCardCode, function (index, key) {
-            selectBank.append(`<option value="${index}">${card_code[key]}</option>`);
+            selectBank.append(`<option value="${key}">${card_code[key]}</option>`);
         });
 
         selectBank.on('change',function(){
