@@ -1006,5 +1006,85 @@
 <!--validation e-->
 
 
+<!-- <script>
+    $(document).ready(function () {
+        const selectMonth = $('#selectMonth')
+        const selectBank = $('#selectBank')
+        const setMonthValue = $('#setMonthValue');
 
+        function getServiceList() {
+        $.ajax({
+            type: "get",
+            url: "/api/inquiry/business",
+            dataType: "JSON",
+            
+            success: function (data) {
+                const card_code = {
+                    "01": "비씨카드",
+                    "02": "KB국민카드",
+                    "03": "하나(외환)카드",
+                    "04": "삼성카드",
+                    "06": "신한카드",
+                    "07": "현대카드",
+                    "08": "롯데카드",
+                    "09": "우체국카드",
+                    "10": "한미카드",
+                    "11": "씨티카드",
+                    "12": "NH채움카드",
+                    "13": "수협카드",
+                    "14": "신협카드",
+                    "15": "우리카드",
+                    "16": "하나카드",
+                    "21": "광주카드",
+                    "22": "전북카드",
+                    "23": "제주카드"
+                };
+
+                const installment_months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12","13","14","15"]
+                const free_installment_months = ["02", "03", "04", "05", "06"]
+                
+                const SortCardCode = Object.keys(card_code).sort();
+                $.each(SortCardCode, function (index, key) {
+                    selectBank.append(`<option value="${key}">${card_code[key]}</option>`);
+                });
+                
+                selectMonth.empty();
+                setMonthValue.val("");
+                selectMonth.append('<option value="" disabled hidden selected>할부 개월수를 선택해 주세요.</option>');
+                $.each(installment_months, function (index, month) {
+                let displayText;
+                const monthNumber = parseInt(month, 10);
+                if (month === "01") {
+                    displayText = "일시불"
+                }else {
+                    displayText = monthNumber + "개월";
+                }
+                if (free_installment_months.includes(month)) {
+                    displayText += " (무이자)";
+                }
+                selectMonth.append(`<option value="${month}">${displayText}</option>`);
+            });
+            },
+
+            error: function (data,status,err) {
+                alertModal("요청에 실패했어요. 잠시 후 다시 시도해주세요.");
+            }
+        })
+    }
+        function alertModal(message, status = 'show') {
+            const ALERT = $('.alert');
+            ALERT.addClass(status);
+            ALERT.children('._modal-animation').addClass(status);
+            ALERT.find('.content').text(message);
+        }
+        
+        selectBank.on('change',getServiceList)
+
+        function init(){
+            getServiceList();
+        }
+        init();
+    });
+
+</script> -->
 </html>

@@ -3,14 +3,8 @@
 @@include('../include/head.html')
 <div class="payment-wrap">
     <header class="payment-header">
-        <div class="title-box">
-            <button>
-                <i class="icon ico-back">뒤로가기</i>
-            </button>
+        <div class="title-box" style="justify-content: center;">
             <h1 class="title">결제하기</h1>
-            <button class="_open-modal" data-modal-id="paymentCloseAlert">
-                <i class="icon ico-close">종료하기</i>
-            </button>
         </div>
     </header>
     <main>
@@ -67,8 +61,6 @@
                 <div class="payment-method-form">
                     <div class="payment-method-box _payment-method-box">
                         <button class="btn active" value="1">앱카드</button>
-                        <button class="btn" value="2">네이버페이</button>
-                        <button class="btn" value="3">카카오페이</button>
                     </div>
                     <div class="tab-pane _tab-pane show"><label class="input-label">
                         <select class="custom-select-box _app-bank-box" name="card" id="selectBank" required="">
