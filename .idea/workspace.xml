@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="앱카드 수정 완료">
+      <change afterPath="$PROJECT_DIR$/src/asdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
     </list>
@@ -42,19 +44,21 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.asdf.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.결제수단_2개이상.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.결제실패.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.결제페이지.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.asdf.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-home.payple.kr&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -74,7 +78,7 @@
       <recent name="C:\Payple\Git_Project\github-payple-payment\src\img\temp" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.결제수단_2개이상.html">
+  <component name="RunManager" selected="JavaScript Debug.asdf.html">
     <configuration name="결제수단_2개이상.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/dist/html/complete/결제수단_2개이상.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -84,8 +88,16 @@
     <configuration name="결제실패.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/dist/html/nicePayPc/결제실패.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="asdf.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/github-payple-payment/src/asdf.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="asdf.html" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/asdf.html" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.asdf.html" />
+        <item itemvalue="Node.js.asdf.html" />
         <item itemvalue="JavaScript Debug.결제페이지.html" />
         <item itemvalue="JavaScript Debug.결제수단_2개이상.html" />
       </list>
@@ -146,15 +158,16 @@
       <workItem from="1732060965696" duration="20326000" />
       <workItem from="1732147212069" duration="6635000" />
       <workItem from="1732178257983" duration="2402000" />
-      <workItem from="1732250666783" duration="12089000" />
-    </task>
-    <task id="LOCAL-00002" summary="feat : 경우의 수 4가지 작업 진행 완료">
-      <option name="closed" value="true" />
-      <created>1729571334498</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1729571334498</updated>
+      <workItem from="1732250666783" duration="14967000" />
+      <workItem from="1732493037792" duration="544000" />
+      <workItem from="1732586024795" duration="4079000" />
+      <workItem from="1732600428235" duration="3410000" />
+      <workItem from="1732667928832" duration="2306000" />
+      <workItem from="1733113744785" duration="1462000" />
+      <workItem from="1733271290232" duration="21670000" />
+      <workItem from="1733371476545" duration="1349000" />
+      <workItem from="1733448358673" duration="181000" />
+      <workItem from="1733902242400" duration="2000" />
     </task>
     <task id="LOCAL-00003" summary="파일명 변경">
       <option name="closed" value="true" />
@@ -540,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732263361822</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="앱카드 수정 완료">
+      <option name="closed" value="true" />
+      <created>1732263519321</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1732263519322</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +581,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="종료 confirm 팝업 작업 완료" />
     <MESSAGE value="slide 추가 완료" />
     <MESSAGE value="네이버 페이 작업 진행중" />
     <MESSAGE value="네이버 페이 수정 완료" />
@@ -585,6 +605,7 @@
     <MESSAGE value="결제페이지 작업 완료" />
     <MESSAGE value="완료" />
     <MESSAGE value="UI 수정 작업 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI 수정 작업 완료" />
+    <MESSAGE value="앱카드 수정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="앱카드 수정 완료" />
   </component>
 </project>

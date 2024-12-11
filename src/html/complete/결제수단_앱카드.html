@@ -883,7 +883,7 @@
         let jsonObj = JSON.parse(jsonData)
         jsonObj.sort((a, b) => parseInt(a.codeCard) - parseInt(b.codeCard));
         $.each(jsonObj, function (index, key) {
-            selectBank.append(`<option value="${key.codeCard}">${key.cardName}</option>`);
+            selectBank.append('<option value="' + key.codeCard + '">' + key.cardName + '</option>');
         });
         selectBank.on('change', function() {
             selectMonth.empty();
@@ -895,11 +895,11 @@
             let selectedCard = json.find(item => item.codeCard === selectedCardCode);
 
             if (selectedCard) {
-              
+
                 $.each(selectedCard.months, function(index, month) {
                     let displayText;
                     const monthNumber = parseInt(month, 10);
-                   
+
                     if (monthNumber === "01") {
                         displayText = "일시불";
                     } else {
@@ -912,10 +912,10 @@
 
                     selectMonth.append(`<option value="${month}">${displayText}</option>`);
                 });
-            } 
+            }
         });
 
-    
+
 
     });
 </script>
@@ -1000,7 +1000,7 @@
             }
         }
 
-    
+
     });
 </script>
 <!--validation e-->
