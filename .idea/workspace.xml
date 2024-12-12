@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/nicePayPc/결제페이지.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/pages/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_modal.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,15 +167,7 @@
       <workItem from="1733448358673" duration="181000" />
       <workItem from="1733902242400" duration="3994000" />
       <workItem from="1733964253472" duration="58000" />
-      <workItem from="1733982487358" duration="2264000" />
-    </task>
-    <task id="LOCAL-00005" summary="feat : 네이버 페이 완료">
-      <option name="closed" value="true" />
-      <created>1729583203786</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1729583203786</updated>
+      <workItem from="1733982487358" duration="2353000" />
     </task>
     <task id="LOCAL-00006" summary="feat : 카카오 페이 완료">
       <option name="closed" value="true" />
@@ -562,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733983730153</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="pc-layout 수정 완료">
+      <option name="closed" value="true" />
+      <created>1733984823123</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1733984823123</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +581,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="네이버 페이 작업 진행중" />
     <MESSAGE value="네이버 페이 수정 완료" />
     <MESSAGE value="작업 진행중" />
     <MESSAGE value="결제수단_네이버페이 우선 작업" />
@@ -607,6 +605,7 @@
     <MESSAGE value="UI 수정 작업 완료" />
     <MESSAGE value="앱카드 수정 완료" />
     <MESSAGE value="테블릿 사이즈 조절 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="테블릿 사이즈 조절 완료" />
+    <MESSAGE value="pc-layout 수정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="pc-layout 수정 완료" />
   </component>
 </project>
