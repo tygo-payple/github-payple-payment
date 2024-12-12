@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="앱카드 수정 완료">
-      <change afterPath="$PROJECT_DIR$/src/asdf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제수단_앱카드.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,15 +166,9 @@
       <workItem from="1733271290232" duration="21670000" />
       <workItem from="1733371476545" duration="1349000" />
       <workItem from="1733448358673" duration="181000" />
-      <workItem from="1733902242400" duration="2000" />
-    </task>
-    <task id="LOCAL-00003" summary="파일명 변경">
-      <option name="closed" value="true" />
-      <created>1729571935259</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1729571935259</updated>
+      <workItem from="1733902242400" duration="3994000" />
+      <workItem from="1733964253472" duration="58000" />
+      <workItem from="1733982487358" duration="1195000" />
     </task>
     <task id="LOCAL-00004" summary="feat : 결제수단 앱카드 완료">
       <option name="closed" value="true" />
@@ -561,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732263519322</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="앱카드 수정 완료">
+      <option name="closed" value="true" />
+      <created>1733902289957</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1733902289957</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

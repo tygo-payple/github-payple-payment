@@ -32,10 +32,18 @@
       width: 100rem;
       display: flex;
       gap: 10rem;
+    @include res-lg{
+      padding: 0 2rem;
+      width: 100%;
+      flex-direction: column;
+      gap: 5rem;
+    }
 
       .list-article {
-
         flex: 1 1 48rem;
+        @include res-lg{
+          flex: 1 1 auto;
+        }
         .position-relative{
           position: relative;
         }
@@ -233,6 +241,9 @@
             background-color: #F5F5F5;
             cursor: auto;
             color: #ACACAC;
+          }
+          @include res-lg{
+            width: 100%;
           }
         }
         .input-label{
