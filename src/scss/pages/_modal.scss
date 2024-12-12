@@ -28,6 +28,22 @@
   }
 }
 
+.pc-layout{
+  .modal-animation{
+
+    width: calc(100% - 4rem);
+    .modal{
+      width: 100%;
+      max-width: 90rem;
+      height: 80vh;
+      .modal-body{
+        height: calc(80vh - 6.6rem);
+      }
+    }
+  }
+
+}
+
 .modal {
   top: 50%;
   left: 50%;
