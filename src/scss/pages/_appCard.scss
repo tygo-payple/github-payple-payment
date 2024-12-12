@@ -52,7 +52,7 @@
 
     @include res-sm {
       height: auto;
-      max-height: 55.5rem;
+      max-height: calc(100dvh - 10.2rem);
     }
 
     &.complete-payment-layout {
