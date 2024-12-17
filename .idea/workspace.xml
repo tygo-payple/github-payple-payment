@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="pc-layout 수정 완료">
+      <change afterPath="$PROJECT_DIR$/src/html/common/loading.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/pages/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCard.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     &quot;Node.js.asdf.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-home.payple.kr&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/payple-homepage-node/front&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -168,6 +170,10 @@
       <workItem from="1733902242400" duration="3994000" />
       <workItem from="1733964253472" duration="58000" />
       <workItem from="1733982487358" duration="2353000" />
+      <workItem from="1733990765993" duration="17000" />
+      <workItem from="1734067101867" duration="2749000" />
+      <workItem from="1734070009954" duration="3508000" />
+      <workItem from="1734411021145" duration="656000" />
     </task>
     <task id="LOCAL-00006" summary="feat : 카카오 페이 완료">
       <option name="closed" value="true" />

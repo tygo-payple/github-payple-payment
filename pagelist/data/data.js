@@ -173,6 +173,7 @@ data.common = {
             category: 'modal',
             page: 'alert'
         },
+
         {
             stateClass: 'complete',
             url: 'confirm',
@@ -196,6 +197,12 @@ data.common = {
             url: '결제실패',
             category: 'common',
             page: '결제실패'
+        },
+        {
+            stateClass: 'complete',
+            url: 'loading',
+            category: 'common',
+            page: 'alert'
         },
 
 
