@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+@@include('../include/head.html')
+<div class="payment-window-background">
+    <div class="payment-window">
+        @@include('../include/header.html')
+        <main>
+            <div class="partner-logo-box">
+                <div class="partner-logo">
+                    <img src="../../img/temp/bi.png" alt="이미지">
+                </div>
+            </div>
+            <section class="info-section">
+                <div class="title-box">
+                    <h3 class="title">결제 상품 정보</h3>
+                    <!--복수일 경우 show 추가-->
+                    <button class="_slide-down-btn slide-down-btn show">
+                        <i class="icon ico-arrow-bottom-slide">슬라이드접기</i>
+                    </button>
+                </div>
+                <!--복수일 경우 items 추가-->
+                <ul class="item-list items">
+                    <li class="item">
+                        <div class="empty-bg">
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
+                            <div class="item-content">
+                                <div class="quantity">
+                                    <span>수량<i class="number">1</i>개</span>
+                                </div>
+                                <div class="amount">
+                                    <span><i class="number">120,250</i></span>원
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="empty-bg">
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
+                            <div class="item-content">
+                                <div class="quantity">
+                                    <span>수량<i class="number">1</i>개</span>
+                                </div>
+                                <div class="amount">
+                                    <span><i class="number">120,250</i></span>원
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="empty-bg">
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝</h5>
+                            <div class="item-content">
+                                <div class="quantity">
+                                    <span>수량<i class="number">1</i>개</span>
+                                </div>
+                                <div class="amount">
+                                    <span><i class="number">120,250</i></span>원
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="total-list show">
+                    <li class="quantity">
+                        <span>총 수량</span>
+                        <span><i class="number">3</i>개</span>
+                    </li>
+                    <li class="amount">
+                        <span class="text-primary">총 결제금액</span>
+                        <span class="text-dark"><i class="number text-primary">375,000</i>원</span>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="payment-method-section">
+                <h3 class="title">결제 수단 선택</h3>
+                <div class="payment-method-box _payment-method-box">
+                    <button class="btn" value="1">앱카드</button>
+                    <button class="btn" value="2">네이버페이</button>
+                    <button class="btn" value="3">카카오페이</button>
+                </div>
+                <div class="tab-pane _tab-pane">
+                    <label class="input-label">
+                        <select class="custom-select-box _app-bank-box" name="card" id="selectBank" required>
+                            <option value="" disabled hidden selected>카드사를 선택해 주세요.</option>
+                            <option value="1">신한은행</option>
+                            <option value="2">하나은행</option>
+                            <option value="3">국민은행</option>
+                            <option value="4">우리은행</option>
+                            <option value="5">농협은행</option>
+                        </select>
+                    </label>
+                    <div class="_installment-box">
+                        <label class="input-label">
+                            <select class="custom-select-box" name="month" id="selectMonth" required>
+                                <option disabled hidden selected value="">할부 개월 수를 선택해 주세요.</option>
+                                <option value="1">1개월</option>
+                                <option value="2">2개월</option>
+                                <option value="3">3개월</option>
+                                <option value="4">4개월</option>
+                                <option value="5">5개월</option>
+                                <option value="6">6개월</option>
+                                <option value="7">7개월</option>
+                                <option value="8">8개월</option>
+                                <option value="9">9개월</option>
+                                <option value="10">10개월</option>
+                                <option value="11">11개월</option>
+                                <option value="12">12개월</option>
+
+                            </select>
+                        </label>
+                    </div>
+                    <p class="caption _open-modal">무이자 할부 안내 〉</p>
+                </div>
+                <div class="tab-pane _tab-pane">
+                    <label class="input-label">
+                        <select class="custom-select-box _transaction-type" name="bank" required id="transactionType">
+                            <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
+                            <option data-value="card" value="1">카드</option>
+                            <option data-value="point" value="2">머니/포인트</option>
+                        </select>
+                    </label>
+                    <div class="tax-box _tax-box">
+                        <label class="input-label">
+                            <select class="custom-select-box _tax" name="bank" id="selectTaxValue">
+                                <option data-value="phone" value="1">소득공제용(휴대폰)</option>
+                                <option data-value="business" value="2">지출증빙(사업자번호)</option>
+                                <option data-value="" value="3">미발행</option>
+                            </select>
+                        </label>
+                        <label class="custom-input _phone-input">
+                            <input id="inputPhoneNumber" class="_only-number" type="text" placeholder="휴대폰번호를 입력해주세요."/>
+                        </label>
+                        <label class="custom-input _business-input">
+                            <input id="inputBusinessNumber" class="_only-number" type="text"
+                                   placeholder="사업자번호를 입력해주세요."/>
+                        </label>
+                    </div>
+                    <p class="caption">* 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                </div>
+                <div class="tab-pane _tab-pane">
+                    <p class="caption">무이자 할부 안내 〉</p>
+                </div>
+                @@include('../include/terms-list_email.html')
+            </section>
+            <p class="copyright">powered by Payple</p>
+            <input type="hidden" id="setPaymentMethod" value="">
+            <input type="hidden" id="setBankValue" value="">
+            <input type="hidden" id="setMonthValue" value="">
+            <input type="hidden" id="setEmailValue" value="">
+            <input type="hidden" id="setRadioCheckbox" value="">
+            <input type="hidden" id="setBusinessNumber" value="">
+            <input type="hidden" id="setTaxValue" value="">
+            <input type="hidden" id="setPhoneNumber" value="">
+            <input type="hidden" id="setTransactionValue">
+        </main>
+        @@include('../include/footer.html')
+    </div>
+</div>
+
+<script>
+    const paymentMethodBox = $('._payment-method-box');
+    const selectMonth = $('#selectMonth');
+    const submitButton = $('#submitButton');
+    const selectBank = $('#selectBank');
+    const inputEmail = $('#inputEmail');
+
+    const radioCheckboxAll = $('._chk-all-validation');
+    const radioCheckbox = $('._chk-validation');
+    const inputPhoneNumber = $('#inputPhoneNumber');
+    const inputBusinessNumber = $('#inputBusinessNumber');
+    const selectTaxValue = $('#selectTaxValue');
+
+    const setPaymentMethod = $('#setPaymentMethod');
+    const setTransactionValue = $('#setTransactionValue')
+    const setMonthValue = $('#setMonthValue')
+    const setRadioCheckbox = $('#setRadioCheckbox');
+    const setPhoneNumber = $('#setPhoneNumber');
+    const setBusinessNumber = $('#setBusinessNumber');
+    const setEmailValue = $('#setEmailValue');
+    const setTaxValue = $('#setTaxValue');
+
+    const selectTransactionType = $('#transactionType')
+    const setBankValue = $('#setBankValue');
+
+
+    // reset Data & Ui
+    const HandleData = () => {
+        resetUi();
+        resetSetData();
+    };
+    const resetUi = () => {
+        selectMonth.find('option:first').prop('selected', true);
+        selectBank.find('option:first').prop('selected', true);
+        radioCheckboxAll.prop("checked", false);
+        radioCheckbox.prop("checked", false);
+        submitButton.attr('disabled', true);
+        $('._transaction-type').find('option:first').prop('selected', true);
+        $('._tax').find('option:first').prop('selected', true);
+        inputPhoneNumber.val("");
+        inputBusinessNumber.val("");
+        $('._tax-box').css({'display': "none"})
+        $('._installment-box').css({'display': "none"})
+    };
+    const resetSetData = () => {
+        setTransactionValue.val("")
+        setBankValue.val("")
+        setMonthValue.val("")
+        setRadioCheckbox.val("")
+        setPhoneNumber.val("")
+        setBusinessNumber.val("")
+        setEmailValue.val("")
+    };
+
+
+    paymentMethodBox.on('click', (e) => {
+        let setData = e.target.value
+        setPaymentMethod.val(setData);
+    })
+    selectBank.on('change', function () {
+        let setData = $(this).val()
+        setBankValue.val(setData)
+    })
+    selectMonth.on('change', function () {
+        let targetValue = $(this).val()
+        setMonthValue.val(targetValue)
+    })
+    radioCheckboxAll.on('change', function () {
+        let isChecked = $(this).is(':checked')
+        if (isChecked) {
+            setRadioCheckbox.val("Y")
+        } else {
+            setRadioCheckbox.val("N")
+        }
+    })
+    inputEmail.on('input', function () {
+        let setData = $(this).val()
+        setEmailValue.val(setData)
+    })
+    radioCheckbox.on('change', function () {
+        const isRadioTotal = radioCheckbox.length;
+        let isRadio = $('._chk-validation:checked').length;
+        if (isRadioTotal === isRadio) {
+            setRadioCheckbox.val("Y")
+        } else {
+            setRadioCheckbox.val("N")
+        }
+    })
+    inputPhoneNumber.on('input', function () {
+        let setData = $(this).val();
+        console.log(setData);
+        setPhoneNumber.val(setData)
+    })
+    inputBusinessNumber.on('input', function () {
+        let setData = $(this).val()
+        setBusinessNumber.val(setData)
+    })
+    selectTransactionType.on('change', function () {
+        let setData = $(this).val()
+        setTransactionValue.val(setData)
+    })
+    selectTaxValue.on('change', function () {
+        let setData = $(this).val();
+        setTaxValue.val(setData);
+
+    })
+
+
+    paymentMethodBox.on('click', HandleData)
+
+    /*
+     * validation
+    * */
+    paymentMethodBox.on('click', checkAllConditions);
+
+    const fieldsToCheck = [radioCheckboxAll, radioCheckbox, setTransactionValue, inputPhoneNumber, inputBusinessNumber, selectBank, selectMonth]
+
+    fieldsToCheck.forEach(field => field.on('change', checkAllConditions));
+
+
+    function checkAllConditions() {
+        const isCheckbox = validationCheckbox();
+        const isPaymentMethod = validationPaymentMethod();
+        const isCardValue = validationBankCard();
+        const issetMonthValue = validationsetMonthValue();
+        const isTransactionType = validationTransactionType();
+        const isTaxValue = validationTaxValue();
+        const isPhoneNumber  = validationPhoneNumber();
+        const isBusinessNumber  = validationBusinessNumber()
+
+
+        switch (setPaymentMethod.val()) {
+            // 앱카드 - 완료
+            case '1':
+                if (isCheckbox && isPaymentMethod && issetMonthValue && isCardValue) {
+                    submitButton.attr('disabled', false);
+                } else {
+                    submitButton.attr('disabled', true);
+                }
+                break;
+            // 네이버페이
+            case '2':
+                switch (setTransactionValue.val()) {
+                    // 네이버페이 - 카드 - 완료
+                    case '1':
+                        if (isCheckbox && isPaymentMethod && isTransactionType) {
+                            submitButton.attr('disabled', false);
+                        } else {
+                            submitButton.attr('disabled', true);
+                        }
+                        break;
+                    // 네이버페이 - 머니/포인트
+                    case '2' :
+                        switch (setTaxValue.val()) {
+                            // 네이버페이 - 머니/포인트 / 소득공제용(휴대폰)
+                            case '1':
+                                if (isPaymentMethod && isCheckbox && isTransactionType && isPhoneNumber && isTaxValue) {
+                                    submitButton.attr('disabled', false);
+                                } else {
+                                    submitButton.attr('disabled', true);
+                                }
+                                break;
+                            // 네이버페이 - 머니/포인트 / 지출증빙(사업자번호)
+                            case '2':
+                                if (isCheckbox && isPaymentMethod && isTransactionType && isBusinessNumber && isTaxValue) {
+                                    submitButton.attr('disabled', false);
+                                } else {
+                                    submitButton.attr('disabled', true);
+                                }
+                                break;
+                            // 네이버페이 - 머니/포인트 / 미발행
+                            case '3':
+                                if (isCheckbox && isPaymentMethod && isTransactionType && isTaxValue) {
+                                    submitButton.attr('disabled', false);
+                                } else {
+                                    submitButton.attr('disabled', true);
+                                }
+                                break;
+                        }
+                        break;
+                    case '3' :
+                        if (isCheckbox && isPaymentMethod && issetMonthValue && isCardValue) {
+                            submitButton.attr('disabled', false);
+                        } else {
+                            submitButton.attr('disabled', true);
+                        }
+                }
+                break;
+            // 카카오 페이 - 완료
+            case '3' :
+                if (isCheckbox) {
+                    submitButton.attr('disabled', false);
+                } else {
+                    submitButton.attr('disabled', true);
+                }
+                break;
+        }
+    }
+
+    function validationCheckbox() {
+
+        return setRadioCheckbox.val() === "Y"
+    }
+
+    function validationPaymentMethod() {
+        return setPaymentMethod.val() !== ""
+    }
+
+    function validationPhoneNumber() {
+        return setPhoneNumber.val() !== ""
+    }
+
+    function validationBusinessNumber() {
+        return setBusinessNumber.val() !== ""
+    }
+
+    function validationBankCard() {
+        return setBankValue.val() !== ""
+    }
+
+    function validationsetMonthValue() {
+        return setMonthValue.val() !== ""
+    }
+
+    function validationTransactionType() {
+        return setTransactionValue.val() !== ""
+    }
+
+    function validationTaxValue() {
+        return setTaxValue.val() !== ""
+    }
+
+
+</script>
+
+</html>
+

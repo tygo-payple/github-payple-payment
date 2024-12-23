@@ -26,6 +26,18 @@ data.complete = {
             category: 'complete',
             page: '결제수단_네이버페이'
         },
+        {
+            stateClass: 'complete',
+            url: '결제_2개이상_이미지있음',
+            category: 'complete',
+            page: '결제_2개이상_이미지있음'
+        },
+        {
+            stateClass: 'complete',
+            url: '결제_2개이상_이미지없음',
+            category: 'complete',
+            page: '결제_2개이상_이미지없음'
+        },
 
 
     ]
@@ -202,7 +214,7 @@ data.common = {
             stateClass: 'complete',
             url: 'loading',
             category: 'common',
-            page: 'alert'
+            page: 'loading'
         },
 
 
