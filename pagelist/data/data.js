@@ -33,10 +33,22 @@ data.complete = {
             page: '결제_2개이상_이미지있음'
         },
         {
+            stateClass: 'working',
+            url: '결제_2개이상_이미지있음_PC',
+            category: 'complete',
+            page: '결제_2개이상_이미지있음_PC'
+        },
+        {
             stateClass: 'complete',
             url: '결제_2개이상_이미지없음',
             category: 'complete',
             page: '결제_2개이상_이미지없음'
+        },
+        {
+            stateClass: 'working',
+            url: '결제_2개이상_이미지없음_PC',
+            category: 'complete',
+            page: '결제_2개이상_이미지없음_PC'
         },
 
 
