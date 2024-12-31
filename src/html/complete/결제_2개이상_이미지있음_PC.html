@@ -74,6 +74,12 @@
                             </div>
                         </li>
                     </ul>
+                    <script>
+                        const itemList = $('.item-list')
+                        if(itemList.children('.item').length > 5){
+                            itemList.addClass('custom-scroll')
+                        }
+                    </script>
                     <!--show 클래스 추가시 display:block-->
                     <ul class="total-list show">
                         <li class="quantity">

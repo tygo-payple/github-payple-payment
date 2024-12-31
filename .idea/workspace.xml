@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지없음_PC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지있음_PC.html" afterDir="false" />
+    <list default="true" id="2267ebce-c78c-4705-8a87-d62d9d65aa3b" name="Changes" comment="스크롤이미지 작업 필요">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagelist/data/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/pagelist/data/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지없음.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지없음.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지없음_PC.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지없음_PC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지있음_PC.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/complete/결제_2개이상_이미지있음_PC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/_appCardPc.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     &quot;Node.js.asdf.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/github-payple-payment/build&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Payple/Git_Project/payple-homepage-node/front&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -175,15 +176,9 @@
       <workItem from="1734489085648" duration="2029000" />
       <workItem from="1734913512983" duration="6048000" />
       <workItem from="1734929130068" duration="4822000" />
-      <workItem from="1734939960437" duration="115000" />
-    </task>
-    <task id="LOCAL-00008" summary="feat: 결제수단 작업 진행중">
-      <option name="closed" value="true" />
-      <created>1729586362985</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1729586362985</updated>
+      <workItem from="1734939960437" duration="671000" />
+      <workItem from="1735602218478" duration="3748000" />
+      <workItem from="1735610208539" duration="1603000" />
     </task>
     <task id="LOCAL-00009" summary="feat: 네이버 페이 완료">
       <option name="closed" value="true" />
@@ -569,7 +564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734931697276</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="스크롤이미지 작업 필요">
+      <option name="closed" value="true" />
+      <created>1734940104446</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1734940104447</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,8 +592,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="결제수단_네이버페이 우선 작업" />
-    <MESSAGE value="네이버페이 작업 진행ㅈ우" />
     <MESSAGE value="비상 pUSH 작업 진행" />
     <MESSAGE value="validation 재작업 진행" />
     <MESSAGE value="해당 작업 임시 구현" />
@@ -614,6 +615,8 @@
     <MESSAGE value="pc-layout 수정 완료" />
     <MESSAGE value="loader 완료" />
     <MESSAGE value="이미지 경우의 수 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="이미지 경우의 수 추가" />
+    <MESSAGE value="Changes" />
+    <MESSAGE value="스크롤이미지 작업 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="스크롤이미지 작업 필요" />
   </component>
 </project>

@@ -17,8 +17,62 @@
             <article class="list-article">
                 <h5 class="sub-title">결제 상품 정보</h5>
                 <div class="position-relative">
-                    <div></div>
-                    <ul class="item-list">
+                    <div style="width: 100%"></div>
+                    <ul class="item-list custom-scroll">
+                        <li class="item">
+                            <div class="empty-bg">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                    아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남
+                                    아쉬탕가끝</h5>
+                                <div class="item-content">
+                                    <div class="quantity">
+                                        <span>수량<i class="number">1</i>개</span>
+                                    </div>
+                                    <div class="amount">
+                                        <span><i class="number">120,250</i></span>원
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="empty-bg">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                    아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남
+                                    아쉬탕가끝</h5>
+                                <div class="item-content">
+                                    <div class="quantity">
+                                        <span>수량<i class="number">1</i>개</span>
+                                    </div>
+                                    <div class="amount">
+                                        <span><i class="number">120,250</i></span>원
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="empty-bg">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <h5 class="item-title">[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남
+                                    아쉬탕가끝[통합회원권] 강남 아쉬탕가끝[통합회원권] 강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남 아쉬탕가끝강남
+                                    아쉬탕가끝</h5>
+                                <div class="item-content">
+                                    <div class="quantity">
+                                        <span>수량<i class="number">1</i>개</span>
+                                    </div>
+                                    <div class="amount">
+                                        <span><i class="number">120,250</i></span>원
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li class="item">
                             <div class="empty-bg">
                                 <img src="" alt="">
@@ -74,6 +128,12 @@
                             </div>
                         </li>
                     </ul>
+                    <script>
+                        const itemList = $('.item-list')
+                        if(itemList.children('.item').length > 5){
+                            itemList.addClass('custom-scroll')
+                        }
+                    </script>
                     <!--show 클래스 추가시 display:block-->
                     <ul class="total-list show">
                         <li class="quantity">
