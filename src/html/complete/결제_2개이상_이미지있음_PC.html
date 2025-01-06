@@ -100,6 +100,8 @@
                 <div class="payment-method-form">
                     <div class="payment-method-box _payment-method-box">
                         <button class="btn active" value="1">앱카드</button>
+                        <button class="btn" value="2">네이버페이</button>
+                        <button class="btn" value="3">카카오페이</button>
                     </div>
                     <div class="tab-pane _tab-pane show"><label class="input-label">
                         <select class="custom-select-box _app-bank-box" name="card" id="selectBank" required="">
@@ -130,6 +132,35 @@
                             </label>
                         </div>
                         <p class="caption _open-modal ziig" data-modal-id="ziig">무이자 할부 안내 〉</p>
+                    </div>
+                    <div class="tab-pane _tab-pane">
+                        <label class="input-label">
+                            <select class="custom-select-box _transaction-type" name="bank" required id="transactionType">
+                                <option value="" disabled hidden selected>카드 또는 머니/포인트를 선택해 주세요.</option>
+                                <option data-value="card" value="1">카드</option>
+                                <option data-value="point" value="2">머니/포인트</option>
+                            </select>
+                        </label>
+                        <div class="tax-box _tax-box">
+                            <label class="input-label">
+                                <select class="custom-select-box _tax" name="bank" id="selectTaxValue">
+                                    <option data-value="phone" value="1">소득공제용(휴대폰)</option>
+                                    <option data-value="business" value="2">지출증빙(사업자번호)</option>
+                                    <option data-value="" value="3">미발행</option>
+                                </select>
+                            </label>
+                            <label class="custom-input _phone-input">
+                                <input id="inputPhoneNumber" class="_only-number" type="text" placeholder="휴대폰번호를 입력해주세요."/>
+                            </label>
+                            <label class="custom-input _business-input">
+                                <input id="inputBusinessNumber" class="_only-number" type="text"
+                                       placeholder="사업자번호를 입력해주세요."/>
+                            </label>
+                        </div>
+                        <p class="caption">* 카드와 머니/포인트 결제를 함께 사용할 수 없습니다.</p>
+                    </div>
+                    <div class="tab-pane _tab-pane">
+                        <p class="caption">무이자 할부 안내 〉</p>
                     </div>
                     <ul class="terms-list">
                         <li class="item all">

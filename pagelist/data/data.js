@@ -24,7 +24,7 @@ data.complete = {
             stateClass: 'complete',
             url: '결제수단_네이버페이',
             category: 'complete',
-            page: '결제수단_네이버페이'
+            page: '결제수단_네이버페이'  
         },
         {
             stateClass: 'complete',
@@ -33,7 +33,7 @@ data.complete = {
             page: '결제_2개이상_이미지있음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제_2개이상_이미지있음_PC',
             category: 'complete',
             page: '결제_2개이상_이미지있음_PC'
@@ -45,7 +45,7 @@ data.complete = {
             page: '결제_2개이상_이미지없음'
         },
         {
-            stateClass: 'working',
+            stateClass: 'complete',
             url: '결제_2개이상_이미지없음_PC',
             category: 'complete',
             page: '결제_2개이상_이미지없음_PC'
